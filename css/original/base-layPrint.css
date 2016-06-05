@@ -1,0 +1,17 @@
+body {
+	background-image: none;
+}
+
+.bPanel
+, .bBanner
+, menu {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a[href^=http]:after {
+	content: " (" attr(href) ")";
+}

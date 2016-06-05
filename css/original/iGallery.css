@@ -1,0 +1,113 @@
+/* <iGallery><iHover> */
+.iGallery {
+	cursor: default;
+	list-style: none;
+	overflow: hidden;
+	padding: 15px 0;
+	text-align: center;	
+}
+
+.iGallery-paspartu {
+	padding: 0 0 10px;
+}
+
+.iGallery li {
+	display: inline;
+	font-size: 0;
+	position: relative;
+}
+
+.iGallery_thumb {
+	height: 180px;
+	vertical-align: top;
+}
+
+@media print {
+.iGallery_thumb {
+	display: none;
+}
+}
+
+.iGallery-thumb120px .iGallery_thumb {
+	height: 120px;
+}
+
+@media screen {
+.iGallery-paspartu img
+, .iGallery-paspartu em {
+	border-style: solid;
+	border-width: 1px;
+}
+}
+
+.iHover em {
+	display: block;
+	font-size: 16px;
+	line-height: 2em;
+	padding: 0 0.75em;
+	text-align: left;
+}
+
+.iHover li:hover .iHover_extra {
+	height: auto;
+	max-height: 2000px;
+	transition: max-height 2s ease;
+	/*animation: fadeIn 0.7s ease;*/
+}
+
+.iHover .iHover_extra {
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+@media screen {
+.iHover .iHover_extra {
+	max-height: 0;
+	height: 0;
+	animation: fadeOut 0.3s ease;
+}
+}
+
+.iHover em {
+	border-bottom: 0;
+}
+
+.iGallery-paspartu em {
+	margin: 15px 0 0;
+}
+
+.iGallery-paspartu img {
+	padding: 4px;
+}
+
+.iGallery-paspartu .iGallery_thumb {
+	margin: 15px 8px 0 7px;
+}
+
+.iHover_base  {
+	transition: margin-top .2s linear;
+}
+
+a:hover .iHover_base {
+	margin-top: 4px;
+}
+
+.iGallery-paspartu  li:hover .iHover_base {
+	margin-top: 19px;
+}
+
+.iHover .iHover_extra img {
+	width: 600px;
+}
+/* </iHover></iGallery> */
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}

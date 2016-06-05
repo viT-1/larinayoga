@@ -1,0 +1,98 @@
+/*Touch-devices...*/
+.touch_enabled h1 span {
+	font-weight: bolder;
+}
+
+/* <media_screen_max1015> */
+/*Styles for screen from 1015...*/
+.bBanner {
+	width: 100%;
+}
+
+.bLikes {
+	right: 30px;
+	text-align: right;
+}
+
+*[role='main'] {
+	margin: 0 auto 0;
+	clear: both;
+}
+
+.bSideBar-master {
+	border-top: 15px solid #FFF;
+}
+
+.bSideBar {
+	text-align: center;
+}
+
+.bSideBar li {
+	display: inline-block;
+}
+
+.bSideBar_mi > a
+, .bSideBar_mi h2  {
+	padding-right: 16px;
+}
+
+.bDevInfo {
+	margin-left: 1em;
+}
+
+menu menu
+, a[href='#top'] {
+	display: none;
+}
+
+/* <media_screen_min630> */
+@media screen and (min-width:630px) {
+.bBase
+, .bPanel[role='banner'] {
+	width: 630px;
+}}
+/* </media_screen_min630> */
+
+/* <media_screen_max629> */
+@media screen and (max-width:629px) {
+.bSideBar_mi > a
+, .bSideBar_mi h2 {
+	background-image: none;
+	padding-left: 16px;
+}
+
+.img-responsive {
+	width: 30%;
+}
+
+*[role='main'] object
+, *[role='main'] embed {
+	width: 100%;
+	height: auto;
+}}
+/* </media_screen_max629> */
+
+/* <media_screen_max422> */
+@media screen and (max-width:422px) {
+.bSideBar
+, .bSideBar li {
+	clear: left;
+}
+
+.bLikes {
+	display: none;
+}
+
+*[role='main'] h3 img
+, .bBanner
+, .bLikes {
+	display: none;
+}
+
+.bBase {
+	padding-top: 0;
+}}
+/* </media_screen_max422> */
+
+}
+/* </media_screen_max1015> */

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="events.xsl" type="text/xsl"?>
+<html lang="ru" vocab="http://schema.org/" data-ly-class="events">
+	<head>
+		<meta name="author" content="Ларина Галина, инструктор по хатха-йоге" />
+		<title>Семинары Лариной Галины, инструктора йоги</title>
+		<link rel="alternate" hreflang="en" href="events-en.xml" />
+		<link rel="author" href="https://vk.com/larinayoga" />
+		<link href="css/original/pgEvents.css" />
+	</head>
+	<body vocab="http://schema.org/" typeof="CollectionPage">
+		<ul data-ly-class="lstEvents" property="mainEntity" typeof="ItemList">
+			<li role="section" property="itemListElement" typeof="Event">
+				<!--<meta property="eventStatus" content="Success" />-->
+				<div role="heading">
+					<em property="name">Гвоздестояние</em>
+					<img src="img/ny-logo.png" property="image" />
+					<ul>
+						<li>
+							Начало: <span property="startDate" typeof="Date" content="2014-11-02T17:45">2 ноября в 17:45</span>,
+							<span property="startDate" typeOf="Date" content="2014-11-03T19:00">3 ноября в 19:00</span>,
+							<span property="startDate" typeOf="Date" content="2014-11-04T13:00">4 ноября в 13:00</span>.
+						</li>
+						<li>
+							Место проведения:
+							<span property="location" typeof="Place"><span property="name"><a href="http://pranayoga.ru/" property="sameAs">Центр йоги «Прана»</a>
+							<a href="http://pranayoga.ru/contacts" property="address" content="Москва, Дмитровское шоссе, д.9 к.2">на Тимирязевской</a></span></span>
+						</li>
+					</ul>
+				</div>
+				<p role="complementary" aria-label="description" property="description">
+					<span property="duration" content="2014-11-02/2014-11-04" typeOf="Date">2-4 ноября</span> состоится
+					<span property="superEvent" typeof="Event">
+						<span property="name">конференция «<a href="http://nashayoga.ru/" property="sameAs">Наша йога</a>»</span>
+						<meta property="startDate" content="2014-11-02" />
+					</span>, на которой я проведу три мастер-класса по стоянию на доске с гвоздями!
+				</p>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Мышечные напряжения и техники релаксации</em>
+					<img src="img/cat-lying.png" property="image" />
+					<ul>
+						<li property="startDate" typeOf="Date" content="2013-12-15T11:00">Начало в 11:00</li>
+						<li>Место проведения:
+							<span property="location" typeof="Place">
+								<span property="name">Центр красоты и здоровья «<a href="http://goo.gl/maps/eHHll" property="sameAs">На Гиляровского</a>»</span>
+							</span>
+						</li>
+						<li>Продолжительность: <span property="duration" content="PT8H">8 часов</span></li>
+						<li>Запись по телефону: <span property="organizer" typeOf="Organization"><span property="telephone">+7 (495) 607-38-68</span></span></li>
+						<li property="offers" typeOf="Offer">Стоимость участия: <span property="price">2000</span><span property="priceCurrency" content="RUB">руб.</span>
+						Предоплата гарантирует Ваше участие. Количество мест ограничено!</li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person">
+						<a href="https://vk.com/larinayoga" property="sameAs"><span property="name"><span property="givenName">Галина</span> <span property="familyName">Ларина</span></span></a>:
+						сертифицированный <span property="jobTitle">инструктор по йоге</span> с большим опытом личной практики,
+						<span property="jobTitle">практический психолог</span></li>
+					</ul>
+				</div>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<!--<meta property="eventStatus" content="Success" />-->
+				<div role="heading">
+					<em property="name">Мышечные напряжения и практики релаксации</em>
+					<img src="img/relax-indoor.jpg" property="image" />
+					<ul>
+						<li>Начало в <span property="startDate" typeOf="Date" content="2014-05-31T12:00">12:00</span></li>
+						<li>
+							Место проведения:
+							<span property="location" typeof="Place"><span property="name"><a href="http://pranayoga.ru/" property="sameAs">Центр йоги «Прана»</a>
+							<a href="http://pranayoga.ru/contacts" property="address" content="Москва, Дмитровское шоссе, д.9 к.2">на Тимирязевской</a></span></span>
+						</li>
+						<li>Продолжительность: <span property="duration" content="PT8H">8 часов</span></li>
+						<li property="offers" typeOf="Offer">
+							<div property="itemOffered" typeOf="Service">
+								Стоимость <span property="serviceType">участия в семинаре:</span>
+								<ul property="hasOfferCatalog" typeof="OfferCatalog">
+									<li typeof="Offer">при оплате <span property="priceValidUntil" typeOf="Date" content="2014-05-08">до 18 мая (включительно) </span>
+										<span property="price">2000</span><span property="priceCurrency" content="RUB">руб.</span>,
+									</li>
+									<li typeof="Offer"><span property="validFrom" typeOf="Date" content="2014-05-09">с 19 мая </span>
+										<span property="price">3000</span><span property="priceCurrency" content="RUB">руб.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>Запись на семинар производится с момента его оплаты.</li>
+						<li>Обращаться по телефону: <span property="organizer" typeOf="Organization"><span property="telephone">8(495)617-02-03</span>,
+						или <span property="email">anna@pranayoga.ru</span></span></li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<p>В наших движениях, жестах, мимике запечатлены переживания и проблемы, которые мы когда-то испытали и пережили. Все страхи,
+					обиды и депрессии накапливаются в форме хронических напряжений мышц и, в конечном счёте, проявляются в виде различных заболеваний.</p>
+					<p>Ускоренный ритм большого города отнимает жизненные силы. Мы перегружены всевозможной информацией, многочисленными целями,
+					задачами и контактами с другими людьми, в пользу чего экономим время на отдыхе, растрачивая своё здоровье.</p>
+					<p>Более того, много проблем и ситуаций (возможно неосознанных) тянется с детства, и выявить их сложнее всего. Но у нас есть
+					замечательный инструмент, который помнит и шлёт сигналы постоянно, - наше тело. На тренинге, в форме игровых упражнений,
+					мы изучим «язык» тела, чтобы суметь распознать эти сигналы.</p>
+					<em role="heading">На тренинге Вы научитесь:</em>
+					<ul property="workFeatured" typeof="ExercisePlan">
+						<li property="potentialAction">Осознавать тело, эмоции и чувства</li>
+						<li property="potentialAction">Понимать эмоции и чувства других людей</li>
+						<li property="potentialAction">Справляться со стрессовыми ситуациями</li>
+						<li property="potentialAction">Замечать источники возникновения напряжений</li>
+						<li property="potentialAction">Снимать напряжение мышц</li>
+						<li property="potentialAction">Активизировать жизненные силы в нужный момент</li>
+					</ul>
+
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person"><span property="name"><span property="givenName">Галина</span> <span property="familyName">Ларина</span></span>:
+						сертифицированный <span property="jobTitle">инструктор по йоге</span> с большим опытом личной практики,
+						<span property="jobTitle">практический психолог</span>, <span property="jobTitle">специалист по телесно-ориентированной психотерапии</span></li>
+						<li property="performer" typeof="Person"><span property="name"><span property="familyName">Васильева</span> <span property="givenName">Ирина</span></span>:
+						<span property="jobTitle">практический психолог</span>, сертифицированный
+						<span property="jobTitle">специалист в сфере психологического консультирования, психодиагностики и гипнотерапии</span></li>
+					</ul>
+				</div>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Гвоздестояние в Нижнем Новгороде</em>
+					<img src="img/forum.jpg" property="image" />
+					<ul>
+						<li>Начало: <span property="startDate" typeOf="Date" content="2013-11-23T9:00">23 ноября в 9:00</span></li>
+						<li>Место проведения: <span property="location" typeof="Place">загородный отель
+						«<a href="http://businessandlife.ru/mesto-provedeniya/" property="sameAs"><span property="name">Чайка</span></a>» в Нижегородской области</span></li>
+					</ul>
+				</div>
+				<p property="description">22-23 ноября состоится <span property="superEvent" typeof="Event">
+				<a href="http://businessandlife.ru/" property="sameAs"><span property="name">VI Нестандартный Предпринимательский Форум</span></a></span>,
+				на котором я проведу мастер-класс по стоянию на доске с гвоздями!</p>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Тренинг-интенсив «Телесные зажимы»</em>
+					<img src="img/child.jpeg" property="image" />
+					<ul>
+						<li>Начало: <span property="startDate" typeof="Date" content="2013-11-09T14:00">9 ноября в 14:00</span>,
+							<span property="startDate" typeOf="Date" content="2013-11-09T10:00">10 ноября в 10:00</span>
+						</li>
+						<li>Место проведения:
+							<span property="location" typeof="Place">
+								<span property="name">Центр красоты и здоровья «<a href="http://goo.gl/maps/eHHll" property="sameAs">На Гиляровского</a>»</span>
+							</span>
+						</li>
+						<li>Запись по телефону: <span property="organizer" typeOf="Organization"><span property="telephone">+7 (495) 607-38-68</span></span></li>
+						<li property="offers" typeOf="Offer">
+							<div property="itemOffered" typeOf="Service">
+								Стоимость <span property="serviceType">за два дня участия в тренинге:</span>
+								<ul property="hasOfferCatalog" typeof="OfferCatalog">
+									<li typeof="Offer">при оплате <span property="priceValidUntil" typeOf="Date" content="2013-11-01">до 1 ноября (включительно) </span>
+										<span property="price">4000</span><span property="priceCurrency" content="RUB">руб.</span>
+									</li>
+									<li typeof="Offer">
+										, и <span property="validFrom" typeOf="Date" content="2013-11-02">со 2 ноября </span>
+										<span property="price">5500</span><span property="priceCurrency" content="RUB">руб.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<p>В наших движениях, жестах, мимике запечатлены переживания и проблемы, которые мы когда-то испытали и пережили. Все наши страхи,
+					неврозы, обиды, депрессии остаются в нас в виде хронических напряжений в мышцах, так называемых «мышечных зажимах»,
+					которые человек не всегда осознает.</p>
+					<p>Все происходящее в нашей душе оставляет отпечаток в нашем теле. Наше бессознательное говорит сигналами тела. Если найти контакт
+					со своим телом и правильно понять его сигналы, то можно найти выход из сложных жизненных ситуаций. Важно знать этот
+					«язык тела», уметь его читать, пользоваться им.</p>
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person"><span property="name"><span property="familyName">Васильева</span> <span property="givenName">Ирина</span></span>:
+						<span property="jobTitle">практический психолог</span>, <span property="jobTitle">гипнотерапевт</span></li>
+						<li property="performer" typeof="Person"><span property="name"><span property="givenName">Галина</span> <span property="familyName">Ларина</span></span>:
+						сертифицированный <span property="jobTitle">инструктор по йоге</span>, <span property="jobTitle">практический психолог</span></li>
+					</ul>
+					<em role="heading">Программа мероприятия:</em>
+					<ul property="workFeatured" typeof="ExercisePlan">
+						<li property="potentialAction">Восточные и западные представления о взаимодействии тела и психики</li>
+						<li property="potentialAction">Понятие «мышечного панциря» и его структура</li>
+						<li property="potentialAction">Способы расслабления хронических мышечных зажимов</li>
+						<li property="potentialAction">Диагностика мышечных зажимов, работа в парах</li>
+						<li property="potentialAction">Упражнения для проработки каждого мышечного зажима</li>
+						<li property="potentialAction">Техники гипнотерапии разблокировки эмоциональных зажимов</li>
+					</ul>
+					<p>Семинар полезен всем, желающим лучше понять себя, разобраться с возможными причинами психосоматических заболеваний.</p>
+					<p>Р.S. Для желающих в конце тренинга дополнительный бонус - часовая практика на погружение в прошлые жизни.</p>
+				</div>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Гвоздестояние на конференции «Наша йога»</em>
+					<img src="img/prana.jpg" property="image" />
+					<ul>
+						<li>Начало: <span property="startDate" typeOf="Date" content="2013-11-03T14:30">3 ноября в 14:30</span>,
+							<span property="startDate" typeOf="Date" content="2013-11-04T16:40">4 ноября в 16:40</span>.</li>
+						<li>
+							Место проведения:
+							<span property="location" typeof="Place"><span property="name"><a href="http://pranayoga.ru/" property="sameAs">Центр йоги «Прана»</a>
+							<a href="http://pranayoga.ru/contacts" property="address" content="Москва, Дмитровское шоссе, д.9 к.2">на Тимирязевской</a></span></span>
+						</li>
+					</ul>
+				</div>
+				<p role="complementary" aria-label="description" property="description">
+					<span property="duration" content="2013-11-02/2013-11-04" typeOf="Date">2-4 ноября</span> состоится
+					<span property="superEvent" typeof="Event">
+						<span property="name">конференция «<a href="http://nashayoga.ru/" property="sameAs">Наша йога 2013</a>»</span>
+						<meta property="startDate" content="2013-11-02" />
+					</span>, на которой я проведу три мастер-класса по стоянию на доске с гвоздями!
+				</p>
+			</li>
+			<li role="section" property="itemListElement" typeof="SportsEvent">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Практики на битом стекле</em>
+					<img src="img/glass-feet.jpg" property="image" />
+					<ul>
+						<li>Начало <span property="startDate" typeOf="Date" content="2013-09-21T14:00">в 14:00</span></li>
+						<li>Место проведения:
+							<span property="location" typeof="Place">м.Кузьминки, <a href="http://goo.gl/maps/6DSCh" property="sameAs">
+							<span property="address name">Волгоградский проспект, д.169</span></a></span></li>
+						<li>Запись через <a href="http://vk.com/event58447502">группу вконтакте</a></li>
+						<li property="offers" typeof="AggregateOffer">
+							Стоимость участия: добровольный взнос (донейшн)
+							<meta property="lowPrice" content="0" />
+							<meta property="priceCurrency" content="RUB" />
+						</li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<p>В глубине любой проблемы можно обнаружить страх. Будь - то нарушение здоровья, отношений, финансового аспекта.
+					Страх стесняет и ограничивает человека. Мешает быть свободным, получать желаемое и наслаждаться жизнью. Бороться
+					со страхом бесполезно, от этого он становится только сильнее и крепче.</p>
+					<p>Пройдя по битым бутылочным стеклам, ты получишь опыт трансформации страха. Стеклохождение и лежание на битом
+					стекле - практики, имеющие терапевтический эффект и позволяющие проработать внутренние блоки и глубинные страхи.
+					При взаимодействии кожи с острыми поверхностями происходит активизация физиологических процессов. Особенность
+					стекла состоит в том, что оно подстраивается под тело и воздействует на те участки кожи, где есть какие-либо зажимы.</p>
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person"><span property="name"><span property="familyName">Васильева</span> <span property="givenName">Ирина</span></span>:
+						<span property="jobTitle">практический психолог</span>, <span property="jobTitle">гипнотерапевт</span></li>
+						<li property="performer" typeof="Person"><span property="name"><span property="givenName">Галина</span> <span property="familyName">Ларина</span></span>:
+						сертифицированный <span property="jobTitle">инструктор по йоге</span>, <span property="jobTitle">практический психолог</span></li>
+					</ul>
+					<em role="heading">Программа мероприятия:</em>
+					<ul property="workFeatured" typeof="ExercisePlan">
+						<li property="potentialAction" typeof="Action"><span property="name">Подготовительные упражнения и медитации с <span property="instrument">поющими чашами</span></span></li>
+						<li property="potentialAction" typeof="Action"><span property="name">Лежание <span property="instrument">на стёклах</span></span></li>
+						<li property="potentialAction" typeof="Action"><span property="name">Хождение по <span property="instrument">битому стеклу</span></span></li>
+						<li property="potentialAction" typeof="Action"><span property="name">Асаны <span property="instrument">на стекле</span> (для продвинутых практиков)</span></li>
+					</ul>
+					<p>Семинар полезен всем, желающим лучше понять себя, разобраться с возможными причинами своих страхов, а также тем,
+					кто хочет испытать ОСТРЫЕ ощущения и познать глубинное расслабление.</p>
+				</div>
+			</li>
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name">Глаза боятся, а тело делает!</em>
+					<img src="img/fire.jpg" property="image" />
+					<ul>
+						<li>Начало в <span property="startDate" typeOf="Date" content="2012-09-14T13:00">13:00</span></li>
+						<li>Место проведения:
+							<span property="location" typeof="Place"><a href="http://vk.com/yoga_les" property="sameAs"><span property="name">Йога Лес</span></a></span></li>
+						<li>Продолжительность: <span property="duration" content="2012-09-14/2012-09-15">2 дня</span></li>
+						<li property="offers" typeof="Offer">
+							Стоимость участия: <span property="price">4000</span><span property="priceCurrency" content="RUB">руб.</span></li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<em role="heading">Программа <a href="http://www.facebook.com/events/398613826871561/" property="sameAs">мероприятия</a>:</em>
+					<ul property="workFeatured" typeof="ExercisePlan">
+						<li property="potentialAction">Универсальная йога простой и сложный уровень</li>
+						<li property="potentialAction">Практика 108 Сурья Намаскар (приветствие Солнцу)</li>
+						<li property="potentialAction">Парная йога</li>
+						<li>Очищение стихиями пяти элементов:
+							<ul>
+								<li property="potentialAction">хождение по стёклам и углям,</li>
+								<li property="potentialAction">стояние на гвоздях,</li>
+								<li property="potentialAction">практики на доверие,</li>
+								<li property="potentialAction">очищение элементом эфира</li>
+							</ul>
+						</li>
+						<li property="potentialAction">Практика работы со страхом смерти</li>
+					</ul>
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person"><span property="name">Алексей Киселёв</span>:
+							сертифицированный <span property="jobTitle">инструктор по универсальной йоге</span></li>
+						<li property="performer" typeof="Person"><span property="name">Галина Ларина</span>:
+							сертифицированный <span property="jobTitle">инструктор по йоге</span>, <span property="jobTitle">практический психолог</span></li>
+					</ul>
+				</div>
+			</li>
+			<!--
+			<li role="section" property="itemListElement" typeof="Event">
+				<meta property="eventStatus" content="Success" />
+				<div role="heading">
+					<em property="name"></em>
+					<img src="" property="image" />
+					<ul>
+						<li>Начало: <span property="startDate" typeOf="Date" content=""></span></li>
+						<li>Место проведения:
+							<span property="location" typeof="Place"></span></li>
+						<li property="duration" typeof="Date" content=""></li>
+						<li property="offers" typeof="Offer">
+							Стоимость участия: <span property="price">4000</span><span property="priceCurrency" content="RUB">руб.</span></li>
+					</ul>
+				</div>
+				<div role="complementary" aria-label="description" property="description">
+					<p></p>
+					<em role="heading">Программа <a href="http://" property="sameAs">мероприятия</a>:</em>
+					<ul property="workFeatured" typeof="ExercisePlan">
+						<li property="potentialAction">Универсальная йога простой и сложный уровень</li>
+					</ul>
+					<em role="heading">Ведущие:</em>
+					<ul>
+						<li property="performer" typeof="Person"><span property="name"></span>:	<span property="jobTitle"></span></li>
+						<li property="performer" typeof="Person"><span property="name">Галина Ларина</span>:
+							сертифицированный <span property="jobTitle">инструктор по йоге</span>, <span property="jobTitle">практический психолог</span></li>
+					</ul>
+				</div>
+			</li>
+			-->
+		</ul>
+	</body>
+</html>

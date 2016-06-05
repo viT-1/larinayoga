@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="about.xsl" type="text/xsl"?>
+<html lang="ru" vocab="http://schema.org/" data-ly-class="about">
+	<head>
+		<meta name="author" content="Ларина Галина, инструктор по хатха-йоге" property="name" typeof="rdfa:Pattern" resource="#author_name" />
+		<title>Информация о Лариной Галине, йога-инструкторе</title>
+		<link rel="alternate" hreflang="en" href="about-en.xml" />
+		<link rel="author" href="https://vk.com/larinayoga" />
+	</head>
+	<body typeof="ProfilePage">
+		<div property="mainContentOfPage">
+			<div id="qualification" role="heading" property="mainEntity">
+				<em property="name">Профессиональный опыт</em>
+				<span property="primaryImageOfPage" typeof="ImageObject">
+					<img src="img/Larina_Galina.jpg" data-ly-class="img-primary" />
+					<meta property="rdfa:copy" href="#author_name" />
+				</span>
+			</div>
+			<p>Йогой начала заниматься в Новосибирске, с 2006 года с подготовительного курса
+			<span property="contributor" typeof="Person">
+				<a href="http://kalabin-yoga.ru/" property="sameAs"><meta property="name" content="Владимир Калабин" />Владимира Калабина</a>
+			&#8212; <span property="award">самого гибкого человека планеты</span></span>.</p>
+			<p property="description">За время своей практики удалось побывать на семинарах у разных учителей и мастеров,
+			делившихся своими знаниями и жизненным опытом.</p>
+			<ul data-ly-class="awards">
+				<li property="award">
+					В 2007 году познакомилась с универсальной йогой <span property="contributor" typeof="Person"><meta property="name" content="Андрей Лаппа" />
+					<a href="http://nashayoga.ru/mastera/andrey-lappa/" property="sameAs">Андрея Лаппы</a></span>.
+				</li>
+				<li property="award">В 2009 году прошла сертификационный курс для преподавателей универсальной йоги.</li>
+				<li property="award">В 2010 году прошла сертификационный курс для преподавателей хатха-йоги у ведущих инструкторов
+				центра йоги «Прана»: Ольги Булановой, Владимира Зайцева, Михаила Галаева, Дмитрия Дёмина.</li>
+				<li property="award">Закончила <a href="http://www.spbappo.ru/institut-psichologo-pedagogicheskogo-obrazovaniya/">Санкт-Петербургскую академию</a>
+				постдипломного педагогического образования по специальности "Практический психолог" (специализация имманентно-образная психотерапия).</li>
+				<li property="award">Летом 2012 прошла сертификацирнный курс по Яр-йоге Владимира Калабина.</li>
+				<li property="award">Осенью 2012 года прошла обучающий курс Йогатерапии опорно-двигательного аппарата.</li>
+				<li property="award"> Закончила в 2015 году <a href="http://ipk.sportedu.ru/"> РГУФКСМиТ</a> по программе «Лечебная физическая культура».</li>
+			</ul>
+			<p>Провожу групповые и индивидуальные <a href="schedule-ru.xml">занятия по йоге</a> и участвую
+			в <a href="http://nashayoga.ru/mastera/galina-larina/">конференциях «Наша йога»</a>
+			и новогодних мероприятиях в качестве мастера по гвоздестоянию.</p>
+		</div>
+		<div>
+			<em role="heading" id="personal">Отношение к делу</em>
+			<p>Свои тренировки выстраиваю от простого к сложному, учитывая индивидуальные особенности
+			каждого человека и правила травмобезопасности. На занятиях включаю элементы суставной гимнастики,
+			танца Шивы, упражнения на развитие памяти, интуиции, упражнения из йога-терапии, работа
+			с образами и т.п. в зависи-мости от потребностей учеников, их физической формы и общего настроения.</p>
+			<p>Для меня йога &#8212; это гармония всех элементов человеческого существа. Совершенствование тела
+			в сочетании с работой внутреннего пространства, управлением энергией, достижение того состояния,
+			при котором в каждом действии, мысли и чувстве ты интуитивно проявляешь свое истинное начало.
+			При работе с телом, мы освобождаемся от эмоциональных блоков и улучшаем своё качество жизни.</p>
+		</div>
+		<div>
+			<em role="heading" id="certificates">Сертификаты</em>
+			<ul data-ly-class="certificates">
+				<li>
+					<a href="img/cert-larina-20150605-rgufk-b.png"><img src="img/cert-larina-20150605-rgufk-s.jpg"
+					alt="Диплом о профессиональной переподготовке для деятельности в сфере Физкультуры и спорта" /></a>
+				</li><li>
+					<a	href="img/cert-larina-20150223-perina-b.jpg"><img src="img/cert-larina-20150223-perina-s.jpg"
+					alt="Сертификат по перинатальной йоге (йоге для беременных)" /></a>
+				</li><li>
+					<a href="img/cert-larina-20131116-osanka-b.png"><img src="img/cert-larina-20131116-osanka-s.jpg"
+					alt="Сертификат по особенностям фитнес-тренировок при нарушениях осанки" /></a>
+				</li><li>
+					<a href="img/cert-larina-20130726-osanka-b.png"><img src="img/cert-larina-20130726-osanka-s.jpg"
+					alt="Сертификат по визуальной оценке осанки" /></a>
+				</li><li>
+					<a href="img/cert-larina-20121111-therapy-b.jpg"><img src="img/cert-larina-20121111-therapy-s.jpg"
+					alt="Сертификат по йогатерапии опорно-двигательного аппарата" /></a>
+				</li><li>
+					<a href="img/cert-larina-201206-yar-b.jpg"><img src="img/cert-larina-201206-yar-s.jpg"
+					alt="Сертификат по Яр-Йоге Калабина" /></a>
+				</li><li>
+					<a href="img/cert-larina-2012-nepal-b.jpg"><img src="img/cert-larina-2012-nepal-s.jpg"
+					alt="Сертификат о тренинге по хатха-йоге в Непале" /></a>
+				</li><li>
+					<a href="img/cert-larina-2012-trans-b.jpg"><img src="img/cert-larina-2012-trans-s.jpg"
+					alt="Сертификат по имманентно-образной психотерапии" /></a>
+				</li><li>
+					<a href="img/cert-larina-20120407-psychology-b.jpg"><img src="img/cert-larina-20120407-psychology-s.jpg"
+					alt="Диплом о втором высшем образовании по программе Психология" /></a>
+				</li><li>
+					<a href="img/cert-larina-201005-hatha-b.jpg"><img src="img/cert-larina-201005-hatha-s.jpg"
+					alt="Сертификат по хатха-йоге" /></a>
+				</li><li><a	href="img/cert-larina-200908-universal-b.jpg"><img src="img/cert-larina-200908-universal-s.jpg"
+					alt="Сертификат по Универсальной Йоге" /></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

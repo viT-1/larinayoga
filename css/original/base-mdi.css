@@ -1,0 +1,133 @@
+.bSideBar_mi > a
+, .bSideBar_mi h2 {
+	position: relative;
+	background-image: none;
+}
+
+.bSideBar_mi > a:before
+, .bSideBar_mi h2:before
+, .iMoreLess dd > *:first-child:after
+/*, .anchor */ {
+	font-weight: normal;
+	font-style: normal;
+	
+	/* Если шрифт не загрузится, то показаны будут похожие "иконки" стандартного Unicode шрифта */
+	font-family: IcoMoon, sans-serif;
+	speak: none;
+}
+
+.bSideBar_mi > a:before
+, .bSideBar_mi h2:before {
+	position: absolute;
+	left: 12px;
+	top: 0;
+	
+	/* Иконки размером 36x36 */
+	width: 36px;
+	height: 100%;
+	font-size: 36px;
+	
+	line-height: 48px;
+}
+
+.iMoreLess.-more dd > *:first-child:after {
+	content: '\fe3d';
+}
+
+.iMoreLess.-less dd > *:first-child:after {
+	content: '\fe3e';
+}
+
+.mi-about > a:before
+, .mi-about h2:before {
+	content: '\263a';
+}
+
+.mi-reviews > a:before
+, .mi-reviews h2:before {
+	content: '\2653';
+}
+
+.mi-video > a:before
+, .mi-video h2:before {
+	content: '\25b6';
+}
+
+.mi-photo > a:before
+, .mi-photo h2:before {
+	content: '\113d';
+}
+
+.mi-books > a:before
+, .mi-books h2:before {
+	content: '\25e7';
+}
+
+/* Вынести content в контент, но IE8 не поддерживает считывание data-атрибута в качестве контента */
+/*
+.mi-books > a[data-ico]:before {
+	content: attr(data-ico);
+}
+*/
+
+.mi-schedule > a:before
+, .mi-schedule h2:before {
+	content: '\25d4';
+}
+
+.mi-events > a:before
+, .mi-events h2:before {
+	content: '\24d8';
+}
+
+/* <media_screen_max629> */
+@media screen and (max-width:629px) {
+.bSideBar_mi > a:before
+, .bSideBar_mi h2:before {
+	display: none;
+}}
+/* </media_screen_max629> */
+
+/* <material-icons Google code> */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-feature-settings: 'liga';
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/* </material-icons Google code> */

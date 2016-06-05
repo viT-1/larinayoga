@@ -1,0 +1,45 @@
+body {
+	background: #FFF url('trees-texture.jpg');
+}
+
+.bBanner {
+	background: url('larina-yoga-2013.png') center;
+}
+
+/* IcoMoon заменил спрайты */
+/*
+.mi-about > a
+, .mi-about h2 {
+	background-image: url('x32-sprite-about.png');
+}
+
+.mi-reviews > a
+, .mi-reviews h2 {
+	background-image: url('x32-sprite-reviews.png');
+}
+
+.mi-video > a
+, .mi-video h2 {
+	background-image: url('x32-sprite-video.png');
+}
+
+.mi-photo > a
+, .mi-photo h2 {
+	background-image: url('x32-sprite-photo.png');
+}
+
+.mi-books > a
+, .mi-books h2 {
+	background-image: url('x32-sprite-books.png');
+}
+
+.mi-schedule > a
+, .mi-schedule h2 {
+	background-image: url('x32-sprite-schedule.png');
+}
+
+.mi-events > a
+, .mi-events h2 {
+	background-image: url('x32-sprite-events.png');
+}
+*/

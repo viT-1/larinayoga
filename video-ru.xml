@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="video.xsl" type="text/xsl"?>
+<html lang="ru" data-ly-class="video">
+	<head>
+		<meta name="author" content="Ларина Галина, инструктор по хатха-йоге" />
+		<title>Видео Лариной Галины, инструктора йоги</title>
+		<link rel="alternate" hreflang="en" href="video-en.xml" />
+		<link rel="author" href="https://vk.com/larinayoga" />
+	</head>
+	<body vocab="http://schema.org/" typeof="VideoGallery">
+		<ul data-ly-class="lstVideo" property="mainEntity" typeof="ItemList">
+			<li property="itemListElement" typeof="VideoObject">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-10-09" />
+					<em property="name">Гвоздестояние. Ольга Таскаева в передаче "Доброе утро"</em>
+				</div>
+				<iframe width="600" height="338" src="https://www.youtube-nocookie.com/embed/IRd3kbCozpU?wmode=transparent" frameborder="0"></iframe>
+				<meta property="uploadDate" content="2013-10-18" />
+				<meta property="description" content="Телепередача о гвоздестоянии и его пользе" />
+				<meta property="thumbnailUrl" content="http://img.youtube.com/vi/IRd3kbCozpU/hqdefault.jpg" />
+			</li>
+			<li property="itemListElement" typeof="VideoObject">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-07-12" />
+					<em property="name">"Сурья Намаскар - приветствие Солнцу"</em>
+				</div>
+				<iframe width="600" height="338" src="https://www.youtube-nocookie.com/embed/jkIEStMJRTU?wmode=transparent" frameborder="0"></iframe>
+				<meta property="uploadDate" content="2013-07-27" />
+				<meta property="description" content="Галина Ларина на фоне гор показывает комплекс асан" />
+				<meta property="thumbnailUrl" content="http://img.youtube.com/vi/jkIEStMJRTU/hqdefault.jpg" />
+			</li>
+			<li property="itemListElement" typeof="VideoObject">
+				<div role="heading">
+					<meta property="dateCreated" content="2010-12-11" />
+					<em property="name">Стеклохождение в программе "Шире округ"</em>
+				</div>
+				<iframe width="600" height="338" src="https://www.youtube-nocookie.com/embed/Vf7wpG4lCew?wmode=transparent" frameborder="0"></iframe>
+				<meta property="uploadDate" content="2013-07-27" />
+				<meta property="description" content="Телепередача про нюансы стеклохождения в исполнении Лариной Галины" />
+				<span property="thumbnail" typeof="ImageObject">
+					<meta property="contentUrl" content="http://img.youtube.com/vi/Vf7wpG4lCew/hqdefault.jpg" />
+					<meta itemprop="width" content="600" />
+					<meta itemprop="height" content="338" />
+				</span>
+			</li>
+		</ul>
+	</body>
+</html>

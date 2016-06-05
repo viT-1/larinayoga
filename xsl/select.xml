@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<select id="strings">
+	<option id="notfound" lang="ru" value="Ошибка: Элемент не найден!" />
+	<option id="notfound" lang="en" value="Error: Item is not found!" />
+
+	<option id="markup" lang="ru" value="Вёрстка и дизайн" />
+	<option id="markup" lang="en" value="Made by" />
+	<option id="tothetop" lang="ru" value="В начало страницы" />
+	<option id="tothetop" lang="en" value="To the top" />
+	<option id="siteroot" lang="ru" value="На главную страницу" />
+	<option id="siteroot" lang="en" value="To the main page" />
+
+	<optgroup label="reviews">
+		<option id="cite" lang="ru" value="Цитировано из заметки" />
+		<option id="cite" lang="en" value="It quoted from" />
+	</optgroup>
+	<optgroup label="events">
+		<option id="evFuture" lang="ru" value="Анонс встречи" />
+		<option id="evFuture" lang="en" value="The meeting announced" />
+		<option id="evComplete" lang="ru" value="Встреча состояласть" />
+		<option id="evComplete" lang="en" value="The meeting completed" />
+		<!--<option id="test" lang="en" value="TeSt" />-->
+	</optgroup>
+	
+	<option id="test" lang="ru">Тестовый те<sup>кст</sup></option>
+</select>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot);
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: IcoMoon;
+	src:	url('icomoon.eot');
+    src:	url('icomoon.eot?#iefix') format('embedded-opentype'),
+			url('icomoon.ttf') format('truetype'),
+			url('icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,26 @@
+.-pastEvents h3 {
+	text-decoration: line-through;
+}
+
+/* <media_screen_only> */
+@media screen {
+.-pastEvents img {
+	opacity: 0.25;
+	filter: alpha(opacity=25);
+}
+
+.-pastEvents
+, .-pastEvents *
+, .-pastEvents .iMoreLess dd > *:first-child:after {
+	color: #CCC!important;
+}
+
+.-pastEvents  li:hover * {
+	color: #777!important;
+}
+
+.-pastEvents .iMoreLess dd > *:first-child:after {
+	border-bottom-color: #CCC; 
+}
+}
+/* </media_screen_only> */

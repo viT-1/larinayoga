@@ -1,0 +1,46 @@
+.bBanner
+, .bPanel[role='banner']
+, .bBase {
+	width: 1000px;
+}
+
+.bBase {
+	background: #CF9;	
+}
+
+.bSideBar {
+	position: absolute;
+	top: 250px;
+	width: 185px;
+}
+
+.bSideBar.-master {
+	left: 0;
+}
+
+.bSideBar.-slave {
+	right: 0;
+}
+
+.bSideBar_mi > a
+, .bSideBar_mi.-active h2 {
+	border-width: 15px;
+	border-style: none solid;
+}
+
+.bSideBar_mi {
+	margin-bottom: 15px;
+}
+
+*[role='main'] {
+	margin: 0 185px 0;
+}
+
+.bDevInfo {
+	position: absolute;
+	right: 15px;
+}
+
+.bLikes {
+	left: 1015px;
+}

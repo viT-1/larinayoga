@@ -1,0 +1,247 @@
+* {
+	-moz-box-sizing: border-box;  
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+a img {
+	border-style: none;
+	display: inline-block;
+}
+
+p
+, ul.-likeP li {
+	text-indent: 30px;
+	margin: 0 0 0 15px;
+	padding: 0 0 1em 0;
+}
+
+menu
+, menu li {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul
+, ol {
+	margin: 0;
+	padding: 0 0 1em 15px;
+}
+
+ul.-likeP
+, .list-unstyled {
+	margin: 0;
+	padding: 0;
+}
+
+.list-inline {
+	margin: 0 .5em 0 0;
+	padding: 0;
+}
+
+.-hidden {
+	display: none;
+}
+
+.list-inline
+, .list-inline li {
+	display: inline;
+}
+
+.list-unstyled
+, .list-unstyled > li
+, ul.-likeP li  {
+	list-style: none;
+	display: block;
+}
+
+.list-unstyled > li {
+	margin-bottom: 1em;
+}
+
+.list-unstyled > li:last-child {
+	margin-bottom: 0;
+}
+
+
+*[role='main'] dl {
+	margin: 0 0 15px;
+}
+
+li {
+	list-style: square outside;
+}
+
+.bPanel h1 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+*[role='main'] h3 {
+	margin: 15px 0 .5em 0;
+	padding: 0 0 0 15px;
+	position: relative;
+}
+
+*[role='main'] .anchor {
+	right: 100%;
+	margin-right: -13px;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	width: 0;
+	
+	transition: width .5s ease-out;
+}
+
+*[role='main'] h3:hover  .anchor {
+	width: 23px;
+}
+
+*[role='main'] h3:target  .anchor  {
+	width: 23px;
+}
+
+*[role='main'] h4 {
+	margin: 0 0 .2em 15px;
+}
+
+*[role='main'] h3 img {
+	float: right;
+	clear: right;
+	margin: 0 0 15px 15px;
+}
+
+.bBanner
+, .bPanel[role='banner']
+, .bBase {
+	margin: 0 auto;
+}
+
+.bBanner {
+	position: absolute;
+	top: 0;
+	height: 250px;
+}
+
+.bBase {
+	text-align: left;
+	position: relative;
+}
+
+@media screen {
+.bBase {
+	padding-top: 250px;
+}
+}
+
+.bSideBar_mi > a
+, .bSideBar_mi.-active h2 {
+	display: block;
+	padding: 1em 0 1em 58px;
+	font-weight: bolder;
+}
+
+.bSideBar_mi.-active h2 {
+	margin: 0;
+}
+
+.bSideBar_mi li a {
+	display: block;
+	padding-bottom: 15px;
+	border-width: 15px;
+}
+
+.bSideBar.-master li li a {
+	text-align: right;
+	padding-left: 15px;
+	border-style: none none none solid;
+}
+
+.bSideBar.-slave li li a {
+	text-align: left;
+	padding-right: 15px;
+	border-style: none solid none none;
+}
+
+*[role='main'] {
+	padding: 15px;
+}
+
+.bPanel {
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+}
+
+a[href='#top'] {
+	position: absolute;
+	left: 15px;
+}
+
+.bDevInfo {
+	white-space: nowrap;
+}
+
+.bLikes {
+	position: absolute;
+	top: 45px;
+}
+
+/* <iMoreLess> */
+.iMoreLess dt
+, .iMoreLess dd {
+	padding: 0;
+	margin: 0;
+}
+
+/* <media_screen_only> */
+@media screen {
+.iMoreLess.-less dd > * {
+	display: none;
+}
+
+.iMoreLess.-less dd > *:first-child
+, .iMoreLess.-more dd > *:first-child {
+	display: inherit;
+	cursor: default;
+}
+
+.iMoreLess.-more dd > *:first-child:after {
+	content: '<<<';
+}
+
+.iMoreLess.-less dd > *:first-child:after {
+	content: '>>>';
+}
+
+.iMoreLess.-more dd > *:first-child:after
+, .iMoreLess.-less dd > *:first-child:after {
+	display: inline;
+	margin-left: 1ex;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+}
+/* </media_screen_only> */
+/* </iMoreLess> */
+
+*[role='main'] h3:first-child
+, *[role='main'] li:first-child h3
+, *[role='main'] > div:first-child h3  {
+	margin-top: 0;
+}
+
+.text-right {
+	text-align: right;
+}

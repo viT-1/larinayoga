@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="photo.xsl" type="text/xsl"?>
+<html lang="ru" vocab="http://schema.org/" data-ly-class="photo">
+	<head>
+		<meta name="author" content="Ларина Галина, инструктор по хатха-йоге" />
+		<title>Фотогалерея Лариной Галины, инструктора йоги</title>
+		<link rel="alternate" hreflang="en" href="books-en.xml" />
+		<link rel="author" href="https://vk.com/larinayoga" />
+		<link href="css/original/pgPhoto-layPrint.css" media="print" />
+	</head>
+	<body vocab="http://schema.org/" typeof="ImageGallery">
+		<ul property="mainEntity" typeof="ItemList">
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2014-12-26" />
+					<em property="name">Лыжи в Кузьминках</em>
+					<p property="description">Немного фото с <a href="http://vit-1.livejournal.com/435067.html" property="sameAs">лыжной прогулки по парку Кузьминки</a>.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7497/16110736971_327c8627c3_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7497/16110736971_327c8627c3_q.jpg" alt="Галя на лыжне" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7531/15490300424_6efa14a73c_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7531/15490300424_6efa14a73c_q.jpg" alt="Вдвоём на старте" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8562/15490297584_f2f5cfcc75_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8562/15490297584_f2f5cfcc75_q.jpg" alt="Галя улыбается" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2014-08-24" />
+					<em property="name">Гвозди в Коломенском</em>
+					<p property="description">Немного фото с <a href="http://vit-1.livejournal.com/412049.html" property="sameAs">гвоздестояния в Коломенском</a>.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3872/15032167335_2ee17fcff2_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3872/15032167335_2ee17fcff2_q.jpg" alt="Становимся на гвозди поочереди. Важна групповая поддержка!" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3836/15009179776_1b95b7b0b1_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3836/15009179776_1b95b7b0b1_q.jpg" alt="Ноги на гвоздях крупным планом" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3895/14845631777_ffd1c21e03_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3895/14845631777_ffd1c21e03_q.jpg" alt="Парная асана" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-07-16" />
+					<em property="name">Алтай, Укок, забавы</em>
+					<p property="description">Забавные снимки с <a href="http://vit-1.livejournal.com/339257.html" property="sameAs">треккинга по плато Укок</a>.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5461/9905467115_0cac931993_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5461/9905467115_0cac931993_q.jpg" alt="Наоборот" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3728/10755879804_f990c6bd0a_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3728/10755879804_f990c6bd0a_q.jpg" alt="Галя-суслик" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3791/9337387660_0d94a55076_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3791/9337387660_0d94a55076_q.jpg" alt="На руках" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-07-12" />
+					<meta property="alternateName" content="20130712_1" />
+					<em property="name">Алтай, Укок, силуэты</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/359416.html" property="sameAs">Серия силуэтов</a>, отснятых на закате днёвки треккинга по плато Укок.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm3.staticflickr.com/2879/10417239094_1c60ff5f9e_b.jpg" property="contentUrl">
+							<img src="http://farm3.staticflickr.com/2879/10417239094_1c60ff5f9e_q.jpg" alt="Горыныч" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5486/10417278005_369ae5d7f9_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5486/10417278005_369ae5d7f9_q.jpg" alt="Ноги" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7311/10417279346_13f222d553_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7311/10417279346_13f222d553_q.jpg" alt="Руки" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-07-12" />
+					<meta property="alternateName" content="20130712_2" />
+					<em property="name">Алтай, Укок, асаны</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/339970.html" property="sameAs">Серия асан</a>, отснятых на днёвке треккинга по плато Укок.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm3.staticflickr.com/2849/9391871898_52f04e2c3d_b.jpg" property="contentUrl">
+							<img src="http://farm3.staticflickr.com/2849/9391871898_52f04e2c3d_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3665/9389098171_85337ae69d_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3665/9389098171_85337ae69d_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7372/9389096587_8a7545a4c3_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7372/9389096587_8a7545a4c3_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7346/9389097697_a022145c80_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7346/9389097697_a022145c80_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5513/9389097237_d20521592b_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5513/9389097237_d20521592b_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3773/9389096127_aa1f1afe47_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3773/9389096127_aa1f1afe47_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-06-22" />
+					<em property="name">Разминка в Кузьминках</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/332691.html" property="sameAs">Серия асан</a>, отснятых утром в Кузьминском парке.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3789/8962214677_6912aff743_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3789/8962214677_6912aff743_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm8.staticflickr.com/7364/8963402566_75d56819d6_b.jpg" property="contentUrl">
+							<img src="http://farm8.staticflickr.com/7364/8963402566_75d56819d6_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8545/8962212171_cd545b33bf_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8545/8962212171_cd545b33bf_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8262/8962211275_1668ea07ff_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8262/8962211275_1668ea07ff_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5330/8963406664_92cd2b8c46_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5330/8963406664_92cd2b8c46_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm4.staticflickr.com/3764/8963403746_c0f221b656_b.jpg" property="contentUrl">
+							<img src="http://farm4.staticflickr.com/3764/8963403746_c0f221b656_q.jpg" alt="асана" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2013-05-18" />
+					<em property="name">Фестивль «Здоровая Москва»</em>
+					<p property="description">Фотографии с <a href="http://vit-1.livejournal.com/330336.html" property="sameAs">занятия по хатха-йоге</a>, отснятого в ПКиО «Красная Пресня».</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8557/8753223601_0b0a51f36f_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8557/8753223601_0b0a51f36f_q.jpg" alt="Вид на шатры для занятия йогой" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5454/8754347366_eace0f5bf1_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5454/8754347366_eace0f5bf1_q.jpg" alt="В индийских одеждах" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5332/8753219827_765dcf5a72_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5332/8753219827_765dcf5a72_q.jpg" alt="Собака мордой вверх" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm3.staticflickr.com/2816/8753221325_2bcd27775d_b.jpg" property="contentUrl">
+							<img src="http://farm3.staticflickr.com/2816/8753221325_2bcd27775d_q.jpg" alt="Лодочка" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm6.staticflickr.com/5448/8754345728_df7883a633_b.jpg" property="contentUrl">
+							<img src="http://farm6.staticflickr.com/5448/8754345728_df7883a633_q.jpg" alt="Контроль за правильностью исполнения" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8269/8753219049_b48c22cbc3_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8269/8753219049_b48c22cbc3_q.jpg" alt="Шавасана" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2012-12-30" />
+					<em property="name">Новый год. Питер - Карелия - Питер</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/311375.html" property="sameAs">Поездка в Карелию</a> к Сат-Марге в кемпинг «<a href="http://satmarga.ucoz.com">Остров</a>»</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8090/8395555471_12c66411eb_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8090/8395555471_12c66411eb_q.jpg" alt="Сфинкс" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8356/8396638664_03336ef56d_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8356/8396638664_03336ef56d_q.jpg" alt="Красная шапочка" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8196/8396638040_562045f3fb_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8196/8396638040_562045f3fb_q.jpg" alt="Успокоение в проруби" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8360/8396637500_b70342cf70_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8360/8396637500_b70342cf70_q.jpg" alt="Большой зал для практики" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8048/8396636646_ff1dc6e623_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8048/8396636646_ff1dc6e623_q.jpg" alt="Заготовка дров в йогическом стиле" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8467/8396635702_b216d35efa_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8467/8396635702_b216d35efa_q.jpg" alt="Кафе Укроп" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2012-12-22" />
+					<em property="name">Первый ПВД после «конца света»</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/308797.html" property="sameAs">Поход</a> выходного дня от йога-инструктора Алексея Киселёва.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8504/8300173576_b9076295c0_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8504/8300173576_b9076295c0_q.jpg" alt="Девушки в лесу" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8215/8299120385_8572df50c5_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8215/8299120385_8572df50c5_q.jpg" alt="Лёша в малиннике" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8222/8299119493_8e59c22d07_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8222/8299119493_8e59c22d07_q.jpg" alt="Пропил" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8219/8299119287_1587015f72_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8219/8299119287_1587015f72_q.jpg" alt="Привал" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8222/8300170662_b5e1081951_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8222/8300170662_b5e1081951_q.jpg" alt="На лестнице" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8072/8299114753_58ea0a0fd7_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8072/8299114753_58ea0a0fd7_q.jpg" alt="Шавасана, вид сверху" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2012-11-18" />
+					<em property="name">Прогулка по подмосковным болотам</em>
+					<p property="description"><a href="http://vit-1.livejournal.com/305256.html" property="sameAs">Поход</a> выходного дня в рамках подготовки к лыжному походу <a href="http://tkmgtu.ru/">т/к МГТУ</a>.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8062/8202583772_dc0919ce5d_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8062/8202583772_dc0919ce5d_q.jpg" alt="Переправа по бревну" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8070/8202581468_437cbd14a9_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8070/8202581468_437cbd14a9_q.jpg" alt="Прогиб назад" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8063/8201490019_795e73c8e5_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8063/8201490019_795e73c8e5_q.jpg" alt="Стремительные" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8197/8201489055_b913215486_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8197/8201489055_b913215486_q.jpg" alt="Компания" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8481/8202583172_92a70f75e5_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8481/8202583172_92a70f75e5_q.jpg" alt="В дебрях" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8197/8202581042_8e81c60338_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8197/8202581042_8e81c60338_q.jpg" alt="Ещё переправа" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li property="itemListElement" typeof="CreativeWork">
+				<div role="heading">
+					<meta property="dateCreated" content="2012-09-14" />
+					<em property="name">Глаза боятся, а тело делает!</em>
+					<p property="description"><a href="events-ru.xml#20120914" property="sameAs">Семинар</a> в подмосковном «<a href="http://vk.com/yoga_les">Йога Лесу</a>» по различным йогическим практикам.</p>
+				</div>
+				<ul data-ly-class="lstPhotoAlbum" typeof="ItemList">
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8450/8045359951_2a3a51ebb8_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8450/8045359951_2a3a51ebb8_q.jpg" alt="С чашей на голове" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8171/8015458678_bf3ed01a86_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8171/8015458678_bf3ed01a86_q.jpg" alt="Хождение по углям" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8313/8045357105_a760375496_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8313/8045357105_a760375496_q.jpg" alt="Рапунцель" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8182/8045366672_a121e07f03_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8182/8045366672_a121e07f03_q.jpg" alt="Работа с огнём" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8448/8015457289_4cc3c7cf17_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8448/8015457289_4cc3c7cf17_q.jpg" alt="Гвоздестояние" property="thumbnailUrl" />
+						</a>
+					</li>
+					<li property="itemListElement" typeof="ImageObject">
+						<a href="http://farm9.staticflickr.com/8179/8045366382_5067cbbac2_b.jpg" property="contentUrl">
+							<img src="http://farm9.staticflickr.com/8179/8045366382_5067cbbac2_q.jpg" alt="Пражок через костёр" property="thumbnailUrl" />
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

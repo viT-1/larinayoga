@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="books.xsl" type="text/xsl"?>
+<html lang="ru" data-ly-class="books">
+	<head>
+		<meta name="author" content="Ларина Галина, инструктор по хатха-йоге" />
+		<title>Литература рекомендованная Лариной Галиной, инструктором йоги</title>
+		<link rel="alternate" hreflang="en" href="books-en.xml" />
+		<link rel="author" href="https://vk.com/larinayoga" />
+	</head>
+	<body vocab="http://schema.org/" typeof="CollectionPage">
+		<ul data-ly-class="lstBooks" property="mainEntity" typeof="ItemList">
+			<li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="5-9550-0364-9" />
+				<meta property="name" content="Экстремальная духовность. Потрясающее путешествие за внутренние границы" />
+				<meta property="author" content="Толли Беркен" />
+				<a href="http://www.ozon.ru/context/detail/id/7566788/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1000148952.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-399-00433-4" />
+				<meta property="name" content="Автобиография йога" />
+				<meta property="author" content="Парамаханса Йогананда" />
+				<a href="http://www.ozon.ru/context/detail/id/19542812/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1005707150.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-905692-24-6" />
+				<meta property="name" content="Экологическая медицина. Путь будущей цивилизации" />
+				<meta property="author" content="М. В. Оганян" />
+				<meta property="author" content="В. С. Оганян" />
+				<a href="http://www.ozon.ru/context/detail/id/18363175/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1005503532.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-8174-0470-8" />
+				<meta property="name" content="Очистись от паразитов и живи без паразитов" />
+				<meta property="author" content="Н. А. Семенова" />
+				<a href="http://www.ozon.ru/context/detail/id/18475608/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1005517530.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-98505-036-3, 978-5-98505-048-6" />
+				<meta property="name" content="Две жизни. В 3 частях (комплект из 4 книг)" />
+				<meta property="author" content="К. Е. Антарова" />
+				<a href="http://www.ozon.ru/context/detail/id/8462465/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1004710760.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="5-89750-240-6" />
+				<meta property="name" content="Прояснение йоги. Йога Дипика" />
+				<meta property="author" content="Б. К. С. Айенгар" />
+				<a href="http://www.ozon.ru/context/detail/id/2197230/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1004934997.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-388-00492-5" />
+				<meta property="name" content="Защита от стресса. Работа с подсознанием" />
+				<meta property="author" content="М. Е. Сандомирский" />
+				<a href="http://www.ozon.ru/context/detail/id/7115346/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1003200224.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="5-9689-0051-2" />
+				<meta property="name" content="Как работает йога" />
+				<meta property="author" content="Геше Майкл Роуч" />
+				<meta property="author" content="Кристи Макнелли" />
+				<a href="http://www.ozon.ru/context/detail/id/8266160/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1005132116.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="5-220-00321-6" />
+				<meta property="name" content="Йога-сукшма-вьяяма. Простые упражнения для исцеления и очищения тела" />
+				<meta property="author" content="Дхирендра Брахмачари" />
+				<a href="http://www.ozon.ru/context/detail/id/103579/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1004472763.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="978-5-399-00320-7" />
+				<meta property="name" content="Крайон. Книга 5. Путешествие домой. Майкл Томас и семь ангелов" />
+				<meta property="author" content="Ли Кэрролл" />
+				<a href="http://www.ozon.ru/context/detail/id/7395091/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1003558093.jpg" alt="image preview" property="image" /></a>
+			</li><li property="itemListElement" typeof="Book">
+				<meta property="isbn" content="5-94433-005-8, 1-56718-499-5" />
+				<meta property="name" content="Путешествия души" />
+				<meta property="author" content="Майкл Ньютон" />
+				<a href="http://www.ozon.ru/context/detail/id/4647398/" property="url">
+				<img src="http://static.ozone.ru/multimedia/books_covers/c200/1001240709.jpg" alt="image preview" property="image" /></a>
+			</li>
+		</ul>
+	</body>
+</html>
