@@ -15,7 +15,7 @@
 />
 
 <xsl:template match="html">
-	<html class="no-js">
+	<html class="no-js {@class}">
 		<xsl:apply-templates select="@* | *" />
 	</html>
 </xsl:template>
