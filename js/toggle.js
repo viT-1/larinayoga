@@ -6,7 +6,7 @@ function addTogglingCtl ( dl, c_less, c_more ) {
 	}
 
 	toggling_ctl.onclick = function () {
-		toggleClass ( dl, c_less, c_more );
+		toggleAttrVal ( dl, 'class', c_less, c_more );
 	}
 }
 
@@ -19,7 +19,7 @@ function initToggleAbility ( o, c_ctl, c_less, c_more ) {
 		elem = toggling_elems[i];
 
 		if ( elem.getAttribute( 'class' ).indexOf( c_ctl ) > -1 ) {
-			addClass( elem, c_less );
+			addAttrVal( elem, 'class', c_less );
 			addTogglingCtl( elem, c_less, c_more );
 		}
 	}

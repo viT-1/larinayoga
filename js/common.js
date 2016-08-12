@@ -1,32 +1,44 @@
-function addClass( o, c ) {
-	var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g")
-	if (re.test(o.className)) return
-	o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "")
+function addAttrVal( o, attr_name,  val ) {
+	if ( !o.hasAttribute( attr_name ) ) return;
+	
+	var re = new RegExp( "(^|\\s)" + val + "(\\s|$)", "g" );
+	var attr_val = o.getAttribute( attr_name );
+	if ( re.test( attr_val ) ) return;
+	
+	attr_val = ( attr_val + " " + val ).replace( /\s+/g, " " ).replace( /(^ | $)/g, "" );
+	o.setAttribute( attr_name, attr_val );
 }
 
-function removeClass( o, c ) {
-	var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g")
-	o.className = o.className.replace(re, "$1").replace(/\s+/g, " ").replace(/(^ | $)/g, "")
+function removeAttrVal( o, attr_name, val ) {
+	if ( !o.hasAttribute( attr_name ) ) return;
+
+	var re = new RegExp( "(^|\\s)" + val + "(\\s|$)", "g" );
+	var attr_val = o.getAttribute( attr_name );
+	attr_val = attr_val.replace( re, "$1" ).replace( /\s+/g, " " ).replace( /(^ | $)/g, "" );
+	o.setAttribute( attr_name, attr_val );
 }
 
-function toggleClass( o, c_toggle_a, c_toggle_b ) {
-	var re_a = new RegExp("(^|\\s)" + c_toggle_a + "(\\s|$)", "g");
-	var is_a = re_a.test(o.className);
-	var re_b = new RegExp("(^|\\s)" + c_toggle_b + "(\\s|$)", "g");
-	var is_b = re_b.test(o.className);
+function toggleAttrVal( o, attr_name, val_a, val_b ) {
+	if ( !o.hasAttribute( attr_name ) ) return;
+	
+	var attrVal = o.getAttribute( attr_name );
+	var re_a = new RegExp( "(^|\\s)" + val_a + "(\\s|$)", "g" );
+	var is_a = re_a.test( attrVal );
+	var re_b = new RegExp( "(^|\\s)" + val_b + "(\\s|$)", "g" );
+	var is_b = re_b.test( attrVal );
 
 	if ( is_a ) {
-		removeClass( o, c_toggle_a );
-		addClass( o, c_toggle_b );
+		removeAttrVal( o, attr_name, val_a );
+		addAttrVal( o, attr_name, val_b );
 	}
 	else {
 		if ( is_b ) {
-			removeClass( o, c_toggle_b );
-			addClass( o, c_toggle_a );
+			removeAttrVal( o, attr_name, val_b );
+			addAttrVal( o, attr_name, val_a );
 		}
 	}
 
 	if ( !is_a && !is_b ) {
-		addClass( o, c_toggle_a );
+		addAttrVal( o, attr_name, val_b );
 	}
 }
