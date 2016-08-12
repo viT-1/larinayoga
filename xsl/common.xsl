@@ -13,7 +13,7 @@ meta
 | @cite
 
 | @vocab
-| @typeof
+| body/*/@typeof
 | @property
 
 | @itemscope
