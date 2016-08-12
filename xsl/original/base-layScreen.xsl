@@ -14,6 +14,12 @@
 	doctype-system="about:legacy-compat"
 />
 
+<xsl:template match="html">
+	<html class="no-js">
+		<xsl:apply-templates select="@* | *" />
+	</html>
+</xsl:template>
+
 <xsl:template match="html/body">
 	<body id="top" typeof="WebPage">
 		<xsl:apply-templates select="@*" />
