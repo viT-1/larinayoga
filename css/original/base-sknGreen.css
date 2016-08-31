@@ -133,7 +133,7 @@ body {
 	text-decoration: none;
 }
 
-/* <media_screen_only> */
+/**** screen only */
 @media screen {
 .iMoreLess.-more dd > *:first-child:after
 , .iMoreLess.-less dd > *:first-child:after {
@@ -145,7 +145,7 @@ a {
 	color: blue;
 }
 }
-/* </media_screen_only> */
+/* screen only ****/
 
 *[role='main'] h4 {
 	text-transform: uppercase;
@@ -155,7 +155,7 @@ a {
 	cursor: default;
 }
 
-/* <iGallery><iHover> */
+/**** @group iHover iGallery */
 .iHover em
 , .iGallery img {
 	background: #CF9;
@@ -172,4 +172,4 @@ a {
 	border-color: #370;
 	transition: background .5s ease;
 }
-/* </iHover></iGallery> */
+/* @group iHover iGallery ****/

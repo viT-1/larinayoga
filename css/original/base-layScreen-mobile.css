@@ -1,10 +1,11 @@
-/*Touch-devices...*/
+/**** Touch-devices */
 .touch_enabled h1 span {
 	font-weight: bolder;
 }
+/* Touch-devices ****/
 
-/* <media_screen_max1015> */
-/*Styles for screen from 1015...*/
+/**** screen max1015 */
+/* Styles for screen from 1015px... */
 .bBanner {
 	width: 100%;
 }
@@ -45,15 +46,15 @@ menu menu
 	display: none;
 }
 
-/* <media_screen_min630> */
+/**** screen min630 */
 @media screen and (min-width:630px) {
 .bBase
 , .bPanel[role='banner'] {
 	width: 630px;
 }}
-/* </media_screen_min630> */
+/* screen min630 ****/
 
-/* <media_screen_max629> */
+/**** screen max629 */
 @media screen and (max-width:629px) {
 .bSideBar_mi > a
 , .bSideBar_mi h2 {
@@ -70,9 +71,9 @@ menu menu
 	width: 100%;
 	height: auto;
 }}
-/* </media_screen_max629> */
+/* screen max629 ****/
 
-/* <media_screen_max422> */
+/**** screen max422 */
 @media screen and (max-width:422px) {
 .bSideBar
 , .bSideBar li {
@@ -92,7 +93,7 @@ menu menu
 .bBase {
 	padding-top: 0;
 }}
-/* </media_screen_max422> */
+/* screen max422 ****/
 
 }
-/* </media_screen_max1015> */
+/* screen max1015 ****/

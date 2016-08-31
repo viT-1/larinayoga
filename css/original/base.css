@@ -198,14 +198,14 @@ a[href='#top'] {
 	top: 45px;
 }
 
-/* <iMoreLess> */
+/**** @class iMoreLess */
 .iMoreLess dt
 , .iMoreLess dd {
 	padding: 0;
 	margin: 0;
 }
 
-/* <media_screen_only> */
+/**** iMoreLess screen only */
 @media screen {
 .iMoreLess.-less dd > * {
 	display: none;
@@ -233,8 +233,8 @@ a[href='#top'] {
 	border-bottom-width: 1px;
 }
 }
-/* </media_screen_only> */
-/* </iMoreLess> */
+/* iMoreLess screen only ****/
+/* @class iMoreLess ****/
 
 *[role='main'] h3:first-child
 , *[role='main'] li:first-child h3

@@ -80,15 +80,15 @@
 	content: '\24d8';
 }
 
-/* <media_screen_max629> */
+/**** screen max629 */
 @media screen and (max-width:629px) {
 .bSideBar_mi > a:before
 , .bSideBar_mi h2:before {
 	display: none;
 }}
-/* </media_screen_max629> */
+/* screen max629 ****/
 
-/* <material-icons Google code> */
+/**** @class material-icons (Google code) */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -130,4 +130,4 @@
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-/* </material-icons Google code> */
+/* @class material-icons (Google code) ****/
