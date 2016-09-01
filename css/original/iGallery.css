@@ -49,20 +49,20 @@
 	text-align: left;
 }
 
-.iHover li:hover .iHover_extra {
+li:hover .iHover[ly-details] {
 	height: auto;
 	max-height: 2000px;
 	transition: max-height 2s ease;
 }
 
-.iHover .iHover_extra {
+.iHover[ly-details] {
 	display: block;
 	float: left;
 	overflow: hidden;
 }
 
 @media screen {
-.iHover .iHover_extra {
+.iHover[ly-details] {
 	max-height: 0;
 	height: 0;
 	animation: fadeOut 0.3s ease;
@@ -85,19 +85,19 @@
 	margin: 15px 8px 0 7px;
 }
 
-.iHover_base  {
+.iHover[ly-thumb]  {
 	transition: margin-top .2s linear;
 }
 
-a:hover .iHover_base {
+a:hover .iHover[ly-thumb] {
 	margin-top: 4px;
 }
 
-.iGallery[ly-list = 'paspartu']  li:hover .iHover_base {
+.iGallery[ly-list = 'paspartu']  li:hover .iHover[ly-thumb] {
 	margin-top: 19px;
 }
 
-.iHover .iHover_extra img {
+.iHover[ly-details] img {
 	width: 600px;
 }
 /* @class iHover ****/

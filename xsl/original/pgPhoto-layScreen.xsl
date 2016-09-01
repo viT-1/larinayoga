@@ -63,13 +63,13 @@
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iHover_extra"><br class="-hidden" /><em><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" /></span>
+		<span class="iHover" ly-details=""><br class="-hidden" /><em><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" /></span>
 	</li>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/li/a/img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
-	<xsl:attribute name="class">iGallery iHover_base</xsl:attribute>
+	<xsl:attribute name="class">iGallery iHover</xsl:attribute>
 	<xsl:attribute name="ly-thumb" />
 </xsl:template>
 

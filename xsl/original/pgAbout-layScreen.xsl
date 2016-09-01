@@ -31,12 +31,12 @@
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iHover_extra"><br class="-hidden" /><em><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" /></span>
+		<span class="iHover" ly-details=""><br class="-hidden" /><em><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" /></span>
 	</li>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li/a/img/@alt">
-	<xsl:attribute name="class">iGallery iHover_base</xsl:attribute>
+	<xsl:attribute name="class">iGallery iHover</xsl:attribute>
 	<xsl:attribute name="ly-thumb" />
 	<xsl:attribute name="alt"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
