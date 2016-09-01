@@ -28,7 +28,7 @@
 }
 }
 
-.iGallery-thumb120px .iGallery[ly-thumb] {
+.iGallery[ly-thumb = 'h120px'] {
 	height: 120px;
 }
 

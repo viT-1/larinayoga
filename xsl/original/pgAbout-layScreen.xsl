@@ -37,7 +37,7 @@
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li/a/img/@alt">
 	<xsl:attribute name="class">iGallery iHover</xsl:attribute>
-	<xsl:attribute name="ly-thumb" />
+	<xsl:attribute name="ly-thumb">h120px</xsl:attribute>
 	<xsl:attribute name="alt"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
