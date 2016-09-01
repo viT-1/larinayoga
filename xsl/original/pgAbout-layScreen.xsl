@@ -24,7 +24,8 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/@data-ly-class">
-	<xsl:attribute name="class">iHover iGallery iGallery-paspartu</xsl:attribute>
+	<xsl:attribute name="class">iHover iGallery</xsl:attribute>
+	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li">
@@ -35,7 +36,8 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li/a/img/@alt">
-	<xsl:attribute name="class">iGallery_thumb iHover_base</xsl:attribute>
+	<xsl:attribute name="class">iGallery iHover_base</xsl:attribute>
+	<xsl:attribute name="ly-thumb" />
 	<xsl:attribute name="alt"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 

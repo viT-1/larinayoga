@@ -10,12 +10,14 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'books']//*[@data-ly-class = 'lstBooks']/@data-ly-class">
-	<xsl:attribute name="class">iGallery iGallery-paspartu</xsl:attribute>
+	<xsl:attribute name="class">iGallery</xsl:attribute>
+	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'books']//*[@data-ly-class = 'lstBooks']//img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
-	<xsl:attribute name="class">iGallery_thumb</xsl:attribute>
+	<xsl:attribute name="class">iGallery</xsl:attribute>
+	<xsl:attribute name="ly-thumb" />
 	<xsl:attribute name="title">
 		<xsl:value-of select="ancestor::*[@typeof = 'Book']/meta[@property = 'author']/@content"/>. <xsl:value-of select="ancestor::*[@typeof = 'Book']/meta[@property = 'name']/@content"/>
 	</xsl:attribute>

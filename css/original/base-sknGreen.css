@@ -155,21 +155,23 @@ a {
 	cursor: default;
 }
 
+/**** @class iGallery */
 /**** @group iHover iGallery */
 .iHover em
 , .iGallery img {
 	background: #CF9;
 	color: black;
 }
+/* @group iHover iGallery ****/
 
-.iGallery-paspartu em
-, .iGallery-paspartu li:hover .iGallery_thumb {
+.iGallery[ly-list = 'paspartu'] em
+, .iGallery[ly-list = 'paspartu'] li:hover .iGallery[ly-thumb] {
 	background: #FFF;
 }
 
-.iGallery-paspartu em
-, .iGallery-paspartu img {
+.iGallery[ly-list = 'paspartu'] em
+, .iGallery[ly-list = 'paspartu'] img {
 	border-color: #370;
 	transition: background .5s ease;
 }
-/* @group iHover iGallery ****/
+/* @class iGallery ****/

@@ -56,7 +56,8 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/@data-ly-class">
-	<xsl:attribute name="class">iHover iGallery iGallery-paspartu</xsl:attribute>
+	<xsl:attribute name="class">iHover iGallery</xsl:attribute>
+	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/li">
@@ -68,7 +69,8 @@
 
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/li/a/img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
-	<xsl:attribute name="class">iGallery_thumb iHover_base</xsl:attribute>
+	<xsl:attribute name="class">iGallery iHover_base</xsl:attribute>
+	<xsl:attribute name="ly-thumb" />
 </xsl:template>
 
 </xsl:stylesheet>
