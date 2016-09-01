@@ -30,11 +30,11 @@
 	line-height: 48px;
 }
 
-.iMoreLess.-more dd > *:first-child:after {
+.iMoreLess[ly-state = '-more'] dd > *:first-child:after {
 	content: '\fe3d';
 }
 
-.iMoreLess.-less dd > *:first-child:after {
+.iMoreLess[ly-state = '-less'] dd > *:first-child:after {
 	content: '\fe3e';
 }
 

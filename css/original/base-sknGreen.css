@@ -135,8 +135,7 @@ body {
 
 /**** screen only */
 @media screen {
-.iMoreLess.-more dd > *:first-child:after
-, .iMoreLess.-less dd > *:first-child:after {
+.iMoreLess[ly-state] dd > *:first-child:after {
 	color: blue;
 	border-bottom-color: blue; 
 }

@@ -54,7 +54,7 @@
 		</div>
 		
 		<script type="text/javascript">
-			initToggleAbility( document, 'class', 'iMoreLess', '-less', '-more' );
+			initToggleAbility( document, 'ly-state', 'iMoreLess', '-less', '-more' );
 		</script>
 	</body>
 </xsl:template>
