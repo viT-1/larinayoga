@@ -38,7 +38,7 @@
 		<xsl:if test="$alternate_href">
 			<xsl:attribute name="id"><xsl:value-of select="$alternate_href" /></xsl:attribute>
 		</xsl:if>
-		<a class="anchor" href="#{$date_href}">
+		<a class="iAnchor" href="#{$date_href}">
 			<xsl:if test="$alternate_href">
 				<xsl:attribute name="href">#<xsl:value-of select="$alternate_href" /></xsl:attribute>
 			</xsl:if>

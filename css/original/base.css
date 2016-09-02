@@ -95,7 +95,7 @@ li {
 	position: relative;
 }
 
-*[role='main'] .anchor {
+.iAnchor[href ^= '#'] {
 	right: 100%;
 	margin-right: -13px;
 	box-sizing: border-box;
@@ -107,13 +107,15 @@ li {
 	transition: width .5s ease-out;
 }
 
-*[role='main'] h3:hover  .anchor {
+/**** IE8 cannot render these two selectors together! */
+h3:hover  .iAnchor[href ^= '#'] {
 	width: 23px;
 }
 
-*[role='main'] h3:target  .anchor  {
+h3:target  .iAnchor[href ^= '#'] {
 	width: 23px;
 }
+/* IE8 cannot render these two selectors together! ****/
 
 *[role='main'] h4 {
 	margin: 0 0 .2em 15px;

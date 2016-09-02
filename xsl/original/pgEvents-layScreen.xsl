@@ -88,7 +88,7 @@
 	<h3 id="{$date_href}">
 		<xsl:apply-templates select="img" />
 		<br class="-hidden" />
-		<a class="anchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate( $date, '-', '.' )" /></span>
+		<a class="iAnchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate( $date, '-', '.' )" /></span>
 		<xsl:if test="$second_date">
 			<xsl:text> - </xsl:text>
 			<span class="tpDate"><xsl:value-of select="translate( $second_date, '-', '.' )" /></span>

@@ -11,7 +11,7 @@
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@role = 'heading']">
 	<hr class="-hidden" />
-	<h3 id="{@id}"><a class="anchor" href="#{@id}">#</a><xsl:apply-templates /></h3>
+	<h3 id="{@id}"><a class="iAnchor" href="#{@id}">#</a><xsl:apply-templates /></h3>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'img-primary']/@data-ly-class">

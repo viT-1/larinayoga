@@ -15,7 +15,7 @@
 	
 	<hr class="-hidden" />
 	<h3 id="{translate($date, '-', '')}">
-		<a class="anchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
+		<a class="iAnchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
 	</h3>
 </xsl:template>
 
