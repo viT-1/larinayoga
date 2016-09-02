@@ -20,7 +20,8 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'video']//*[@data-ly-class = 'lstVideo']/@data-ly-class">
-	<xsl:attribute name="class">list-unstyled</xsl:attribute>
+	<xsl:attribute name="class">iList</xsl:attribute>
+	<xsl:attribute name="ly-list">unstyled</xsl:attribute>
 </xsl:template>
 
 </xsl:stylesheet>

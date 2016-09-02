@@ -14,14 +14,14 @@
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']">
 	<xsl:if test="count( $pgEvents-future ) &gt; 0">
-		<ul class="list-unstyled">
+		<ul class="iList" ly-list="unstyled">
 			<xsl:apply-templates select="$pgEvents-future">
 				<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 			</xsl:apply-templates>
 		</ul>
 	</xsl:if>
 	<xsl:if test="count( $pgEvents-complete ) &gt; 0">
-		<ul class="list-unstyled -pastEvents">
+		<ul class="iList -pastEvents" ly-list="unstyled">
 			<xsl:apply-templates select="$pgEvents-complete">
 				<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 			</xsl:apply-templates>
@@ -70,7 +70,7 @@
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li[count( div[@aria-label = 'description']/p ) &gt; 1 ]">
 	<li>
-		<dl class="iMoreLess list-unstyled">
+		<dl class="iMoreLess iList" ly-list="unstyled">
 			<xsl:apply-templates select="*[@role = 'heading']" />
 			<xsl:apply-templates select="*[not(@role = 'heading')]" />
 		</dl>
@@ -123,7 +123,7 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@role = 'section']//ul//ul">
-	<ul class="list-inline"><xsl:apply-templates /></ul>
+	<ul class="iList" ly-list="inline"><xsl:apply-templates /></ul>
 </xsl:template>
 
 </xsl:stylesheet>

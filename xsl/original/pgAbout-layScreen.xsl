@@ -20,7 +20,8 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'awards']/@data-ly-class">
-	<xsl:attribute name="class">-likeP</xsl:attribute>
+	<xsl:attribute name="class">iList</xsl:attribute>
+	<xsl:attribute name="ly-list">paragraph</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/@data-ly-class">

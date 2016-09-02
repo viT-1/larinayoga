@@ -15,13 +15,6 @@ a img {
 	display: inline-block;
 }
 
-p
-, ul.-likeP li {
-	text-indent: 30px;
-	margin: 0 0 0 15px;
-	padding: 0 0 1em 0;
-}
-
 menu
 , menu li {
 	list-style: none;
@@ -36,41 +29,51 @@ ul
 	padding: 0 0 1em 15px;
 }
 
-ul.-likeP
-, .list-unstyled {
+/**** @group p iList */
+p
+, .iList[ly-list ~= 'paragraph'] li {
+	text-indent: 30px;
+	margin: 0 0 0 15px;
+	padding: 0 0 1em 0;
+}
+/* @group p iList ****/
+
+/**** @class iList */
+.iList[ly-list ~= 'paragraph']
+, .iList[ly-list ~= 'unstyled']{
 	margin: 0;
 	padding: 0;
 }
 
-.list-inline {
+.iList[ly-list ~= 'inline'] {
 	margin: 0 .5em 0 0;
 	padding: 0;
 }
 
-.-hidden {
-	display: none;
-}
-
-.list-inline
-, .list-inline li {
+.iList[ly-list ~= 'inline']
+, .iList[ly-list ~= 'inline'] li {
 	display: inline;
 }
 
-.list-unstyled
-, .list-unstyled > li
-, ul.-likeP li  {
+.iList[ly-list ~= 'unstyled']
+, .iList[ly-list ~= 'unstyled'] > li
+, .iList[ly-list ~= 'paragraph'] li  {
 	list-style: none;
 	display: block;
 }
 
-.list-unstyled > li {
+.iList[ly-list ~= 'unstyled'] > li {
 	margin-bottom: 1em;
 }
 
-.list-unstyled > li:last-child {
+.iList[ly-list ~= 'unstyled'] > li:last-child {
 	margin-bottom: 0;
 }
+/* @class iList ****/
 
+.-hidden {
+	display: none;
+}
 
 *[role='main'] dl {
 	margin: 0 0 15px;

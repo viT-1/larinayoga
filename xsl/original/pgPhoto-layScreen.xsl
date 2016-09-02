@@ -50,7 +50,8 @@
 
 <xsl:template match="html[@data-ly-class = 'photo']/body/ul">
 	<xsl:element name="{name()}">
-		<xsl:attribute name="class">list-unstyled</xsl:attribute>
+		<xsl:attribute name="class">iList</xsl:attribute>
+		<xsl:attribute name="ly-list">unstyled</xsl:attribute>
 		<xsl:apply-templates />
 	</xsl:element>
 </xsl:template>
