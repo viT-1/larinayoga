@@ -5,9 +5,10 @@ function addTogglingCtl ( dl, attr_name, c_less, c_more ) {
 		toggling_ctl = toggling_ctl.nextSibling;
 	}
 
-	toggling_ctl.onclick = function () {
+	var evt_handler = function () {
 		toggleAttrVal ( dl, attr_name, c_less, c_more );
 	}
+	addListener(toggling_ctl, 'click', evt_handler);
 }
 
 function initToggleAbility ( o, attr_name, c_ctl, c_less, c_more ) {
