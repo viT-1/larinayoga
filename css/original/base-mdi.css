@@ -6,8 +6,7 @@
 
 .bSideBar_mi > a:before
 , .bSideBar_mi h2:before
-, .iMoreLess dd > *:first-child:after
-/*, .anchor */ {
+, .iMoreLess dd > *:first-child:after {
 	font-weight: normal;
 	font-style: normal;
 	
