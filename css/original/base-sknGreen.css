@@ -156,21 +156,19 @@ a {
 }
 
 /**** @class iGallery */
-/**** @group iHover iGallery */
-.iHover em
+.iGallery[ly-txtDetails]
 , .iGallery img {
 	background: #CF9;
 	color: black;
 }
-/* @group iHover iGallery ****/
 
-.iGallery[ly-list = 'paspartu'] em
-, .iGallery[ly-list = 'paspartu'] li:hover .iGallery[ly-thumb] {
+.iGallery[ly-list ~= 'paspartu'] *[ly-txtDetails]
+, .iGallery[ly-list ~= 'paspartu'] li:hover *[ly-imgThumb] {
 	background: #FFF;
 }
 
-.iGallery[ly-list = 'paspartu'] em
-, .iGallery[ly-list = 'paspartu'] img {
+.iGallery[ly-list ~= 'paspartu'] *[ly-txtDetails]
+, .iGallery[ly-list ~= 'paspartu'] img {
 	border-color: #370;
 	transition: background .5s ease;
 }

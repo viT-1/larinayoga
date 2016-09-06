@@ -7,7 +7,7 @@
 	text-align: center;	
 }
 
-.iGallery[ly-list = 'paspartu'] {
+.iGallery[ly-list ~= 'paspartu'] {
 	padding: 0 0 10px;
 }
 
@@ -17,31 +17,30 @@
 	position: relative;
 }
 
-.iGallery[ly-thumb] {
+.iGallery[ly-imgThumb] {
 	height: 180px;
 	vertical-align: top;
 }
 
 @media print {
-.iGallery[ly-thumb] {
+.iGallery[ly-imgThumb] {
 	display: none;
 }
 }
 
-.iGallery[ly-thumb = 'h120px'] {
+.iGallery[ly-imgThumb ~= 'h120px'] {
 	height: 120px;
 }
 
 @media screen {
-.iGallery[ly-list = 'paspartu'] img
-, .iGallery[ly-list = 'paspartu'] em {
+.iGallery[ly-list ~= 'paspartu'] img
+, .iGallery[ly-txtDetails ~= 'paspartu'] {
 	border-style: solid;
 	border-width: 1px;
 }
 }
 
-/**** @class iHover */
-.iHover em {
+.iGallery[ly-txtDetails] {
 	display: block;
 	font-size: 16px;
 	line-height: 2em;
@@ -49,58 +48,57 @@
 	text-align: left;
 }
 
-li:hover .iHover[ly-details] {
+li:hover .iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	height: auto;
 	max-height: 2000px;
 	transition: max-height 2s ease;
 }
 
-.iHover[ly-details] {
+.iGallery[ly-hldDetails] {
 	display: block;
 	float: left;
 	overflow: hidden;
 }
 
 @media screen {
-.iHover[ly-details] {
+.iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	max-height: 0;
 	height: 0;
 	animation: fadeOut 0.3s ease;
 }
 }
 
-.iHover em {
+.iGallery[ly-txtDetails] {
 	border-bottom: 0;
 }
 
-.iGallery[ly-list = 'paspartu'] em {
+.iGallery[ly-txtDetails ~= 'paspartu'] {
 	margin: 15px 0 0;
 }
 
-.iGallery[ly-list = 'paspartu'] img {
+.iGallery[ly-list ~= 'paspartu'] img {
 	padding: 4px;
 }
 
-.iGallery[ly-list = 'paspartu'] .iGallery[ly-thumb] {
+.iGallery[ly-imgThumb ~= 'paspartu'] {
 	margin: 15px 8px 0 7px;
 }
 
-.iHover[ly-thumb]  {
+.iGallery[ly-imgThumb ~= 'bhvrHover']  {
 	transition: margin-top .2s linear;
 }
 
-a:hover .iHover[ly-thumb] {
+a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 	margin-top: 4px;
 }
 
-.iGallery[ly-list = 'paspartu']  li:hover .iHover[ly-thumb] {
+ li:hover .iGallery[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
 	margin-top: 19px;
 }
 
-.iHover[ly-details] img {
+.iGallery[ly-imgDetails] {
 	width: 600px;
 }
-/* @class iHover ****/
 /* @class iGallery ****/
 
 @keyframes fadeIn {

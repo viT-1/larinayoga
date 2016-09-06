@@ -25,20 +25,20 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/@data-ly-class">
-	<xsl:attribute name="class">iHover iGallery</xsl:attribute>
+	<xsl:attribute name="class">iGallery</xsl:attribute>
 	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iHover" ly-details=""><br class="-hidden" /><em><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" /></span>
+		<span class="iGallery" ly-hldDetails="bhvrHover"><br class="-hidden" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="" /></span>
 	</li>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li/a/img/@alt">
-	<xsl:attribute name="class">iGallery iHover</xsl:attribute>
-	<xsl:attribute name="ly-thumb">h120px</xsl:attribute>
+	<xsl:attribute name="class">iGallery</xsl:attribute>
+	<xsl:attribute name="ly-imgThumb">h120px bhvrHover paspartu</xsl:attribute>
 	<xsl:attribute name="alt"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
