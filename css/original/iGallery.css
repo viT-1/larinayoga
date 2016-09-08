@@ -40,7 +40,6 @@
 }
 
 .iGallery[ly-hldDetails] {
-	display: block;
 	float: left;
 	overflow: hidden;
 	text-align: center;
@@ -91,13 +90,8 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 }
 
 .iGallery[ly-imgDetails] {
-	width: 600px;
-}
-
-.iGallery[ly-imgDetails ~= 'v'] {
-	height: 600px;
-	width: auto;
-	margin: 0 auto;
+	max-width: 600px;
+	max-height: 600px;
 }
 /* @class iGallery ****/
 
