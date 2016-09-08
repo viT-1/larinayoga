@@ -26,6 +26,10 @@
 .iGallery[ly-imgThumb] {
 	display: none;
 }
+.iGallery[ly-imgDetails] {
+	max-width: 18cm;
+	max-height: 18cm;
+}
 }
 
 .iGallery[ly-imgThumb ~= 'h120px'] {
@@ -63,6 +67,11 @@
 	border-style: solid;
 	border-width: 1px;
 }
+
+.iGallery[ly-imgDetails] {
+	max-width: 600px;
+	max-height: 600px;
+}
 }
 
 .iGallery[ly-txtDetails ~= 'paspartu'] {
@@ -87,11 +96,6 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 
  .iGallery li:hover *[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
 	margin-top: 19px;
-}
-
-.iGallery[ly-imgDetails] {
-	max-width: 600px;
-	max-height: 600px;
 }
 /* @class iGallery ****/
 
