@@ -22,6 +22,7 @@ meta
 
 | @data-ly-ie
 | @data-ly-class
+| @data-ly-mod
 | @data-ly-proc
 "></xsl:template>
 

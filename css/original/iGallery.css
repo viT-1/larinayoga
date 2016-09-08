@@ -37,13 +37,14 @@
 	font-size: 16px;
 	line-height: 2em;
 	padding: 0 0.75em;
-	text-align: left;
 }
 
 .iGallery[ly-hldDetails] {
 	display: block;
 	float: left;
 	overflow: hidden;
+	text-align: center;
+	width: 600px;
 }
 
 .iGallery li:hover *[ly-hldDetails ~= 'bhvrHover'] {
@@ -59,8 +60,7 @@
 	animation: fadeOut 0.3s ease;
 }
 
-.iGallery[ly-list ~= 'paspartu'] img
-, .iGallery[ly-txtDetails ~= 'paspartu'] {
+.iGallery[ly-list ~= 'paspartu'] img {
 	border-style: solid;
 	border-width: 1px;
 }
@@ -68,7 +68,6 @@
 
 .iGallery[ly-txtDetails ~= 'paspartu'] {
 	margin: 15px 0 0;
-	border-bottom-style: none;
 }
 
 .iGallery[ly-list ~= 'paspartu'] img {
@@ -93,6 +92,12 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 
 .iGallery[ly-imgDetails] {
 	width: 600px;
+}
+
+.iGallery[ly-imgDetails ~= 'v'] {
+	height: 600px;
+	width: auto;
+	margin: 0 auto;
 }
 /* @class iGallery ****/
 
