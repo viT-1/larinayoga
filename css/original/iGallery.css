@@ -87,7 +87,7 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 	margin-top: 4px;
 }
 
- li:hover .iGallery[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
+ .iGallery li:hover *[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
 	margin-top: 19px;
 }
 
