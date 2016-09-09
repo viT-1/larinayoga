@@ -8,19 +8,19 @@
 	
 	<set name="active_theme" content="css/original/" dis_abled="" />
 	<set name="active_theme" content="img/original/" dis_abled="" />
-	<set name="active_theme" content="img/_other/ico" dis_abled="" />
+	<set name="active_theme" content="img/other/ico" dis_abled="" />
 	<set name="active_theme" content="fonts.google" disabled="" />
-	<set name="active_theme" content="css/_other/" dis_abled="" />
+	<set name="active_theme" content="css/other/" dis_abled="" />
 
-	<link href="css/_other/normalize.css" />
+	<link href="css/other/normalize.css" />
 	<link href="css/mimimi/somelayout.css" disabled="" data-ly-proc="postCSS" />
-	<!--<link href="css/_other/social-likes.css" />-->
+	<!--<link href="css/other/social-likes.css" />-->
 	<link href="css/original/iGallery.css" />
 	<link href="css/original/base.css" />
 	<link href="css/original/base-sknGreen.css" />
 	<link href="img/original/base-sknGreen_urlBackgr.css" />
 	<link href="css/original/base-mdi.css" dis_abled="" />
-	<link href="img/_other/icoFontFaces.css" />
+	<link href="img/other/icoFontFaces.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href="css/original/base-layScreen-mobile.css" media="only screen and (max-width:1015px)" />
 	<link href="css/original/base-layScreen-wide.css" media="only screen and (min-width:1016px)" />
