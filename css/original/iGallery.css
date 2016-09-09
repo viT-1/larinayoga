@@ -26,10 +26,20 @@
 .iGallery[ly-imgThumb] {
 	display: none;
 }
+
 .iGallery[ly-imgDetails] {
-	max-width: 18cm;
-	max-height: 18cm;
+	max-width: 14cm;
+	max-height: 14cm;
 }
+
+.iGallery li {
+	page-break-before: always;
+}
+
+.iGallery li:first-child {
+	page-break-before: auto;
+}
+
 }
 
 .iGallery[ly-imgThumb ~= 'h120px'] {
