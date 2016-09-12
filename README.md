@@ -2,7 +2,7 @@
 Static site for yoga teacher Galina Larina. [Try it!](http://vit-1.github.io/larinayoga/)
 
 ### Key features:
-- adaptive
+- adaptive (besides MS IE)
 - print.css
 - CSS3 transformations
 - BEM + AMCSS > IAMcss
