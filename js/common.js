@@ -1,5 +1,4 @@
 function addAttrVal( o, attr_name,  val ) {
-	if ( !o ) return;
 	if ( !o.hasAttribute( attr_name ) ) return;
 	
 	var re = new RegExp( "(^|\\s)" + val + "(\\s|$)", "g" );
@@ -11,7 +10,6 @@ function addAttrVal( o, attr_name,  val ) {
 }
 
 function removeAttrVal( o, attr_name, val ) {
-	if ( !o ) return;
 	if ( !o.hasAttribute( attr_name ) ) return;
 
 	var re = new RegExp( "(^|\\s)" + val + "(\\s|$)", "g" );
@@ -21,7 +19,6 @@ function removeAttrVal( o, attr_name, val ) {
 }
 
 function toggleAttrVal( o, attr_name, val_a, val_b ) {
-	if ( !o ) return;
 	if ( !o.hasAttribute( attr_name ) ) return;
 	
 	var attrVal = o.getAttribute( attr_name );
