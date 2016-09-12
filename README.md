@@ -10,7 +10,7 @@ Static site for yoga teacher Galina Larina. [Try it!](http://vit-1.github.io/lar
 - ARIA-roles
 - XML-pages as base HTML and XSLT for redefining
 
-### Supporting browsers:
+### Supported browsers:
 - MS IE 8
 - Crome 34
 - Opera 37
