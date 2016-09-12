@@ -4,11 +4,12 @@ Static site for yoga teacher Galina Larina. [Try it!](http://vit-1.github.io/lar
 ### Key features:
 - adaptive
 - print.css
-- xsl-includes (static site w/o SSI)
-- viewable from local folder (w/o WebServer)
+- CSS3 transformations
 - BEM + AMCSS > IAMcss
 - ARIA-roles
 - XML-pages as base HTML and XSLT for redefining
+- xsl-includes (static site w/o SSI)
+- viewable from local folder (w/o WebServer)
 
 ### Supported browsers:
 - MS IE 8
