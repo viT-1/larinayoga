@@ -5,7 +5,7 @@ Static site for yoga teacher Galina Larina. [Try it!](http://vit-1.github.io/lar
 - adaptive (besides MS IE)
 - print.css
 - CSS3 transformations
-- BEM + AMCSS > IAMcss
+- [BEM](https://github.com/bem/) + [AMCSS](https://github.com/bem/bem-method/issues/455) > IAMcss
 - ARIA-roles
 - XML-pages as base HTML and XSLT for redefining
 - xsl-includes (static site w/o SSI)
