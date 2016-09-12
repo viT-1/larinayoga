@@ -72,6 +72,7 @@
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
 	<xsl:attribute name="class">iGallery</xsl:attribute>
 	<xsl:attribute name="ly-imgThumb">bhvrHover paspartu</xsl:attribute>
+	<xsl:attribute name="hidden"></xsl:attribute>
 </xsl:template>
 
 </xsl:stylesheet>
