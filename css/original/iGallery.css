@@ -56,7 +56,7 @@
 	width: 600px;
 }
 
-.iGallery li:hover *[ly-hldDetails ~= 'bhvrHover'] {
+li:hover .iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	height: auto;
 	max-height: 2000px;
 	transition: max-height 2s ease;
@@ -106,7 +106,7 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 	margin-top: 4px;
 }
 
- .iGallery li:hover *[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
+li:hover .iGallery[ly-imgThumb ~= 'bhvrHover'][ly-imgThumb ~= 'paspartu'] {
 	margin-top: 19px;
 }
 /* @class iGallery ****/
