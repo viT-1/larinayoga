@@ -23,7 +23,6 @@
 <xsl:template match="html/body">
 	<body id="top" typeof="WebPage">
 		<xsl:apply-templates select="@*" />
-		<script type="text/javascript">initBodySettings();</script>
 		
 		<div class="bPanel" role="banner">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" mode="nav_header" />
@@ -54,6 +53,7 @@
 		</div>
 		
 		<script type="text/javascript">
+			initBodySettings();
 			initToggleAbility( document, 'class', 'iMoreLess', '-less', '-more' );
 		</script>
 	</body>
