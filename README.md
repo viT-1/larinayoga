@@ -10,6 +10,7 @@ Static site for yoga teacher Galina Larina. [Try it!](http://vit-1.github.io/lar
 - XML-pages as base HTML and XSLT for redefining
 - xsl-includes (static site w/o SSI)
 - viewable from local folder (w/o WebServer)
+- you can switch off images, css, js
 
 ### Supported browsers:
 - MS IE 8
