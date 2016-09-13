@@ -163,7 +163,7 @@ a {
 }
 
 .iGallery[ly-txtDetails ~= 'paspartu']
-, li:hover .iGallery[ly-imgThumb ~= 'paspartu'] {
+,.iGallery li:hover *[ly-imgThumb ~= 'paspartu'] {
 	background: #FFF;
 }
 
