@@ -11,7 +11,7 @@
 
 <xsl:template match="html[@data-ly-class = 'books']//*[@data-ly-class = 'lstBooks']/@data-ly-class">
 	<xsl:attribute name="class">iGallery</xsl:attribute>
-	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
+	<xsl:attribute name="ly-list" />
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'books']//*[@data-ly-class = 'lstBooks']//img/@src">

@@ -162,13 +162,14 @@ a {
 	color: black;
 }
 
-.iGallery[ly-list ~= 'paspartu'] *[ly-txtDetails]
-, .iGallery[ly-list ~= 'paspartu'] li:hover *[ly-imgThumb] {
+.iGallery[ly-txtDetails ~= 'paspartu']
+, li:hover .iGallery[ly-imgThumb ~= 'paspartu'] {
 	background: #FFF;
 }
 
-.iGallery[ly-list ~= 'paspartu'] *[ly-txtDetails]
-, .iGallery[ly-list ~= 'paspartu'] img {
+.iGallery[ly-txtDetails ~= 'paspartu']
+, .iGallery[ly-imgThumb ~= 'paspartu']
+, .iGallery[ly-imgDetails ~= 'paspartu'] {
 	border-color: #370;
 	transition: background .5s ease;
 }

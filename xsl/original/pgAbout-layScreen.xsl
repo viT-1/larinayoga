@@ -26,13 +26,13 @@
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/@data-ly-class">
 	<xsl:attribute name="class">iGallery</xsl:attribute>
-	<xsl:attribute name="ly-list">paspartu</xsl:attribute>
+	<xsl:attribute name="ly-list" />
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iGallery" ly-hldDetails="bhvrHover"><br class="-hidden" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="" /></span>
+		<span class="iGallery" ly-hldDetails="bhvrHover"><br class="-hidden" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="paspartu" /></span>
 	</li>
 </xsl:template>
 
