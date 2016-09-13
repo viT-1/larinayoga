@@ -25,7 +25,7 @@ meta
 | @data-ly-proc
 "></xsl:template>
 
-<xsl:template match="script[@data-ly-ie]">
+<xsl:template match="script[@data-ly-ie] | meta[@data-ly-ie]">
 	<xsl:text disable-output-escaping="yes">&lt;!--[if </xsl:text><xsl:value-of select="@data-ly-ie" /><xsl:text disable-output-escaping="yes">]&gt;</xsl:text>
 	<xsl:copy>
 		<xsl:apply-templates select="@* | node()" />
