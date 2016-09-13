@@ -33,7 +33,7 @@
 }
 
 .bSideBar_mi > a
-, .bSideBar_mi h2  {
+, .bSideBar_mi.-active h2  {
 	padding-right: 16px;
 }
 
