@@ -1,19 +1,14 @@
-function addTogglingCtl ( dl, attr_name, c_less, c_more ) {
-	var toggling_ctl = dl.querySelector( 'dd > *:first-child' );
-
-	while (toggling_ctl.nodeType == 3 && toggling_ctl.nextSibling) { // skip TextNodes
-		toggling_ctl = toggling_ctl.nextSibling;
-	}
-
-	var evt_handler = function () {
-		toggleAttrVal ( dl, attr_name, c_less, c_more );
-	}
-	
-	addListener( toggling_ctl, 'click', evt_handler );
+function addTogglingCtl ( state_elem, onclick_elem_query, attr_name, c_less, c_more ) {
+	addListener(
+		state_elem.querySelector( onclick_elem_query )
+		, 'click'
+		, function () {
+			toggleAttrVal ( state_elem, attr_name, c_less, c_more );
+		} );
 }
 
-function initToggleAbility ( o, attr_name, c_ctl, c_less, c_more ) {
-	var toggling_elems = document.querySelectorAll( 'dl.' + c_ctl );
+function initToggleAbility ( state_elem_query, onclick_elem_query, attr_name, c_less, c_more ) {
+	var toggling_elems = document.querySelectorAll( state_elem_query );
 	var toggling_ctl;
 	var attr;
 	
@@ -27,6 +22,6 @@ function initToggleAbility ( o, attr_name, c_ctl, c_less, c_more ) {
 		}
 	
 		addAttrVal( toggling_ctl, attr_name, c_less );
-		addTogglingCtl( toggling_ctl, attr_name, c_less, c_more );
+		addTogglingCtl( toggling_ctl, onclick_elem_query, attr_name, c_less, c_more );
 	}
 }
