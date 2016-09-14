@@ -54,7 +54,11 @@
 		
 		<script type="text/javascript">
 			initBodySettings();
-			initToggleAbility( document, 'class', 'iMoreLess', '-less', '-more' );
+			
+			//IE9 and other browsers
+			if (document.addEventListener) {
+				initToggleAbility( document, 'ly-state', 'iMoreLess', 'less', 'more' );
+			}
 		</script>
 	</body>
 </xsl:template>

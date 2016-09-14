@@ -206,31 +206,34 @@ a[href='#top'] {
 
 /**** iMoreLess screen only */
 @media screen {
-.iMoreLess.-less dd > * {
+.iMoreLess[ly-state ~= 'less'] dd > * {
 	display: none;
 }
 
-.iMoreLess.-less dd > *:first-child
-, .iMoreLess.-more dd > *:first-child {
+.iMoreLess[ly-state] dd > *:first-child {
 	display: inherit;
 	cursor: default;
 }
 
-.iMoreLess.-more dd > *:first-child:after {
+.iMoreLess[ly-state ~= 'more'] dd > *:first-child:after {
 	content: '<<<';
 }
 
-.iMoreLess.-less dd > *:first-child:after {
+.iMoreLess[ly-state ~= 'less'] dd > *:first-child:after {
 	content: '>>>';
 }
 
-.iMoreLess.-more dd > *:first-child:after
-, .iMoreLess.-less dd > *:first-child:after {
+.iMoreLess[ly-state] dd > *:first-child:after {
 	display: inline;
 	margin-left: 1ex;
 	border-bottom-style: dotted;
 	border-bottom-width: 1px;
 }
+
+/* Fix for updating selectors in webkit */
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+
+.iMoreLess[ly-state] { -webkit-animation: bugfix infinite 1s; }
 }
 /* iMoreLess screen only ****/
 /* @class iMoreLess ****/
