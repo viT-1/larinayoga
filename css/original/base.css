@@ -206,24 +206,24 @@ a[href='#top'] {
 
 /**** iMoreLess screen only */
 @media screen {
-.iMoreLess[ly-state ~= 'less'] dd > * {
+.iMoreLess[aria-expanded ~= 'false'] dd > * {
 	display: none;
 }
 
-.iMoreLess[ly-state] dd > *:first-child {
+.iMoreLess[aria-expanded] dd > *:first-child {
 	display: inherit;
 	cursor: default;
 }
 
-.iMoreLess[ly-state ~= 'more'] dd > *:first-child:after {
+.iMoreLess[aria-expanded ~= 'true'] dd > *:first-child:after {
 	content: '<<<';
 }
 
-.iMoreLess[ly-state ~= 'less'] dd > *:first-child:after {
+.iMoreLess[aria-expanded ~= 'false'] dd > *:first-child:after {
 	content: '>>>';
 }
 
-.iMoreLess[ly-state] dd > *:first-child:after {
+.iMoreLess[aria-expanded] dd > *:first-child:after {
 	display: inline;
 	margin-left: 1ex;
 	border-bottom-style: dotted;
@@ -233,7 +233,7 @@ a[href='#top'] {
 /* Fix for updating selectors in webkit */
 @-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
 
-.iMoreLess[ly-state] { -webkit-animation: bugfix infinite 1s; }
+.iMoreLess[aria-expanded] { -webkit-animation: bugfix infinite 1s; }
 }
 /* iMoreLess screen only ****/
 /* @class iMoreLess ****/

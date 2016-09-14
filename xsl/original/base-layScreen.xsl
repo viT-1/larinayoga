@@ -57,7 +57,7 @@
 			
 			//IE9 and other browsers
 			if (document.addEventListener) {
-				initToggleAbility( '*[role = "main"] dl.iMoreLess', 'dd > p:first-child', 'ly-state', 'less', 'more' );
+				initToggleAbility( '*[role = "main"] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
 			}
 		</script>
 	</body>
