@@ -10,7 +10,9 @@ a img {
 }
 
 menu
-, menu li {
+, .iList[ly-list ~= 'unstyled']
+, menu li 
+, .iList[ly-list ~= 'unstyled'] > li {
 	list-style: none;
 	display: block;
 	margin: 0;
@@ -33,8 +35,7 @@ p
 /* @group p iList ****/
 
 /**** @class iList */
-.iList[ly-list ~= 'paragraph']
-, .iList[ly-list ~= 'unstyled']{
+.iList[ly-list ~= 'paragraph'] {
 	margin: 0;
 	padding: 0;
 }
@@ -49,9 +50,7 @@ p
 	display: inline;
 }
 
-.iList[ly-list ~= 'unstyled']
-, .iList[ly-list ~= 'unstyled'] > li
-, .iList[ly-list ~= 'paragraph'] li  {
+.iList[ly-list ~= 'paragraph'] li  {
 	list-style: none;
 	display: block;
 }
