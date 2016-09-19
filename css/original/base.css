@@ -194,7 +194,7 @@ a[href='#top'] {
 	white-space: nowrap;
 }
 
-.ly-hldLikes {
+*[ly-hldLikes] {
 	position: absolute;
 	top: 45px;
 }

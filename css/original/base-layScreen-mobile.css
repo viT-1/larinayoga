@@ -10,7 +10,7 @@
 	width: 100%;
 }
 
-.ly-hldLikes {
+*[ly-hldLikes] {
 	right: 30px;
 	text-align: right;
 }
@@ -78,13 +78,13 @@ menu menu
 	clear: left;
 }
 
-.ly-hldLikes {
+*[ly-hldLikes] {
 	display: none;
 }
 
 *[role='main'] h3 img
 , .bBanner
-, .ly-hldLikes {
+, *[ly-hldLikes] {
 	display: none;
 }
 

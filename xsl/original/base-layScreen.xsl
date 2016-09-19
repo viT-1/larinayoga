@@ -42,7 +42,7 @@
 			<a class="bBanner" href="index-{$base_htmlLang}.xml">
 				<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
 			</a>
-			<!--&social_likes;-->
+			&social_likes;
 			<hr class="-hidden" />
 			<div class="bPanel" role="contentinfo">
 				<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />

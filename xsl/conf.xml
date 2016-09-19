@@ -15,13 +15,13 @@
 
 	<link href="css/other/normalize.css" />
 	<link href="css/mimimi/somelayout.css" disabled="" data-ly-proc="postCSS" />
-	<!--<link href="css/other/social-likes.css" />-->
 	<link href="css/original/iGallery.css" />
 	<link href="css/original/base.css" />
 	<link href="css/original/base-sknGreen.css" />
 	<link href="img/original/base-sknGreen_urlBackgr.css" />
 	<link href="css/original/base-mdi.css" dis_abled="" />
 	<link href="img/other/icoFontFaces.css" />
+	<link href="css/other/social-likes.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<link href="css/original/base-layScreen-mobile.css" media="only screen and (max-width:1015px)" />
 	<link href="css/original/base-layScreen-wide.css" media="only screen and (min-width:1016px)" />
@@ -32,4 +32,6 @@
 	<script src="js/onload.js" />
 	<script src="js/toggle.js" />
 	<script src="js/toggle----ie.js" data-ly-ie="IE 7" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" />
+	<script src="js/social-likes.min.js" />
 </conf>
