@@ -33,7 +33,7 @@
 
 <xsl:template match="nav//menu">
 	<xsl:param name="mod__class" />
-	<menu class="iSideBar" ly-list="{$mod__class}">
+	<menu class="hldSideBar iSideBar" ly-list="{$mod__class}">
 		<xsl:choose>
 			<xsl:when test="$mod__class = 'master'"><xsl:apply-templates select="*[position() &lt; 5]" /></xsl:when>
 			<xsl:when test="$mod__class = 'slave'"><xsl:apply-templates select="*[position() &gt; 4]" /></xsl:when>

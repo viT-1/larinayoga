@@ -159,19 +159,21 @@ h2.iSideBar[role = 'heading'] {
 	padding-bottom: 15px;
 	border-width: 15px;
 }
+/* @class iSideBar ****/
 
-.iSideBar[ly-list ~= 'master'] *[role = 'link']{
+/**** @class hldSideBar */
+.hldSideBar[ly-list ~= 'master'] *[role = 'link']{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-.iSideBar[ly-list ~= 'slave'] *[role = 'link'] {
+.hldSideBar[ly-list ~= 'slave'] *[role = 'link'] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;
 }
-/* @class iSideBar ****/
+/* @class hldSideBar ****/
 
 *[role='main'] {
 	padding: 15px;

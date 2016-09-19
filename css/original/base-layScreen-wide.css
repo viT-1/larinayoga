@@ -8,21 +8,23 @@
 	background: #CF9;	
 }
 
-/**** @class iSideBar */
-.iSideBar[ly-list] {
+/**** @class hldSideBar */
+.hldSideBar {
 	position: absolute;
 	top: 250px;
 	width: 185px;
 }
 
-.iSideBar[ly-list ~= 'master'] {
+.hldSideBar[ly-list ~= 'master'] {
 	left: 0;
 }
 
-.iSideBar[ly-list ~= 'slave'] {
+.hldSideBar[ly-list ~= 'slave'] {
 	right: 0;
 }
+/* @class hldSideBar ****/
 
+/**** @class iSideBar */
 .iSideBar[role = 'heading'] {
 	border-width: 15px;
 	border-style: none solid;
