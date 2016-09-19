@@ -190,7 +190,7 @@ a[href='#top'] {
 	left: 15px;
 }
 
-.bDevInfo {
+*[hldDevInfo] {
 	white-space: nowrap;
 }
 

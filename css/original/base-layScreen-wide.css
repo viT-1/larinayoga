@@ -39,7 +39,7 @@
 	margin: 0 185px 0;
 }
 
-.bDevInfo {
+*[hldDevInfo] {
 	position: absolute;
 	right: 15px;
 }
