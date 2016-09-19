@@ -15,7 +15,7 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'index']/body//*[@data-ly-class = 'best_wishes']/@data-ly-class">
-	<xsl:attribute name="class">text-right</xsl:attribute>
+	<xsl:attribute name="class">hTxt-r</xsl:attribute>
 </xsl:template>
 
 </xsl:stylesheet>
