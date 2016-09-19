@@ -162,13 +162,13 @@ h2.iSideBar[role = 'heading'] {
 /* @class iSideBar ****/
 
 /**** @class hldSideBar */
-.hldSideBar[ly-list ~= 'master'] *[role = 'link']{
+*[ly-hldSideBar ~= 'master'] *[role = 'link']{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-.hldSideBar[ly-list ~= 'slave'] *[role = 'link'] {
+*[ly-hldSideBar ~= 'slave'] *[role = 'link'] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;
@@ -194,7 +194,7 @@ a[href='#top'] {
 	white-space: nowrap;
 }
 
-.bLikes {
+.ly-hldLikes {
 	position: absolute;
 	top: 45px;
 }

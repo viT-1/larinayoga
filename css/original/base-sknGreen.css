@@ -24,13 +24,13 @@ a.iSideBar[role = 'heading'] {
 	transition: border-color .7s ease;
 }
 
-.iSideBar[ly-list = 'master'] a[role = 'heading']:hover
-, .iSideBar[ly-list = 'master'] h2[role = 'heading'] {
+*[ly-hldSideBar = 'master'] a[role = 'heading']:hover
+, *[ly-hldSideBar = 'master'] h2[role = 'heading'] {
 	border-right-color: #FFF;
 }
 
-.iSideBar[ly-list = 'slave'] a[role = 'heading']:hover
-, .iSideBar[ly-list = 'slave'] h2[role = 'heading'] {
+*[ly-hldSideBar = 'slave'] a[role = 'heading']:hover
+, *[ly-hldSideBar = 'slave'] h2[role = 'heading'] {
 	border-left-color: #FFF;
 }
 

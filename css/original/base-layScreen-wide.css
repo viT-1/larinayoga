@@ -9,17 +9,17 @@
 }
 
 /**** @class hldSideBar */
-.hldSideBar {
+*[ly-hldSideBar] {
 	position: absolute;
 	top: 250px;
 	width: 185px;
 }
 
-.hldSideBar[ly-list ~= 'master'] {
+*[ly-hldSideBar ~= 'master'] {
 	left: 0;
 }
 
-.hldSideBar[ly-list ~= 'slave'] {
+*[ly-hldSideBar ~= 'slave'] {
 	right: 0;
 }
 /* @class hldSideBar ****/
@@ -44,6 +44,6 @@
 	right: 15px;
 }
 
-.bLikes {
+.ly-hldLikes {
 	left: 1015px;
 }

@@ -10,7 +10,7 @@
 	width: 100%;
 }
 
-.bLikes {
+.ly-hldLikes {
 	right: 30px;
 	text-align: right;
 }
@@ -20,11 +20,11 @@
 	clear: both;
 }
 
-.iSideBar[ly-list ~= 'master'] {
+*[ly-hldSideBar ~= 'master'] {
 	border-top: 15px solid #FFF;
 }
 
-.iSideBar[ly-list] {
+*[ly-hldSideBar] {
 	text-align: center;
 }
 
@@ -73,18 +73,18 @@ menu menu
 
 /**** screen max422 */
 @media screen and (max-width:422px) {
-.iSideBar[ly-list]
+*[ly-hldSideBar]
 , .iSideBar[ly-item] {
 	clear: left;
 }
 
-.bLikes {
+.ly-hldLikes {
 	display: none;
 }
 
 *[role='main'] h3 img
 , .bBanner
-, .bLikes {
+, .ly-hldLikes {
 	display: none;
 }
 
