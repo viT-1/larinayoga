@@ -144,34 +144,35 @@ h3:target  .iAnchor[href ^= '#'] {
 }
 }
 
-.bSideBar_mi > a
-, .bSideBar_mi.-active h2 {
+/**** @class iSideBar */
+.iSideBar[role = 'heading'] {
 	display: block;
 	padding: 1em 0 1em 58px;
 	font-weight: bolder;
 }
 
-.bSideBar_mi.-active h2 {
+h2.iSideBar[role = 'heading'] {
 	margin: 0;
 }
 
-.bSideBar_mi li a {
+.iSideBar[role = 'link'] {
 	display: block;
 	padding-bottom: 15px;
 	border-width: 15px;
 }
 
-.bSideBar.-master li li a {
+.iSideBar[ly-list ~= 'master'] *[role = 'link']{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-.bSideBar.-slave li li a {
+.iSideBar[ly-list ~= 'slave'] *[role = 'link'] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;
 }
+/* @class iSideBar ****/
 
 *[role='main'] {
 	padding: 15px;

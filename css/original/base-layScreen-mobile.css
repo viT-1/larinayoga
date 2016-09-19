@@ -20,20 +20,19 @@
 	clear: both;
 }
 
-.bSideBar-master {
+.iSideBar[ly-list ~= 'master'] {
 	border-top: 15px solid #FFF;
 }
 
-.bSideBar {
+.iSideBar[ly-list] {
 	text-align: center;
 }
 
-.bSideBar li {
+.iSideBar[ly-list] li {
 	display: inline-block;
 }
 
-.bSideBar_mi > a
-, .bSideBar_mi.-active h2  {
+.iSideBar[role = 'heading']  {
 	padding-right: 16px;
 }
 
@@ -56,8 +55,7 @@ menu menu
 
 /**** screen max629 */
 @media screen and (max-width:629px) {
-.bSideBar_mi > a
-, .bSideBar_mi h2 {
+.iSideBar[role = 'heading'] {
 	background-image: none;
 	padding-left: 16px;
 }
@@ -75,8 +73,8 @@ menu menu
 
 /**** screen max422 */
 @media screen and (max-width:422px) {
-.bSideBar
-, .bSideBar li {
+.iSideBar[ly-list]
+, .iSideBar[ly-list] li {
 	clear: left;
 }
 

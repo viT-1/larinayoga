@@ -30,10 +30,10 @@
 		<div class="bBase">
 			<hr class="-hidden" />
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
-				<xsl:with-param name="mod__class" select="'-master'" />
+				<xsl:with-param name="mod__class" select="'master'" />
 			</xsl:apply-templates>
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
-				<xsl:with-param name="mod__class" select="'-slave'" />
+				<xsl:with-param name="mod__class" select="'slave'" />
 			</xsl:apply-templates>
 			
 			<div role="main">

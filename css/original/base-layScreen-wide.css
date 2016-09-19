@@ -8,27 +8,26 @@
 	background: #CF9;	
 }
 
-.bSideBar {
+.iSideBar[ly-list] {
 	position: absolute;
 	top: 250px;
 	width: 185px;
 }
 
-.bSideBar.-master {
+.iSideBar[ly-list ~= 'master'] {
 	left: 0;
 }
 
-.bSideBar.-slave {
+.iSideBar[ly-list ~= 'slave'] {
 	right: 0;
 }
 
-.bSideBar_mi > a
-, .bSideBar_mi.-active h2 {
+.iSideBar[role = 'heading'] {
 	border-width: 15px;
 	border-style: none solid;
 }
 
-.bSideBar_mi {
+.iSideBar[ly-item] {
 	margin-bottom: 15px;
 }
 

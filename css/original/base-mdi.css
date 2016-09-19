@@ -1,11 +1,9 @@
-.bSideBar_mi > a
-, .bSideBar_mi h2 {
+.iSideBar[role = 'heading'] {
 	position: relative;
 	background-image: none;
 }
 
-.bSideBar_mi > a:before
-, .bSideBar_mi h2:before
+.iSideBar[role = 'heading']:before
 , .iMoreLess dd > *:first-child:after {
 	font-weight: normal;
 	font-style: normal;
@@ -15,8 +13,7 @@
 	speak: none;
 }
 
-.bSideBar_mi > a:before
-, .bSideBar_mi h2:before {
+.iSideBar[role = 'heading']:before {
 	position: absolute;
 	left: 12px;
 	top: 0;
@@ -37,52 +34,44 @@
 	content: '\fe3e';
 }
 
-.mi-about > a:before
-, .mi-about h2:before {
+.iSideBar[ly-item ~= 'about'] *[role = 'heading']:before {
 	content: '\263a';
 }
 
-.mi-reviews > a:before
-, .mi-reviews h2:before {
+.iSideBar[ly-item ~= 'reviews'] *[role = 'heading']:before {
 	content: '\2653';
 }
 
-.mi-video > a:before
-, .mi-video h2:before {
+.iSideBar[ly-item ~= 'video'] *[role = 'heading']:before {
 	content: '\25b6';
 }
 
-.mi-photo > a:before
-, .mi-photo h2:before {
+.iSideBar[ly-item ~= 'photo'] *[role = 'heading']:before {
 	content: '\113d';
 }
 
-.mi-books > a:before
-, .mi-books h2:before {
+.iSideBar[ly-item ~= 'books'] *[role = 'heading']:before {
 	content: '\25e7';
 }
 
-/* Вынести content в контент, но IE8 не поддерживает считывание data-атрибута в качестве контента */
+/* @todo: Вынести content в контент, но IE8 не поддерживает считывание data-атрибута в качестве контента */
 /*
 .mi-books > a[data-ico]:before {
 	content: attr(data-ico);
 }
 */
 
-.mi-schedule > a:before
-, .mi-schedule h2:before {
+.iSideBar[ly-item ~= 'schedule'] *[role = 'heading']:before {
 	content: '\25d4';
 }
 
-.mi-events > a:before
-, .mi-events h2:before {
+.iSideBar[ly-item ~= 'events'] *[role = 'heading']:before{
 	content: '\24d8';
 }
 
 /**** screen max629 */
 @media screen and (max-width:629px) {
-.bSideBar_mi > a:before
-, .bSideBar_mi h2:before {
+.iSideBar[role = 'heading']:before {
 	display: none;
 }}
 /* screen max629 ****/

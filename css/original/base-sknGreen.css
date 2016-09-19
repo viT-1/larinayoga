@@ -2,25 +2,26 @@
 	background: #CF9;	
 }
 
-.bSideBar_mi > a {
+/**** @class iSideBar */
+a.iSideBar[role = 'heading'] {
 	color: #CF9;
 }
 
-.bSideBar_mi.-active h2
-, .bSideBar_mi a {
+.iSideBar[role] {
 	border-color: #CF9;
 	transition: border-color .7s ease;
 }
 
-.bSideBar.-master .bSideBar_mi > a:hover
-, .bSideBar.-master .bSideBar_mi.-active h2 {
+.iSideBar[ly-list = 'master'] a[role = 'heading']:hover
+, .iSideBar[ly-list = 'master'] h2[role = 'heading'] {
 	border-right-color: #FFF;
 }
 
-.bSideBar.-slave .bSideBar_mi > a:hover
-, .bSideBar.-slave .bSideBar_mi.-active h2 {
+.iSideBar[ly-list = 'slave'] a[role = 'heading']:hover
+, .iSideBar[ly-list = 'slave'] h2[role = 'heading'] {
 	border-left-color: #FFF;
 }
+/* @class iSideBar ****/
 
 a[href='#top'] {
 	color: #CF9;
@@ -34,7 +35,7 @@ a[href='#top']:hover {
 	background: #9C6;
 }
 
-.bSideBar_mi li a {
+.iSideBar[role = 'link'] {
 	color: #9C6;
 }
 
@@ -43,16 +44,16 @@ a[href='#top']:hover {
 , *[role='main'] h3
 , *[role='main'] h3 a
 , *[role='main'] h4
-, .bSideBar_mi.-active
-, .bSideBar_mi li a:hover {
+, .iSideBar[ly-item ~= 'active']
+, .iSideBar[role = 'link']:hover {
 	color: #370;
 }
 
-*[role='main'] h3 a:hover {
+*[role = 'main'] h3 a:hover {
 	color: blue;
 }
 
-.bSideBar_mi > a
+a.iSideBar[role = 'heading']
 , .bBase  {
 	background-color: #370;
 }
@@ -62,33 +63,33 @@ body {
 }
 
 *[role='main']
-, .bSideBar_mi.-active h2
-, .bSideBar_mi.-active a {
+, h2.iSideBar[role = 'heading']
+, a.iSideBar[role = 'link']
+ {
 	background-color: #FFF;
 }
 
 
-.bSideBar_mi > a
-, .bSideBar_mi h2 {
+.iSideBar[role = 'heading'] {
 	background-repeat: no-repeat;
 }
 
 /* IcoMoon заменил спрайты */
 /*
-.bSideBar_mi > a {
+a.iSideBar[role = 'heading'] {
 	background-position:  -385px 8px;
 }
 
-.bSideBar_mi > a:hover {
+a.iSideBar[role = 'heading']:hover {
 	background-position:  -185px 8px;
 }
 
-.bSideBar_mi h2 {
+h2.iSideBar[role = 'heading'] {
 	background-position:  15px 8px;
 }
 */
 
-.bSideBar_mi > a:hover {
+a.iSideBar[role = 'heading']:hover {
 	color: #FFF;
 }
 
@@ -105,8 +106,8 @@ body {
 }
 
 .bPanel
-, .bSideBar_mi > a
-, .bSideBar_mi.-active
+, a.iSideBar[role = 'heading']
+, .iSideBar[ly-item ~= 'active']
 , *[role='main'] h3
 , *[role='main'] h4 {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
@@ -117,19 +118,19 @@ body {
 }
 
 .bPanel h1
-, .bSideBar_mi.-active h2 {
+, h2.iSideBar[role = 'heading'] {
 	font-size: 1em;
 }
 
 .bPanel
 , *[role='main'] h4
 , h3 .tpDate
-, .bSideBar_mi li a {
+, .iSideBar[role = 'link'] {
 	font-size: 0.8em;
 }
 
-.bSideBar_mi > a
-, .bSideBar_mi.-active {
+a.iSideBar[role = 'heading']
+, .iSideBar[ly-item ~= 'active'] {
 	text-decoration: none;
 }
 
@@ -150,7 +151,7 @@ a {
 	text-transform: uppercase;
 }
 
-.bSideBar_mi.-active h2 {
+h2.iSideBar[role = 'heading'] {
 	cursor: default;
 }
 
