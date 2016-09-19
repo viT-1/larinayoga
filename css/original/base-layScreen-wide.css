@@ -8,6 +8,7 @@
 	background: #CF9;	
 }
 
+/**** @class iSideBar */
 .iSideBar[ly-list] {
 	position: absolute;
 	top: 250px;
@@ -30,6 +31,7 @@
 .iSideBar[ly-item] {
 	margin-bottom: 15px;
 }
+/* @class iSideBar ****/
 
 *[role='main'] {
 	margin: 0 185px 0;

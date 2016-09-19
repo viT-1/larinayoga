@@ -1,5 +1,13 @@
-.bPanel {
-	background: #CF9;	
+body {
+	background-attachment: fixed;
+}
+
+a[href='#top'] {
+	color: #CF9;
+}
+
+a[href='#top']:hover {
+	color: #FFF;
 }
 
 /**** @class iSideBar */
@@ -21,45 +29,15 @@ a.iSideBar[role = 'heading'] {
 , .iSideBar[ly-list = 'slave'] h2[role = 'heading'] {
 	border-left-color: #FFF;
 }
-/* @class iSideBar ****/
-
-a[href='#top'] {
-	color: #CF9;
-}
-
-a[href='#top']:hover {
-	color: #FFF;
-}
-
-.bPanel[role='contentinfo'] {
-	background: #9C6;
-}
 
 .iSideBar[role = 'link'] {
 	color: #9C6;
 }
-
-*[role='main'] b
-, *[role='main'] strong
-, *[role='main'] h3
-, *[role='main'] h3 a
-, *[role='main'] h4
-, .iSideBar[ly-item ~= 'active']
-, .iSideBar[role = 'link']:hover {
-	color: #370;
-}
-
-*[role = 'main'] h3 a:hover {
-	color: blue;
-}
+/* @class iSideBar ****/
 
 a.iSideBar[role = 'heading']
 , .bBase  {
 	background-color: #370;
-}
-
-body {
-	background-attachment: fixed;
 }
 
 *[role='main']
@@ -93,6 +71,35 @@ a.iSideBar[role = 'heading']:hover {
 	color: #FFF;
 }
 
+a.iSideBar[role = 'heading']
+, .iSideBar[ly-item ~= 'active'] {
+	text-decoration: none;
+}
+
+/**** screen only */
+@media screen {
+.iMoreLess[aria-expanded] dd > *:first-child:after {
+	color: blue;
+	border-bottom-color: blue; 
+}
+}
+/* screen only ****/
+/* @class iSideBar ****/
+
+*[role='main'] b
+, *[role='main'] strong
+, *[role='main'] h3
+, *[role='main'] h3 a
+, *[role='main'] h4
+, .iSideBar[ly-item ~= 'active']
+, .iSideBar[role = 'link']:hover {
+	color: #370;
+}
+
+*[role = 'main'] h3 a:hover {
+	color: blue;
+}
+
 .-clrYandex {
 	color: #000;
 }
@@ -113,6 +120,14 @@ a.iSideBar[role = 'heading']:hover {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
+.bPanel {
+	background: #CF9;	
+}
+
+.bPanel[role='contentinfo'] {
+	background: #9C6;
+}
+
 .bPanel h1 {
 	font-weight: normal;
 }
@@ -128,24 +143,6 @@ a.iSideBar[role = 'heading']:hover {
 , .iSideBar[role = 'link'] {
 	font-size: 0.8em;
 }
-
-a.iSideBar[role = 'heading']
-, .iSideBar[ly-item ~= 'active'] {
-	text-decoration: none;
-}
-
-/**** screen only */
-@media screen {
-.iMoreLess[aria-expanded] dd > *:first-child:after {
-	color: blue;
-	border-bottom-color: blue; 
-}
-
-a {
-	color: blue;
-}
-}
-/* screen only ****/
 
 *[role='main'] h4 {
 	text-transform: uppercase;
@@ -174,3 +171,11 @@ h2.iSideBar[role = 'heading'] {
 	transition: background .5s ease;
 }
 /* @class iGallery ****/
+
+/**** screen only */
+@media screen {
+a {
+	color: blue;
+}
+}
+/* screen only ****/

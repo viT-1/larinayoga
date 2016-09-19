@@ -1,7 +1,12 @@
-.iSideBar[role = 'heading'] {
-	position: relative;
-	background-image: none;
+/**** @class iMoreLess */
+.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
+	content: '\fe3d';
 }
+
+.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
+	content: '\fe3e';
+}
+/* @class iMoreLess ****/
 
 .iSideBar[role = 'heading']:before
 , .iMoreLess dd > *:first-child:after {
@@ -11,6 +16,12 @@
 	/* Если шрифт не загрузится, то показаны будут похожие "иконки" стандартного Unicode шрифта */
 	font-family: IcoMoon, sans-serif;
 	speak: none;
+}
+
+/**** @class iSideBar */
+.iSideBar[role = 'heading'] {
+	position: relative;
+	background-image: none;
 }
 
 .iSideBar[role = 'heading']:before {
@@ -24,14 +35,6 @@
 	font-size: 36px;
 	
 	line-height: 48px;
-}
-
-.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
-	content: '\fe3d';
-}
-
-.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
-	content: '\fe3e';
 }
 
 .iSideBar[ly-item ~= 'about'] *[role = 'heading']:before {
@@ -75,6 +78,7 @@
 	display: none;
 }}
 /* screen max629 ****/
+/* @class iSideBar ****/
 
 /**** @class material-icons (Google code) */
 .material-icons {
