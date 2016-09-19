@@ -26,11 +26,11 @@
 	line-height: 48px;
 }
 
-.iMoreLess[aria-expanded ~= 'true'] dd > *:first-child:after {
+.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
 	content: '\fe3d';
 }
 
-.iMoreLess[aria-expanded ~= 'false'] dd > *:first-child:after {
+.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
 	content: '\fe3e';
 }
 

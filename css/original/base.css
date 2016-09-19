@@ -207,7 +207,7 @@ a[href='#top'] {
 
 /**** iMoreLess screen only */
 @media screen {
-.iMoreLess[aria-expanded ~= 'false'] dd > * {
+.iMoreLess[aria-expanded = 'false'] dd > * {
 	display: none;
 }
 
@@ -216,11 +216,11 @@ a[href='#top'] {
 	cursor: default;
 }
 
-.iMoreLess[aria-expanded ~= 'true'] dd > *:first-child:after {
+.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
 	content: '<<<';
 }
 
-.iMoreLess[aria-expanded ~= 'false'] dd > *:first-child:after {
+.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
 	content: '>>>';
 }
 
