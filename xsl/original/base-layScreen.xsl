@@ -27,7 +27,7 @@
 		<div class="bPanel" role="banner">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" mode="nav_header" />
 		</div>
-		<div class="bBase">
+		<div ly-hldBase="">
 			<hr class="-hidden" />
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
 				<xsl:with-param name="mod__class" select="'master'" />

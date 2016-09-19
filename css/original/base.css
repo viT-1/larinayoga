@@ -122,7 +122,7 @@ h3:target  .iAnchor[href ^= '#'] {
 
 .bBanner
 , .bPanel[role='banner']
-, .bBase {
+, *[ly-hldBase] {
 	margin: 0 auto;
 }
 
@@ -132,13 +132,13 @@ h3:target  .iAnchor[href ^= '#'] {
 	height: 250px;
 }
 
-.bBase {
+*[ly-hldBase] {
 	text-align: left;
 	position: relative;
 }
 
 @media screen {
-.bBase {
+*[ly-hldBase] {
 	padding-top: 250px;
 }
 }

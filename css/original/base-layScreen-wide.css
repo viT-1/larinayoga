@@ -1,10 +1,10 @@
 .bBanner
 , .bPanel[role='banner']
-, .bBase {
+, *[ly-hldBase] {
 	width: 1000px;
 }
 
-.bBase {
+*[ly-hldBase] {
 	background: #CF9;	
 }
 

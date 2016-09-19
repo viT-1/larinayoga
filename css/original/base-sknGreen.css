@@ -40,7 +40,7 @@ a.iSideBar[role = 'heading'] {
 /* @class iSideBar ****/
 
 a.iSideBar[role = 'heading']
-, .bBase  {
+, *[ly-hldBase]  {
 	background-color: #370;
 }
 

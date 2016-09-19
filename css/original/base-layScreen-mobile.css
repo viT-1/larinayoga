@@ -47,7 +47,7 @@ menu menu
 
 /**** screen min630 */
 @media screen and (min-width:630px) {
-.bBase
+*[ly-hldBase]
 , .bPanel[role='banner'] {
 	width: 630px;
 }}
@@ -88,7 +88,7 @@ menu menu
 	display: none;
 }
 
-.bBase {
+*[ly-hldBase] {
 	padding-top: 0;
 }}
 /* screen max422 ****/
