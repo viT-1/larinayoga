@@ -39,7 +39,7 @@
 			<div role="main">
 				<xsl:apply-templates select="*" />
 			</div>
-			<a class="bBanner" href="index-{$base_htmlLang}.xml">
+			<a ly-hldBanner="" href="index-{$base_htmlLang}.xml">
 				<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
 			</a>
 			&social_likes;

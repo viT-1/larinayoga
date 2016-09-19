@@ -120,13 +120,13 @@ h3:target  .iAnchor[href ^= '#'] {
 	margin: 0 0 15px 15px;
 }
 
-.bBanner
+*[ly-hldBanner]
 , .bPanel[role='banner']
 , *[ly-hldBase] {
 	margin: 0 auto;
 }
 
-.bBanner {
+*[ly-hldBanner] {
 	position: absolute;
 	top: 0;
 	height: 250px;

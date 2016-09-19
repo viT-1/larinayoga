@@ -3,7 +3,7 @@ body {
 }
 
 .bPanel
-, .bBanner
+, *[ly-hldBanner]
 , menu {
 	display: none;
 }

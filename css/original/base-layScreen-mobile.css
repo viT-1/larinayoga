@@ -6,7 +6,7 @@
 
 /**** screen max1015 */
 /* Styles for screen from 1015px... */
-.bBanner {
+*[ly-hldBanner] {
 	width: 100%;
 }
 
@@ -83,7 +83,7 @@ menu menu
 }
 
 *[role='main'] h3 img
-, .bBanner
+, *[ly-hldBanner]
 , *[ly-hldLikes] {
 	display: none;
 }

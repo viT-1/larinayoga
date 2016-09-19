@@ -2,7 +2,7 @@ body {
 	background: #FFF url('trees-texture.jpg');
 }
 
-.bBanner {
+*[ly-hldBanner] {
 	background: url('larina-yoga-2013.png') center;
 }
 
