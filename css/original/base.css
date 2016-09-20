@@ -68,7 +68,7 @@ p
 	display: none;
 }
 
-*[role='main'] dl {
+*[ly-hldMain] dl {
 	margin: 0 0 15px;
 }
 
@@ -82,7 +82,7 @@ li {
 	padding: 0;
 }
 
-*[role='main'] h3 {
+*[ly-hldMain] h3 {
 	margin: 15px 0 .5em 0;
 	padding: 0 0 0 15px;
 	position: relative;
@@ -110,11 +110,11 @@ h3:target  .iAnchor[href ^= '#'] {
 }
 /* IE8 cannot render these two selectors together! ****/
 
-*[role='main'] h4 {
+*[ly-hldMain] h4 {
 	margin: 0 0 .2em 15px;
 }
 
-*[role='main'] h3 img {
+*[ly-hldMain] h3 img {
 	float: right;
 	clear: right;
 	margin: 0 0 15px 15px;
@@ -175,7 +175,7 @@ h2.iSideBar[role = 'heading'] {
 }
 /* @class hldSideBar ****/
 
-*[role='main'] {
+*[ly-hldMain] {
 	padding: 15px;
 }
 
@@ -240,9 +240,9 @@ a[href='#top'] {
 /* iMoreLess screen only ****/
 /* @class iMoreLess ****/
 
-*[role='main'] h3:first-child
-, *[role='main'] li:first-child h3
-, *[role='main'] > div:first-child h3  {
+*[ly-hldMain] h3:first-child
+, *[ly-hldMain] li:first-child h3
+, *[ly-hldMain] > div:first-child h3  {
 	margin-top: 0;
 }
 

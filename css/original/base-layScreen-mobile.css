@@ -15,7 +15,7 @@
 	text-align: right;
 }
 
-*[role='main'] {
+*[ly-hldMain] {
 	margin: 0 auto 0;
 	clear: both;
 }
@@ -64,8 +64,8 @@ menu menu
 	width: 30%;
 }
 
-*[role='main'] object
-, *[role='main'] embed {
+*[ly-hldMain] object
+, *[ly-hldMain] embed {
 	width: 100%;
 	height: auto;
 }}
@@ -82,7 +82,7 @@ menu menu
 	display: none;
 }
 
-*[role='main'] h3 img
+*[ly-hldMain] h3 img
 , *[ly-hldBanner]
 , *[ly-hldLikes] {
 	display: none;

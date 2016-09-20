@@ -36,7 +36,7 @@
 				<xsl:with-param name="mod__class" select="'slave'" />
 			</xsl:apply-templates>
 			
-			<div role="main">
+			<div role="main" ly-hldMain="">
 				<xsl:apply-templates select="*" />
 			</div>
 			<a ly-hldBanner="" href="index-{$base_htmlLang}.xml">
@@ -57,7 +57,7 @@
 			
 			//IE9 and other browsers
 			if (document.addEventListener) {
-				initToggleAbility( '*[role = "main"] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
+				initToggleAbility( '*[ly-hldMain] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
 			}
 		</script>
 	</body>

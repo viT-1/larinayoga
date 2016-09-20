@@ -44,7 +44,7 @@ a.iSideBar[role = 'heading']
 	background-color: #370;
 }
 
-*[role='main']
+*[ly-hldMain]
 , h2.iSideBar[role = 'heading']
 , a.iSideBar[role = 'link']
  {
@@ -90,17 +90,17 @@ a.iSideBar[role = 'heading']
 /* screen only ****/
 /* @class iSideBar ****/
 
-*[role='main'] b
-, *[role='main'] strong
-, *[role='main'] h3
-, *[role='main'] h3 a
-, *[role='main'] h4
+*[ly-hldMain] b
+, *[ly-hldMain] strong
+, *[ly-hldMain] h3
+, *[ly-hldMain] h3 a
+, *[ly-hldMain] h4
 , .iSideBar[ly-item ~= 'active']
 , .iSideBar[role = 'link']:hover {
 	color: #370;
 }
 
-*[role = 'main'] h3 a:hover {
+*[ly-hldMain] h3 a:hover {
 	color: blue;
 }
 
@@ -112,15 +112,15 @@ a.iSideBar[role = 'heading']
 	color: red;
 }
 
-*[role='main'] {
+*[ly-hldMain] {
 	font-family: "PT Sans", Calibri, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .bPanel
 , a.iSideBar[role = 'heading']
 , .iSideBar[ly-item ~= 'active']
-, *[role='main'] h3
-, *[role='main'] h4 {
+, *[ly-hldMain] h3
+, *[ly-hldMain] h4 {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
@@ -142,13 +142,13 @@ a.iSideBar[role = 'heading']
 }
 
 .bPanel
-, *[role='main'] h4
+, *[ly-hldMain] h4
 , h3 .tpDate
 , .iSideBar[role = 'link'] {
 	font-size: 0.8em;
 }
 
-*[role='main'] h4 {
+*[ly-hldMain] h4 {
 	text-transform: uppercase;
 }
 

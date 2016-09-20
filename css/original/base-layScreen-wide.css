@@ -1,3 +1,7 @@
+*[ly-hldMain] {
+	margin: 0 185px 0;
+}
+
 *[ly-hldBanner]
 , .bPanel[role='banner']
 , *[ly-hldBase] {
@@ -34,10 +38,6 @@
 	margin-bottom: 15px;
 }
 /* @class iSideBar ****/
-
-*[role='main'] {
-	margin: 0 185px 0;
-}
 
 *[ly-hldDevInfo] {
 	position: absolute;
