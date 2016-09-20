@@ -59,7 +59,7 @@
 
 /* @todo: Вынести content в контент, но IE8 не поддерживает считывание data-атрибута в качестве контента */
 /*
-.mi-books > a[data-ico]:before {
+.iSideBar[ly-item ~= 'reviews'] a[role = 'heading'][data-ico]:before {
 	content: attr(data-ico);
 }
 */
