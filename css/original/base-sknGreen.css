@@ -116,7 +116,7 @@ a.iSideBar[role = 'heading']
 	font-family: "PT Sans", Calibri, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-.bPanel
+.iPanel[role]
 , a.iSideBar[role = 'heading']
 , .iSideBar[ly-item ~= 'active']
 , *[ly-hldMain] h3
@@ -124,24 +124,24 @@ a.iSideBar[role = 'heading']
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
-.bPanel {
+.iPanel[role = 'banner'] {
 	background: #CF9;	
 }
 
-.bPanel[role='contentinfo'] {
+.iPanel[role = 'contentinfo'] {
 	background: #9C6;
 }
 
-.bPanel h1 {
+.iPanel[role] h1 {
 	font-weight: normal;
 }
 
-.bPanel h1
+.iPanel[role] h1
 , h2.iSideBar[role = 'heading'] {
 	font-size: 1em;
 }
 
-.bPanel
+.iPanel[role]
 , *[ly-hldMain] h4
 , h3 .hTxt-date
 , .iSideBar[role = 'link'] {

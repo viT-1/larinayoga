@@ -3,7 +3,7 @@
 }
 
 *[ly-hldBanner]
-, .bPanel[role='banner']
+, .iPanel[role = 'banner']
 , *[ly-hldBase] {
 	width: 1000px;
 }
