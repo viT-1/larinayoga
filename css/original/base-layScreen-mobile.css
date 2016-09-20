@@ -1,5 +1,5 @@
 /**** Touch-devices */
-.touch_enabled h1 span {
+*[ly-touch = 'true'] .iYandex[ly-userName = 'firstLetter'] {
 	font-weight: bolder;
 }
 /* Touch-devices ****/

@@ -1,5 +1,9 @@
 function addAttrVal( o, attr_name,  val ) {
-	if ( !o.hasAttribute( attr_name ) ) return;
+	if ( !o.hasAttribute( attr_name ) ) {
+		var attr = document.createAttribute( attr_name );
+		attr.value = ''
+		o.setAttributeNode( attr );
+	}
 	
 	var re = new RegExp( "(^|\\s)" + val + "(\\s|$)", "g" );
 	var attr_val = o.getAttribute( attr_name );
