@@ -124,6 +124,7 @@ a.iSideBar[role = 'heading']
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
+/**** @class iPanel */
 .iPanel[role = 'banner'] {
 	background: #CF9;	
 }
@@ -135,6 +136,7 @@ a.iSideBar[role = 'heading']
 .iPanel[role] h1 {
 	font-weight: normal;
 }
+/* @class iPanel ****/
 
 .iPanel[role] h1
 , h2.iSideBar[role = 'heading'] {

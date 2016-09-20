@@ -76,12 +76,6 @@ li {
 	list-style: square outside;
 }
 
-.iPanel[role] h1 {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-
 *[ly-hldMain] h3 {
 	margin: 15px 0 .5em 0;
 	padding: 0 0 0 15px;
@@ -119,6 +113,20 @@ h3:target  .iAnchor[href ^= '#'] {
 	clear: right;
 	margin: 0 0 15px 15px;
 }
+
+/**** @class iPanel */
+.iPanel[role] {
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+}
+
+.iPanel[role] h1 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+/* @class iPanel ****/
 
 *[ly-hldBanner]
 , .iPanel[role = 'banner']
@@ -177,12 +185,6 @@ h2.iSideBar[role = 'heading'] {
 
 *[ly-hldMain] {
 	padding: 15px;
-}
-
-.iPanel[role] {
-	padding: 15px 0;
-	text-align: center;
-	position: relative;
 }
 
 *[ly-hldToTop] {
