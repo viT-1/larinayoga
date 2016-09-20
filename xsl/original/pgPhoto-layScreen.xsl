@@ -44,7 +44,7 @@
 			</xsl:if>
 			#
 		</a>
-		<span class="tpDate"><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates />
+		<span class="hTxt-date"><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates />
 	</h3>
 </xsl:template>
 

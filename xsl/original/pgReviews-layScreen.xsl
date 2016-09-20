@@ -22,7 +22,7 @@
 		<xsl:variable name="date" select="substring(*[@property = 'datePublished']/@content, 1, 10 )" />
 		<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 		<h3 id="{$date_href}">
-		<a class="iAnchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h3>
+		<a class="iAnchor" href="#{$date_href}">#</a><span class="hTxt-date"><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h3>
 		<h4><xsl:call-template name="select_string"><xsl:with-param name="id" select="'cite'" /></xsl:call-template> &#171;<xsl:apply-templates select="cite" />&#187;</h4>
 	</dt>
 </xsl:template>

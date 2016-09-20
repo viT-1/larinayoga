@@ -89,10 +89,10 @@
 	<h3 id="{$date_href}">
 		<xsl:apply-templates select="img" />
 		<br class="-hidden" />
-		<a class="iAnchor" href="#{$date_href}">#</a><span class="tpDate"><xsl:value-of select="translate( $date, '-', '.' )" /></span>
+		<a class="iAnchor" href="#{$date_href}">#</a><span class="hTxt-date"><xsl:value-of select="translate( $date, '-', '.' )" /></span>
 		<xsl:if test="$second_date">
 			<xsl:text> - </xsl:text>
-			<span class="tpDate"><xsl:value-of select="translate( $second_date, '-', '.' )" /></span>
+			<span class="hTxt-date"><xsl:value-of select="translate( $second_date, '-', '.' )" /></span>
 		</xsl:if>: <xsl:apply-templates select="em" />
 	</h3>
 	<xsl:apply-templates select="*[not( name() = 'img' or name() = 'em' )]" />
