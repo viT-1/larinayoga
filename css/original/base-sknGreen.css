@@ -2,14 +2,6 @@ body {
 	background-attachment: fixed;
 }
 
-a[href='#top'] {
-	color: #CF9;
-}
-
-a[href='#top']:hover {
-	color: #FFF;
-}
-
 /**** @class iSideBar */
 a.iSideBar[role = 'heading'] {
 	color: #CF9;
@@ -102,6 +94,14 @@ a.iSideBar[role = 'heading']
 
 *[ly-hldMain] h3 a:hover {
 	color: blue;
+}
+
+*[ly-hldToTop] {
+	color: #CF9;
+}
+
+*[ly-hldToTop]:hover {
+	color: #FFF;
 }
 
 .iYandex[ly-userName] {

@@ -41,7 +41,7 @@
 }
 
 menu menu
-, a[href='#top'] {
+, *[ly-hldToTop] {
 	display: none;
 }
 

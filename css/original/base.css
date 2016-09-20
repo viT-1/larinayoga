@@ -185,7 +185,7 @@ h2.iSideBar[role = 'heading'] {
 	position: relative;
 }
 
-a[href='#top'] {
+*[ly-hldToTop] {
 	position: absolute;
 	left: 15px;
 }
