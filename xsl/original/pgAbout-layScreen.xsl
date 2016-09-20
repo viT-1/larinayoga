@@ -15,7 +15,7 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'img-primary']/@data-ly-class">
-	<xsl:attribute name="class">img-responsive</xsl:attribute>
+	<xsl:attribute name="class">hImg-responsive</xsl:attribute>
 	<xsl:attribute name="width">185</xsl:attribute>
 </xsl:template>
 
