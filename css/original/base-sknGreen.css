@@ -104,11 +104,11 @@ a.iSideBar[role = 'heading']
 	color: blue;
 }
 
-.-clrYandex {
+.iYandex[ly-userName] {
 	color: #000;
 }
 
-.-clrYandex span{
+.iYandex[ly-userName = 'firstLetter'] {
 	color: red;
 }
 

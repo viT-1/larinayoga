@@ -8,8 +8,17 @@
 	doctype-system="about:legacy-compat"
 />
 
-<xsl:template match="nav//footer//*[@data-ly-class = 'yandexName']/@data-ly-class">
-	<xsl:attribute name="class">-clrYandex</xsl:attribute>
+<xsl:template match="nav//footer//*[@data-ly-class = 'yandexName']">
+	<xsl:param name="is_header" />
+	
+	<a class="iYandex" ly-userName="">
+		<xsl:if test="$is_header">
+			<xsl:attribute name="role">heading</xsl:attribute>
+			<xsl:attribute name="aria-level">1</xsl:attribute>
+		</xsl:if>
+		<xsl:apply-templates select="@*" />
+		<span class="iYandex" ly-userName="firstLetter"><xsl:value-of select="substring(text(), 1, 1)" /></span><xsl:value-of select="substring(text(), 2)" />
+	</a>
 </xsl:template>
 
 <xsl:template match="nav//menu/li" mode="nav-layScreen_current">
