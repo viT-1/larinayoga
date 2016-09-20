@@ -28,7 +28,7 @@
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" mode="nav_header" />
 		</div>
 		<div ly-hldBase="">
-			<hr class="-hidden" />
+			<hr aria-hidden="true" />
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
 				<xsl:with-param name="mod__class" select="'master'" />
 			</xsl:apply-templates>
@@ -43,7 +43,7 @@
 				<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
 			</a>
 			<!--&social_likes;-->
-			<hr class="-hidden" />
+			<hr aria-hidden="true" />
 			<div class="iPanel" role="contentinfo">
 				<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />
 				<span ly-hldDevInfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:

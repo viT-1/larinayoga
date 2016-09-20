@@ -32,7 +32,7 @@
 	<xsl:variable name="date" select="../*[@property = 'dateCreated']/@content" />
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 	
-	<hr class="-hidden" />
+	<hr aria-hidden="true" />
 	<h3 id="{$date_href}">
 		<xsl:variable name="alternate_href" select="../*[@property = 'alternateName']/@content" />
 		<xsl:if test="$alternate_href">
@@ -64,7 +64,7 @@
 <xsl:template match="html[@data-ly-class = 'photo']//*[@data-ly-class = 'lstPhotoAlbum']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iGallery" ly-hldDetails="bhvrHover"><br class="-hidden" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="paspartu" /></span>
+		<span class="iGallery" ly-hldDetails="bhvrHover"><br aria-hidden="true" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br aria-hidden="true" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="paspartu" /></span>
 	</li>
 </xsl:template>
 

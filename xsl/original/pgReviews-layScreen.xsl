@@ -10,7 +10,7 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'reviews']//*[@role = 'article']">
-	<hr class="-hidden" />
+	<hr aria-hidden="true" />
 	<dl class="iMoreLess">
 		<xsl:apply-templates select="*[@role = 'heading']" />
 		<xsl:apply-templates select="blockquote" />

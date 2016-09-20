@@ -10,7 +10,7 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@role = 'heading']">
-	<hr class="-hidden" />
+	<hr aria-hidden="true" />
 	<h3 id="{@id}"><a class="iAnchor" href="#{@id}">#</a><xsl:apply-templates /></h3>
 </xsl:template>
 
@@ -32,7 +32,7 @@
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'certificates']/li">
 	<li>
 		<xsl:apply-templates />
-		<span class="iGallery" ly-hldDetails="bhvrHover"><br class="-hidden" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br class="-hidden" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="paspartu" /></span>
+		<span class="iGallery" ly-hldDetails="bhvrHover"><br aria-hidden="true" /><em class="iGallery" ly-txtDetails="paspartu"><xsl:value-of select="a/img/@alt"/></em><br aria-hidden="true" /> <img src="{a/@href}" class="iGallery" ly-imgDetails="paspartu" /></span>
 	</li>
 </xsl:template>
 

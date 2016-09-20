@@ -13,7 +13,7 @@
 	<xsl:variable name="date" select="../*[@property = 'dateCreated']/@content" />
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 	
-	<hr class="-hidden" />
+	<hr aria-hidden="true" />
 	<h3 id="{translate($date, '-', '')}">
 		<a class="iAnchor" href="#{$date_href}">#</a><span class="hTxt-date"><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
 	</h3>

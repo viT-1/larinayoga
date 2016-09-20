@@ -85,10 +85,10 @@
 	<!-- Используем только вторую дату (после разделителя '/'), в случае со значениями 'PT8H' получаем пустую строку -->
 	<xsl:variable name="second_date" select="substring-after( ..//*[@property = 'duration'][1]/@content, '/' )" />
 	
-	<hr class="-hidden" />
+	<hr aria-hidden="true" />
 	<h3 id="{$date_href}">
 		<xsl:apply-templates select="img" />
-		<br class="-hidden" />
+		<br aria-hidden="true" />
 		<a class="iAnchor" href="#{$date_href}">#</a><span class="hTxt-date"><xsl:value-of select="translate( $date, '-', '.' )" /></span>
 		<xsl:if test="$second_date">
 			<xsl:text> - </xsl:text>
