@@ -168,8 +168,8 @@ h2.iSideBar[role = 'heading'] {
 /**** screen only */
 @media screen {
 a
-, *[ly-hldMain] h3 a:hover,
-.iMoreLess[aria-expanded] dd > *:first-child:after {
+, *[ly-hldMain] h3 a:hover
+, .iMoreLess[aria-expanded] dd > *:first-child:after {
 	color: blue;
 	border-bottom-color: blue;
 }
