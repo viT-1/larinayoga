@@ -179,5 +179,14 @@ a
 	border-bottom-color: blue;
 }
 }
-
 /* screen only ****/
+/**** mobile screen only */
+@media screen and (max-width:1015px) {
+body {
+	background-color: #966;
+}
+*[ly-hldBase] {
+	background: #370;	
+}
+}
+/* mobile screen only ****/
