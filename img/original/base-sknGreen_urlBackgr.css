@@ -1,5 +1,5 @@
 body {
-	background: #FFF url('trees-texture.jpg');
+	background-image: url('trees-texture.jpg');
 }
 
 *[ly-hldBanner] {

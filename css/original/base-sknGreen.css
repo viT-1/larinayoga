@@ -1,4 +1,5 @@
 body {
+	background: #FFF top center;
 	background-attachment: fixed;
 }
 
@@ -167,6 +168,10 @@ h2.iSideBar[role = 'heading'] {
 
 /**** screen only */
 @media screen {
+*[ly-hldBase] {
+	background: #CF9;	
+}
+
 a
 , *[ly-hldMain] h3 a:hover
 , .iMoreLess[aria-expanded] dd > *:first-child:after {

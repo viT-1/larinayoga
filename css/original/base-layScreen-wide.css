@@ -8,10 +8,6 @@
 	width: 1000px;
 }
 
-*[ly-hldBase] {
-	background: #CF9;	
-}
-
 /**** @class hldSideBar */
 *[ly-hldSideBar] {
 	position: absolute;
