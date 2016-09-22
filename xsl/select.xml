@@ -9,6 +9,8 @@
 	<option id="tothetop" lang="en" value="To the top" />
 	<option id="siteroot" lang="ru" value="На главную страницу" />
 	<option id="siteroot" lang="en" value="To the main page" />
+	<option id="getbigimg" lang="ru" value="Открыть в большом разрешении" />
+	<option id="getbigimg" lang="en" value="Get the bigger image" />
 
 	<optgroup label="reviews">
 		<option id="cite" lang="ru" value="Цитировано из заметки" />

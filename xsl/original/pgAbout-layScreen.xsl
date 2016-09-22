@@ -41,6 +41,7 @@
 	<xsl:attribute name="ly-imgThumb">h120px bhvrHover paspartu</xsl:attribute>
 	<xsl:attribute name="hidden"></xsl:attribute>
 	<xsl:attribute name="alt"><xsl:value-of select="."/></xsl:attribute>
+	<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'getbigimg'" /></xsl:call-template></xsl:attribute>
 </xsl:template>
 
 <!--
