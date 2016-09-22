@@ -1,0 +1,135 @@
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animated[data-animation ~= 'infinite'] {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated[data-animation ~= 'hinge'] {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+*[data-animation ~= 'fadeIn'] {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+*[data-animation ~= 'fadeOut'] {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes fadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+*[data-animation ~= 'fadeOutIn'] {
+	-webkit-animation-name: fadeOutIn;
+	animation-name: fadeOutIn;
+}
+
+@-webkit-keyframes fadeOutIn {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes fadeOutIn {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+*[data-animation ~= 'fadeInOut'] {
+	-webkit-animation-name: fadeInOut;
+	animation-name: fadeInOut;
+}
+
+@-webkit-keyframes fadeOutIn {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeOutIn {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+*[data-animation ~= 'pulse'] {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+
+*[data-animation ~= 'pulse']:hover {
+	-webkit-animation-name: restart;
+	animation-name: restart;
+}
+
+@-webkit-keyframes restart {
+	to{ width: auto; }
+}
+@keyframes restart {
+	to{ width: auto; }
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Fix for updating selectors in webkit */
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }

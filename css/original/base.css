@@ -234,9 +234,6 @@ h2.iSideBar[role = 'heading'] {
 	border-bottom-width: 1px;
 }
 
-/* Fix for updating selectors in webkit */
-@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
-
 .iMoreLess[aria-expanded] { -webkit-animation: bugfix infinite 1s; }
 }
 /* iMoreLess screen only ****/

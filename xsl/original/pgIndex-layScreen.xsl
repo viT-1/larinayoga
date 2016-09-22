@@ -10,8 +10,9 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'index']/body//*[@data-ly-class = 'img-primary']/@data-ly-class">
-	<xsl:attribute name="class">hImg-responsive</xsl:attribute>
+	<xsl:attribute name="class">hImg-responsive animated</xsl:attribute>
 	<xsl:attribute name="style">float:right; margin:0 0 15px 15px;</xsl:attribute>
+	<xsl:attribute name="data-animation">pulse</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'index']/body//*[@data-ly-class = 'best_wishes']/@data-ly-class">

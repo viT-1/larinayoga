@@ -1,0 +1,194 @@
+body {
+	background: #FFF top center;
+	background-attachment: fixed;
+}
+
+*[ly-hldMain] {
+	font-family: "PT Sans", Calibri, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+*[ly-hldMain] h4 {
+	text-transform: uppercase;
+}
+
+*[ly-hldMain] a
+, .iMoreLess[aria-expanded] dd > *:first-child:after {
+	color: #09C;
+	border-bottom-color: #09C;
+}
+
+*[ly-hldMain] a:visited {
+	color: #069;
+}
+
+*[ly-hldMain] a:hover {
+	color: #6CF;
+}
+
+*[ly-hldMain]
+, h2.iSideBar[role = 'heading']
+, a.iSideBar[role = 'link'] {
+	background-color: #FFF;
+}
+
+*[ly-hldMain] b
+, *[ly-hldMain] strong
+, *[ly-hldMain] h3
+, *[ly-hldMain] h3 a
+, *[ly-hldMain] h4
+, .iSideBar[ly-item ~= 'active']
+, .iSideBar[role = 'link']:hover {
+	color: #630;
+}
+
+/**** @class iSideBar */
+a.iSideBar[role = 'heading'] 
+, .iSideBar[role = 'link']{
+	color: #C96;
+}
+
+.iSideBar[role] {
+	border-color: #C96;
+}
+
+a.iSideBar[role = 'heading'] {
+	background-color: #630;
+	transition: border-color .7s ease;
+}
+
+*[ly-hldSideBar = 'master'] a[role = 'heading']:hover
+, *[ly-hldSideBar = 'master'] h2[role = 'heading'] {
+	border-right-color: #FFF;
+}
+
+*[ly-hldSideBar = 'slave'] a[role = 'heading']:hover
+, *[ly-hldSideBar = 'slave'] h2[role = 'heading'] {
+	border-left-color: #FFF;
+}
+
+.iSideBar[role = 'heading'] {
+	background-repeat: no-repeat;
+}
+
+a.iSideBar[role = 'heading']:hover {
+	color: #FFF;
+}
+
+a.iSideBar[role = 'heading']
+, .iSideBar[ly-item ~= 'active'] {
+	text-decoration: none;
+}
+/* @class iSideBar ****/
+
+.iPanel[role]
+, a.iSideBar[role = 'heading']
+, .iSideBar[ly-item ~= 'active']
+, *[ly-hldMain] h3
+, *[ly-hldMain] h4 {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.iPanel[role] h1
+, h2.iSideBar[role = 'heading'] {
+	font-size: 1em;
+}
+
+.iPanel[role]
+, *[ly-hldMain] h4
+, h3 .hTxt-date
+, .iSideBar[role = 'link'] {
+	font-size: 0.8em;
+}
+
+/**** @class iPanel */
+.iPanel[role = 'banner'] {
+	background: #C96;	
+}
+
+.iPanel[role = 'contentinfo'] {
+	background: #630;
+}
+
+.iPanel[role] h1 {
+	font-weight: normal;
+}
+
+.iPanel[role] a:hover {
+	color: #FFF;
+}
+
+.iPanel[role = 'banner'] a {
+	color: #630;
+}
+
+.iPanel[role = 'contentinfo'] a {
+	color: #C96;
+}
+/* @class iPanel ****/
+
+h2.iSideBar[role = 'heading'] {
+	cursor: default;
+}
+
+/**** @class iGallery */
+.iGallery[ly-txtDetails]
+, .iGallery img {
+	background: #C96;
+	color: black;
+}
+
+.iGallery[ly-txtDetails ~= 'paspartu']
+,.iGallery li:hover *[ly-imgThumb ~= 'paspartu'] {
+	background: #FFF;
+}
+
+.iGallery[ly-txtDetails ~= 'paspartu']
+, .iGallery[ly-imgThumb ~= 'paspartu']
+, .iGallery[ly-imgDetails ~= 'paspartu'] {
+	border-color: #630;
+	transition: background .5s ease;
+}
+/* @class iGallery ****/
+
+.iYandex[ly-userName] {
+	color: #000;
+}
+
+.iYandex[ly-userName = 'firstLetter'] {
+	color: red;
+}
+
+*[ly-hldBase] {
+	background: #C96;	
+}
+
+.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width:1015px) {
+.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
+	-webkit-animation: fadeOut 4s forwards ease-in-out;
+	animation: fadeOut 4s forwards ease-in-out;
+}
+
+.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:hover:before{
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+}
+
+/**** mobile screen only */
+@media (max-width: 1015px) {
+*[ly-hldBase] {
+	background: #630;	
+}
+
+body {
+	background-color: #963;
+}
+}
+/* mobile screen only ****/
