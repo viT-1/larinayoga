@@ -85,17 +85,9 @@
 }
 
 *[data-animation ~= 'pulse']:hover {
-	-webkit-animation-name: restart;
-	animation-name: restart;
+	-webkit-animation-name: bugfix;
+	animation-name: bugfix;
 }
-
-@-webkit-keyframes restart {
-	to{ width: auto; }
-}
-@keyframes restart {
-	to{ width: auto; }
-}
-
 
 @-webkit-keyframes pulse {
   from {
@@ -133,3 +125,4 @@
 
 /* Fix for updating selectors in webkit */
 @-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+@keyframes bugfix { from { padding: 0; } to { padding: 0; } }
