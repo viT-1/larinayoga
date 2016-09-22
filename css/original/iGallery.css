@@ -35,7 +35,6 @@
 .iGallery li:first-child {
 	page-break-before: auto;
 }
-
 }
 
 .iGallery[ly-imgThumb ~= 'h120px'] {
@@ -66,6 +65,8 @@
 .iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	max-height: 0;
 	height: 0;
+	
+	-webkit-animation: fadeOut 0.3s ease;
 	animation: fadeOut 0.3s ease;
 }
 
@@ -117,6 +118,16 @@ a:hover .iGallery[ly-imgThumb ~= 'bhvrHover'] {
 	margin-top: 19px;
 }
 /* @class iGallery ****/
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
 
 @keyframes fadeIn {
 	0% { opacity: 0; }
