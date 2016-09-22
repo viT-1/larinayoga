@@ -1,5 +1,5 @@
 /**** Touch-devices */
-*[ly-touch = 'true'] .iYandex[ly-userName = 'firstLetter'] {
+.touch-on .iYandex[ly-userName = 'firstLetter'] {
 	font-weight: bolder;
 }
 /* Touch-devices ****/

@@ -65,7 +65,9 @@
 .iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	max-height: 0;
 	height: 0;
-	
+}
+
+.animate-on .iGallery[ly-hldDetails ~= 'bhvrHover'] {
 	-webkit-animation: fadeOut 0.3s ease;
 	animation: fadeOut 0.3s ease;
 }
