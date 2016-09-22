@@ -3,6 +3,7 @@ body {
 	background-attachment: fixed;
 }
 
+/**** @class ly-hldMain */
 *[ly-hldMain] {
 	font-family: "PT Sans", Calibri, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
@@ -24,6 +25,7 @@ body {
 *[ly-hldMain] a:hover {
 	color: #6CF;
 }
+/* @class ly-hldMain ****/
 
 *[ly-hldMain]
 , h2.iSideBar[role = 'heading']
@@ -78,6 +80,10 @@ a.iSideBar[role = 'heading']
 , .iSideBar[ly-item ~= 'active'] {
 	text-decoration: none;
 }
+
+h2.iSideBar[role = 'heading'] {
+	cursor: default;
+}
 /* @class iSideBar ****/
 
 .iPanel[role]
@@ -126,10 +132,6 @@ a.iSideBar[role = 'heading']
 }
 /* @class iPanel ****/
 
-h2.iSideBar[role = 'heading'] {
-	cursor: default;
-}
-
 /**** @class iGallery */
 .iGallery[ly-txtDetails]
 , .iGallery img {
@@ -162,6 +164,18 @@ h2.iSideBar[role = 'heading'] {
 	background: #C96;	
 }
 
+/**** when menus in two rows with icons */
+@media (max-width: 1015px) {
+*[ly-hldBase] {
+	background: #630;
+}
+
+body {
+	background-color: #963;
+}
+}
+/* when menus in two rows with icons ****/
+
 .animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
 	content: '';
 	display: block;
@@ -169,15 +183,8 @@ h2.iSideBar[role = 'heading'] {
 	height: 100%;
 }
 
-@media (min-width:630px) {
-.animations-on .hImg-responsive {
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-}
-
+/**** ANIMATIONS */
+/**** when menus in two columns with icons */
 @media (min-width:1015px) {
 .animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
 	-webkit-animation: fadeOut 4s forwards ease-in-out;
@@ -189,15 +196,16 @@ h2.iSideBar[role = 'heading'] {
 	animation-play-state: paused;
 }
 }
+/* when menus in two columns with icons ****/
 
-/**** mobile screen only */
-@media (max-width: 1015px) {
-*[ly-hldBase] {
-	background: #630;	
+/**** when menus in two rows without icons */
+@media (min-width:630px) {
+.animations-on .hImg-responsive {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
-
-body {
-	background-color: #963;
 }
-}
-/* mobile screen only ****/
+/* when menus in two rows without icons ****/
+/* ANIMATIONS ****/
