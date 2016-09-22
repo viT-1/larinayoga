@@ -16,7 +16,7 @@ function isTouchSupported() {
 		|| (window.DocumentTouch && document instanceof DocumentTouch)
 	);
 	
-	return supports ? strIsSupportedPostfixString : strDoesntSupportedPostfix;
+	return supports ? strIsSupportedPostfix : strDoesntSupportedPostfix;
 }
 
 function isAnimationsSupported() {
@@ -34,5 +34,5 @@ function isAnimationsSupported() {
 		}
 	}
 	
-	return supports ? strIsSupportedPostfixString : strDoesntSupportedPostfix;
+	return supports ? strIsSupportedPostfix : strDoesntSupportedPostfix;
 }
