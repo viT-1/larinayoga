@@ -169,6 +169,15 @@ h2.iSideBar[role = 'heading'] {
 	height: 100%;
 }
 
+@media (min-width:630px) {
+.animations-on .hImg-responsive {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+}
+
 @media (min-width:1015px) {
 .animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
 	-webkit-animation: fadeOut 4s forwards ease-in-out;
