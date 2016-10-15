@@ -9,8 +9,7 @@
 />
 
 <xsl:template match="
-meta
-| @cite
+@cite
 
 | @vocab
 | body/*/@typeof
