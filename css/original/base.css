@@ -114,22 +114,16 @@ h3:target  .iAnchor[href ^= '#'] {
 	margin: 0 0 15px 15px;
 }
 
-/**** @class iPanel */
-.iPanel[role] {
+/**** @class info_panel */
+*[ly-page__info_panel] {
 	padding: 15px 0;
 	text-align: center;
 	position: relative;
 }
-
-.iPanel[role] h1 {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-/* @class iPanel ****/
+/* @class info_panel ****/
 
 *[ly-hldBanner]
-, .iPanel[role]
+, *[ly-page__info_panel]
 , *[ly-hldBase] {
 	margin: 0 auto;
 }

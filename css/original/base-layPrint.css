@@ -2,7 +2,7 @@ body {
 	background-image: none;
 }
 
-.iPanel[role]
+*[ly-info_panel]
 , *[ly-hldBanner]
 , menu {
 	display: none;

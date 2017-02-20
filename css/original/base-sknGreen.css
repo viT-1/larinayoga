@@ -105,7 +105,7 @@ h2.iSideBar[role = 'heading'] {
 }
 /* @class iSideBar ****/
 
-.iPanel[role]
+*[ly-info_panel]
 , a.iSideBar[role = 'heading']
 , .iSideBar[ly-item ~= 'active']
 , *[ly-hldMain] h3
@@ -113,31 +113,25 @@ h2.iSideBar[role = 'heading'] {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
-.iPanel[role] h1
-, h2.iSideBar[role = 'heading'] {
+h2.iSideBar[role = 'heading'] {
 	font-size: 1em;
 }
 
-.iPanel[role]
+*[ly-info_panel]
 , *[ly-hldMain] h4
 , h3 .hTxt-date
 , .iSideBar[role = 'link'] {
 	font-size: 0.8em;
 }
 
-/**** @class iPanel */
-.iPanel[role = 'banner'] {
+/**** @class info_panel */
+*[ly-info_panel *= 'light_'] {
 	background: #CF9;	
 }
 
-.iPanel[role = 'contentinfo'] {
+*[ly-info_panel *= 'dark_'] {
 	background: #9C6;
-}
-
-.iPanel[role] h1 {
-	font-weight: normal;
-}
-/* @class iPanel ****/
+}/* @class info_panel ****/
 
 /**** @class iGallery */
 .iGallery[ly-txtDetails]
@@ -158,12 +152,7 @@ h2.iSideBar[role = 'heading'] {
 	transition: background .5s ease;
 }
 /* @class iGallery ****/
-
-.iYandex[ly-userName] {
-	color: #000;
-}
-
-.iYandex[ly-userName = 'firstLetter'] {
+*[ly-user_name__first_letter = 'yandex_'] {
 	color: red;
 }
 

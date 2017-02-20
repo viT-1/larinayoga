@@ -11,13 +11,13 @@
 <xsl:template match="nav//footer//*[@data-ly-class = 'yandexName']">
 	<xsl:param name="is_header" />
 	
-	<a class="iYandex" ly-userName="">
+	<a ly-info_panel__link="" ly-user_name="">
 		<xsl:if test="$is_header">
 			<xsl:attribute name="role">heading</xsl:attribute>
 			<xsl:attribute name="aria-level">1</xsl:attribute>
 		</xsl:if>
 		<xsl:apply-templates select="@*" />
-		<span class="iYandex" ly-userName="firstLetter"><xsl:value-of select="substring(text(), 1, 1)" /></span><xsl:value-of select="substring(text(), 2)" />
+		<span ly-user_name__first_letter="yandex_"><xsl:value-of select="substring(text(), 1, 1)" /></span><xsl:value-of select="substring(text(), 2)" />
 	</a>
 </xsl:template>
 

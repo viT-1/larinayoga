@@ -21,4 +21,9 @@
 	<xsl:apply-templates />
 </xsl:template>
 
+<xsl:template match="nav//footer/a/@href">
+	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
+	<xsl:attribute name="ly-info_panel__link"><xsl:value-of select="../@data-ly-class"/></xsl:attribute>
+</xsl:template>
+
 </xsl:stylesheet>

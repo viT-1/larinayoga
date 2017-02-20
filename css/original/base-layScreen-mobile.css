@@ -1,5 +1,6 @@
 /**** Touch-devices */
-.touch-on .iYandex[ly-userName = 'firstLetter'] {
+.touch-on
+*[ly-user_name__first_letter] {
 	font-weight: bolder;
 }
 /* Touch-devices ****/
@@ -48,7 +49,7 @@ menu menu
 /**** screen min630 */
 @media screen and (min-width:630px) {
 *[ly-hldBase]
-, .iPanel[role] {
+, *[ly-page__info_panel] {
 	width: 630px;
 }}
 /* screen min630 ****/

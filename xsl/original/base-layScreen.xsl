@@ -21,10 +21,10 @@
 </xsl:template>
 
 <xsl:template match="html/body">
-	<body id="top" typeof="WebPage">
+	<body id="top" typeof="WebPage" ly-page="{$base_pgContext}">
 		<xsl:apply-templates select="@*" />
 		
-		<div class="iPanel" role="banner">
+		<div role="banner" ly-page__info_panel="top_" ly-info_panel="light_">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" mode="nav_header" />
 		</div>
 		<div ly-hldBase="">
@@ -45,11 +45,11 @@
 			<!--&social_likes;-->
 			<hr aria-hidden="true" />
 		</div>
-		<div class="iPanel" role="contentinfo">
+		<div role="contentinfo" ly-page__info_panel="bottom_" ly-info_panel="dark_">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />
 			<span ly-hldDevInfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:
-			&copy;<a href="https://github.com/viT-1/larinayoga/issues">viT-1</a></span>
-			<a href="#top" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
+			&copy;<a href="https://github.com/viT-1/larinayoga/issues" ly-info_panel__link="">viT-1</a></span>
+			<a href="#top" ly-info_panel__link="" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
 		
 		<script type="text/javascript">
