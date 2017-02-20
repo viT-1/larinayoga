@@ -1,4 +1,4 @@
-body {
+*[ly-page] {
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -116,31 +116,33 @@ h3:target  .iAnchor[href ^= '#'] {
 
 /**** @class info_panel */
 *[ly-page__info_panel] {
-	padding: 15px 0;
+	padding: .8em 0;
 	text-align: center;
 	position: relative;
 }
 /* @class info_panel ****/
 
-*[ly-hldBanner]
+*[ly-page__banner]
 , *[ly-page__info_panel]
-, *[ly-hldBase] {
+, *[ly-page__base] {
 	margin: 0 auto;
 }
 
-*[ly-hldBanner] {
+*[ly-page__banner] {
 	position: absolute;
-	top: 0;
+	top: 2.4em;
+	left: 0;
+	right: 0;
 	height: 250px;
 }
 
-*[ly-hldBase] {
+*[ly-base] {
 	text-align: left;
 	position: relative;
 }
 
 @media screen {
-*[ly-hldBase] {
+*[ly-page__base] {
 	padding-top: 250px;
 }
 }

@@ -1,9 +1,9 @@
-body {
+*[ly-page] {
 	background-image: none;
 }
 
 *[ly-info_panel]
-, *[ly-hldBanner]
+, *[ly-page__banner]
 , menu {
 	display: none;
 }

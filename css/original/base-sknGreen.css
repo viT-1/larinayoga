@@ -1,4 +1,4 @@
-body {
+*[ly-page] {
 	background: #FFF top center;
 	background-attachment: fixed;
 }
@@ -156,17 +156,17 @@ h2.iSideBar[role = 'heading'] {
 	color: red;
 }
 
-*[ly-hldBase] {
+*[ly-base] {
 	background: #CF9;	
 }
 
 /**** when menus in two rows with icons */
 @media (max-width:1015px) {
-*[ly-hldBase] {
+*[ly-base] {
 	background: #370;	
 }
 
-body {
+*[ly-page] {
 	background-color: #966;
 }
 }

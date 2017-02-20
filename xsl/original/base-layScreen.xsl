@@ -27,7 +27,7 @@
 		<div role="banner" ly-page__info_panel="top_" ly-info_panel="light_">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" mode="nav_header" />
 		</div>
-		<div ly-hldBase="">
+		<div ly-page__base="" ly-base="">
 			<hr aria-hidden="true" />
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
 				<xsl:with-param name="mod__class" select="'master'" />
@@ -39,9 +39,7 @@
 			<div role="main" ly-hldMain="">
 				<xsl:apply-templates select="*" />
 			</div>
-			<a ly-hldBanner="" href="index-{$base_htmlLang}.xml">
-				<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
-			</a>
+			
 			<!--&social_likes;-->
 			<hr aria-hidden="true" />
 		</div>
@@ -51,6 +49,9 @@
 			&copy;<a href="https://github.com/viT-1/larinayoga/issues" ly-info_panel__link="">viT-1</a></span>
 			<a href="#top" ly-info_panel__link="" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
+		<a ly-hldBanner="" ly-page__banner="" href="index-{$base_htmlLang}.xml">
+			<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
+		</a>
 		
 		<script type="text/javascript">
 			initBodySettings();

@@ -2,9 +2,9 @@
 	margin: 0 185px 0;
 }
 
-*[ly-hldBanner]
+*[ly-page__banner]
 , *[ly-page__info_panel]
-, *[ly-hldBase] {
+, *[ly-page__base] {
 	width: 1000px;
 }
 

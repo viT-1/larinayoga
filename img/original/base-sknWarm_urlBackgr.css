@@ -1,12 +1,12 @@
-body {
+*[ly-page] {
 	background-image: url('hex-grid-texture.jpg');
 }
 
-*[ly-hldBanner]
-, body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
+*[ly-page__banner]
+, *[ly-page = 'about'] *[ly-page__banner]:before {
 	background: url('larina-yoga-2015-.png') center top;
 }
 
-body[typeof = 'AboutPage'] *[ly-hldBanner] {
+*[ly-page = 'about'] *[ly-page__banner] {
 	background-position: center 250px;
 }

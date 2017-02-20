@@ -7,10 +7,6 @@
 
 /**** screen max1015 */
 /* Styles for screen from 1015px... */
-*[ly-hldBanner] {
-	width: 100%;
-}
-
 *[ly-hldLikes] {
 	right: 30px;
 	text-align: right;
@@ -48,8 +44,9 @@ menu menu
 
 /**** screen min630 */
 @media screen and (min-width:630px) {
-*[ly-hldBase]
-, *[ly-page__info_panel] {
+*[ly-page__base]
+, *[ly-page__info_panel]
+, *[ly-hldBanner] {
 	width: 630px;
 }}
 /* screen min630 ****/
@@ -84,12 +81,12 @@ menu menu
 }
 
 *[ly-hldMain] h3 img
-, *[ly-hldBanner]
+, *[ly-page__banner]
 , *[ly-hldLikes] {
 	display: none;
 }
 
-*[ly-hldBase] {
+*[ly-page__base] {
 	padding-top: 0;
 }}
 /* screen max422 ****/

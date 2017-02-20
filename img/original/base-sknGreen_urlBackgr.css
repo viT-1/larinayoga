@@ -1,8 +1,8 @@
-body {
+*[ly-page] {
 	background-image: url('trees-texture.jpg');
 }
 
-*[ly-hldBanner] {
+*[ly-page__banner] {
 	background: url('larina-yoga-2013.png') center;
 }
 

@@ -1,4 +1,4 @@
-body {
+*[ly-page] {
 	background: #FFF top center;
 	background-attachment: fixed;
 }
@@ -153,23 +153,24 @@ h2.iSideBar[role = 'heading'] {
 	color: red;
 }
 
-*[ly-hldBase] {
+*[ly-base] {
 	background: #C96;	
 }
 
 /**** when menus in two rows with icons */
 @media (max-width: 1015px) {
-*[ly-hldBase] {
+*[ly-base] {
 	background: #630;
 }
 
-body {
+*[ly-page] {
 	background-color: #963;
 }
 }
 /* when menus in two rows with icons ****/
 
-.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
+.animations-on
+*[ly-page = 'about'] *[ly-page__banner]:before {
 	content: '';
 	display: block;
 	width: 100%;
@@ -179,12 +180,12 @@ body {
 /**** ANIMATIONS */
 /**** when menus in two columns with icons */
 @media (min-width:1015px) {
-.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:before {
+.animations-on *[ly-page = 'about'] *[ly-page__banner]:before {
 	-webkit-animation: fadeOut 4s forwards ease-in-out;
 	animation: fadeOut 4s forwards ease-in-out;
 }
 
-.animations-on body[typeof = 'AboutPage'] *[ly-hldBanner]:hover:before{
+.animations-on *[ly-page = 'about'] *[ly-page__banner]:hover:before{
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
