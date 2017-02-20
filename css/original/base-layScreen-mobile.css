@@ -48,7 +48,7 @@ menu menu
 /**** screen min630 */
 @media screen and (min-width:630px) {
 *[ly-hldBase]
-, .iPanel[role = 'banner'] {
+, .iPanel[role] {
 	width: 630px;
 }}
 /* screen min630 ****/

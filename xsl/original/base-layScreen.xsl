@@ -44,12 +44,12 @@
 			</a>
 			<!--&social_likes;-->
 			<hr aria-hidden="true" />
-			<div class="iPanel" role="contentinfo">
-				<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />
-				<span ly-hldDevInfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:
-				&copy;<a href="https://github.com/viT-1/larinayoga/issues">viT-1</a></span>
-				<a href="#top" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
-			</div>
+		</div>
+		<div class="iPanel" role="contentinfo">
+			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />
+			<span ly-hldDevInfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:
+			&copy;<a href="https://github.com/viT-1/larinayoga/issues">viT-1</a></span>
+			<a href="#top" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
 		
 		<script type="text/javascript">
