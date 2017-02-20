@@ -121,7 +121,7 @@ h2.iSideBar[role = 'heading'] {
 , *[ly-hldMain] h4
 , h3 .hTxt-date
 , .iSideBar[role = 'link'] {
-	font-size: 0.8em;
+	font-size: 14px;
 }
 
 /**** @class info_panel */

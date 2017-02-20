@@ -49,7 +49,7 @@
 			&copy;<a href="https://github.com/viT-1/larinayoga/issues" ly-info_panel__link="">viT-1</a></span>
 			<a href="#top" ly-info_panel__link="" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
-		<a ly-hldBanner="" ly-page__banner="" href="index-{$base_htmlLang}.xml">
+		<a ly-page__banner="" href="index-{$base_htmlLang}.xml">
 			<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
 		</a>
 		

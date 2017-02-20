@@ -1,4 +1,5 @@
 *[ly-page] {
+	font-size: 1em;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -116,7 +117,8 @@ h3:target  .iAnchor[href ^= '#'] {
 
 /**** @class info_panel */
 *[ly-page__info_panel] {
-	padding: .8em 0;
+	padding: 15px 0;
+	box-sizing:border-box;
 	text-align: center;
 	position: relative;
 }
@@ -130,7 +132,7 @@ h3:target  .iAnchor[href ^= '#'] {
 
 *[ly-page__banner] {
 	position: absolute;
-	top: 2.4em;
+	top: 47px;
 	left: 0;
 	right: 0;
 	height: 250px;

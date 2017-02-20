@@ -46,7 +46,7 @@ menu menu
 @media screen and (min-width:630px) {
 *[ly-page__base]
 , *[ly-page__info_panel]
-, *[ly-hldBanner] {
+, *[ly-page__banner] {
 	width: 630px;
 }}
 /* screen min630 ****/
