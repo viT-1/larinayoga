@@ -192,7 +192,7 @@ h2.iSideBar[role = 'heading'] {
 	white-space: nowrap;
 }
 
-*[ly-hldLikes] {
+*[ly-page__likes] {
 	position: absolute;
 	top: 45px;
 }

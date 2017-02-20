@@ -7,7 +7,7 @@
 
 /**** screen max1015 */
 /* Styles for screen from 1015px... */
-*[ly-hldLikes] {
+*[ly-page__likes] {
 	right: 30px;
 	text-align: right;
 }
@@ -76,13 +76,9 @@ menu menu
 	clear: left;
 }
 
-*[ly-hldLikes] {
-	display: none;
-}
-
 *[ly-hldMain] h3 img
 , *[ly-page__banner]
-, *[ly-hldLikes] {
+, *[ly-page__likes] {
 	display: none;
 }
 
