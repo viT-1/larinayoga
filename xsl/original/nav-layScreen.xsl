@@ -42,7 +42,7 @@
 
 <xsl:template match="nav//menu">
 	<xsl:param name="mod__class" />
-	<menu ly-hldSideBar="{$mod__class}">
+	<menu ly-base__sidebar="{$mod__class}" ly-sidebar="">
 		<xsl:choose>
 			<xsl:when test="$mod__class = 'master'"><xsl:apply-templates select="*[position() &lt; 5]" /></xsl:when>
 			<xsl:when test="$mod__class = 'slave'"><xsl:apply-templates select="*[position() &gt; 4]" /></xsl:when>

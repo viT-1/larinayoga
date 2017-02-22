@@ -45,9 +45,9 @@
 		</div>
 		<div role="contentinfo" ly-page__info_panel="bottom_" ly-info_panel="dark_">
 			<xsl:apply-templates select="$nav_navRoot/footer[@lang = $base_htmlLang]" />
-			<span ly-hldDevInfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:
+			<span ly-info_panel__devinfo=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'markup'" /></xsl:call-template>:
 			&copy;<a href="https://github.com/viT-1/larinayoga/issues" ly-info_panel__link="">viT-1</a></span>
-			<a href="#top" ly-info_panel__link="" ly-hldToTop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
+			<a href="#top" ly-info_panel__link="" ly-info_panel__tothetop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
 		<a ly-page__banner="" href="index-{$base_htmlLang}.xml">
 			<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>

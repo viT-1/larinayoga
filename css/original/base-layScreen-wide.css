@@ -8,21 +8,21 @@
 	width: 1000px;
 }
 
-/**** @class hldSideBar */
-*[ly-hldSideBar] {
+/**** @class base__sidebar */
+*[ly-base__sidebar] {
 	position: absolute;
 	top: 250px;
 	width: 185px;
 }
 
-*[ly-hldSideBar ~= 'master'] {
+*[ly-base__sidebar ~= 'master'] {
 	left: 0;
 }
 
-*[ly-hldSideBar ~= 'slave'] {
+*[ly-base__sidebar ~= 'slave'] {
 	right: 0;
 }
-/* @class hldSideBar ****/
+/* @class base__sidebar ****/
 
 /**** @class iSideBar */
 .iSideBar[role = 'heading'] {
@@ -35,7 +35,7 @@
 }
 /* @class iSideBar ****/
 
-*[ly-hldDevInfo] {
+*[ly-info_panel__devinfo] {
 	position: absolute;
 	right: 15px;
 }

@@ -168,13 +168,13 @@ h2.iSideBar[role = 'heading'] {
 /* @class iSideBar ****/
 
 /**** @class hldSideBar */
-*[ly-hldSideBar ~= 'master'] *[role = 'link']{
+*[ly-base__sidebar ~= 'master'] *[role = 'link']{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-*[ly-hldSideBar ~= 'slave'] *[role = 'link'] {
+*[ly-base__sidebar ~= 'slave'] *[role = 'link'] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;
@@ -185,12 +185,12 @@ h2.iSideBar[role = 'heading'] {
 	padding: 15px;
 }
 
-*[ly-hldToTop] {
+*[ly-info_panel__tothetop] {
 	position: absolute;
 	left: 15px;
 }
 
-*[ly-hldDevInfo] {
+*[ly-info_panel__devinfo] {
 	white-space: nowrap;
 }
 

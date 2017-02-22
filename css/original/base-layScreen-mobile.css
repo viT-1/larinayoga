@@ -17,11 +17,11 @@
 	clear: both;
 }
 
-*[ly-hldSideBar ~= 'master'] {
+*[ly-base__sidebar ~= 'master'] {
 	border-top: 15px solid #FFF;
 }
 
-*[ly-hldSideBar] {
+*[ly-base__sidebar] {
 	text-align: center;
 }
 
@@ -33,12 +33,12 @@
 	padding-right: 16px;
 }
 
-*[ly-hldDevInfo] {
+*[ly-info_panel__devinfo] {
 	margin-left: 1em;
 }
 
 menu menu
-, *[ly-hldToTop] {
+, *[ly-info_panel__tothetop] {
 	display: none;
 }
 
@@ -71,7 +71,7 @@ menu menu
 
 /**** screen max422 */
 @media screen and (max-width:422px) {
-*[ly-hldSideBar]
+*[ly-base__sidebar]
 , .iSideBar[ly-item] {
 	clear: left;
 }

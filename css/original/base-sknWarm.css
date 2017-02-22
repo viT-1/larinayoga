@@ -58,13 +58,13 @@ a.iSideBar[role = 'heading'] {
 	transition: border-color .7s ease;
 }
 
-*[ly-hldSideBar = 'master'] a[role = 'heading']:hover
-, *[ly-hldSideBar = 'master'] h2[role = 'heading'] {
+*[ly-base__sidebar = 'master'] a[role = 'heading']:hover
+, *[ly-base__sidebar = 'master'] h2[role = 'heading'] {
 	border-right-color: #FFF;
 }
 
-*[ly-hldSideBar = 'slave'] a[role = 'heading']:hover
-, *[ly-hldSideBar = 'slave'] h2[role = 'heading'] {
+*[ly-base__sidebar = 'slave'] a[role = 'heading']:hover
+, *[ly-base__sidebar = 'slave'] h2[role = 'heading'] {
 	border-left-color: #FFF;
 }
 
