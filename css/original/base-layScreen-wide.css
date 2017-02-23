@@ -8,32 +8,30 @@
 	width: 1000px;
 }
 
-/**** @class base__sidebar */
+/**** @class sidebar */
 *[ly-base__sidebar] {
 	position: absolute;
 	top: 250px;
 	width: 185px;
 }
 
-*[ly-base__sidebar ~= 'master'] {
+*[ly-base__sidebar *= 'master'] {
 	left: 0;
 }
 
-*[ly-base__sidebar ~= 'slave'] {
+*[ly-base__sidebar *= 'slave'] {
 	right: 0;
 }
-/* @class base__sidebar ****/
 
-/**** @class iSideBar */
-.iSideBar[role = 'heading'] {
+*[ly-sidebar__caption] {
 	border-width: 15px;
 	border-style: none solid;
 }
 
-.iSideBar[ly-item] {
+*[ly-sidebar__item][aria-level = '1'] {
 	margin-bottom: 15px;
 }
-/* @class iSideBar ****/
+/* @class sidebar ****/
 
 *[ly-info_panel__devinfo] {
 	position: absolute;

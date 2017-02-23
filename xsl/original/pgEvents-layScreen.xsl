@@ -29,15 +29,15 @@
 	</xsl:if>
 </xsl:template>
 
-<xsl:template match="nav//menu/li" mode="nav-layScreen_current">
-	<li class="iSideBar" ly-item="{@data-ly-class} active">
-		<h2 class="iSideBar" role="heading"><xsl:value-of select="*" /></h2>
+<xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
+	<li ly-sidebar__item="" aria-level="1">
+		<h1 ly-sidebar__caption="{@data-ly-class}_ current_"><xsl:value-of select="." /></h1>
 		
 		<xsl:if test="count( $pgEvents-future ) &gt; 0">
 			<xsl:variable name="strFuture">
 				<xsl:call-template name="select_string"><xsl:with-param name="id" select="'evFuture'" /></xsl:call-template>
 			</xsl:variable>
-			<menu title="{$strFuture}">
+			<menu title="{$strFuture}" ly-sidebar__page_index="">
 				<xsl:apply-templates select="$pgEvents-future//*[@role = 'heading'][em]" mode="pgEvents-layScreen_mi">
 					<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 				</xsl:apply-templates>
@@ -48,7 +48,7 @@
 			<xsl:variable name="strComplete">
 				<xsl:call-template name="select_string"><xsl:with-param name="id" select="'evComplete'" /></xsl:call-template>
 			</xsl:variable>
-			<menu title="{$strComplete}" class="-pastEvents">
+			<menu title="{$strComplete}" class="-pastEvents" ly-sidebar__page_index="">
 				<xsl:apply-templates select="$pgEvents-complete//*[@role = 'heading'][em]" mode="pgEvents-layScreen_mi">
 					<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 				</xsl:apply-templates>
@@ -61,8 +61,8 @@
 	<xsl:variable name="date" select="substring( ..//*[@property = 'startDate'][1]/@content, 1, 10 )" />
 	<xsl:variable name="second_date" select="substring( ..//*[@property = 'duration'][1]/@content, 11 )" />
 	<xsl:variable name="second_date_mi" select="translate( translate($second_date, '-', '.'), '/', '-' )" />
-	<li>
-		<a href="#{translate($date, '-', '')}" class="iSideBar" role="link">
+	<li ly-sidebar__item="" aria-level="2">
+		<a href="#{translate($date, '-', '')}" ly-sidebar__link="">
 			<xsl:value-of select="translate( $date, '-', '.' )" />
 			<xsl:value-of select="concat( substring( $second_date_mi, 1, 1 ), substring( $second_date_mi, 7, 5 ) )" />: <xsl:value-of select="em" /></a>
 	</li>

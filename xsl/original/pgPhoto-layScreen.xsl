@@ -9,10 +9,10 @@
 	doctype-system="about:legacy-compat"
 />
 
-<xsl:template match="nav//menu/li" mode="nav-layScreen_current">
-	<li class="iSideBar" ly-item="{@data-ly-class} active">
-		<h2 class="iSideBar" role="heading"><xsl:value-of select="*" /></h2>
-		<menu>
+<xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
+	<li ly-sidebar__item="" aria-level="1">
+		<h1 ly-sidebar__caption="{@data-ly-class}_ current_"><xsl:value-of select="." /></h1>
+		<menu ly-sidebar__page_index="">
 			<xsl:apply-templates select="$base_htmlRoot//*[@role = 'heading']" mode="pgPhoto-layScreen_mi" />
 		</menu>
 	</li>
@@ -20,8 +20,8 @@
 
 <xsl:template match="html[@data-ly-class = 'photo']//*[@role = 'heading']" mode="pgPhoto-layScreen_mi">
 	<xsl:variable name="date" select="*[@property = 'dateCreated']/@content" />
-	<li>
-		<a href="#{translate( $date, '-', '' )}" class="iSideBar" role="link">
+	<li ly-sidebar__item="" aria-level="2">
+		<a href="#{translate( $date, '-', '' )}" ly-sidebar__link="">
 		<xsl:if test="*[@property = 'alternateName']">
 			<xsl:attribute name="href">#<xsl:value-of select="*[@property = 'alternateName']/@content" /></xsl:attribute>
 		</xsl:if><xsl:value-of select="translate( $date, '-', '.' )" />: <xsl:value-of select="em" /></a>

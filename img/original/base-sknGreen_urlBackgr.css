@@ -5,34 +5,3 @@
 *[ly-page__banner] {
 	background: url('larina-yoga-2013.png') center;
 }
-
-/* IcoMoon заменил спрайты */
-/*
-.iSideBar[ly-item ~= 'about'] *[role = 'heading'] {
-	background-image: url('x32-sprite-about.png');
-}
-
-.iSideBar[ly-item ~= 'reviews'] *[role = 'heading'] {
-	background-image: url('x32-sprite-reviews.png');
-}
-
-.iSideBar[ly-item ~= 'video'] *[role = 'heading'] {
-	background-image: url('x32-sprite-video.png');
-}
-
-.iSideBar[ly-item ~= 'photo'] *[role = 'heading'] {
-	background-image: url('x32-sprite-photo.png');
-}
-
-.iSideBar[ly-item ~= 'books'] *[role = 'heading'] {
-	background-image: url('x32-sprite-books.png');
-}
-
-.iSideBar[ly-item ~= 'schedule'] *[role = 'heading'] {
-	background-image: url('x32-sprite-schedule.png');
-}
-
-.iSideBar[ly-item ~= 'events'] *[role = 'heading'] {
-	background-image: url('x32-sprite-events.png');
-}
-*/

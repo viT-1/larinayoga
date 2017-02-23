@@ -21,8 +21,8 @@ a
 /* @class ly-hldMain ****/
 
 *[ly-hldMain]
-, h2.iSideBar[role = 'heading']
-, a.iSideBar[role = 'link'] {
+, *[ly-sidebar__caption *= 'current_']
+, *[ly-sidebar__link] {
 	background-color: #FFF;
 }
 
@@ -31,88 +31,66 @@ a
 , *[ly-hldMain] h3
 , *[ly-hldMain] h3 a
 , *[ly-hldMain] h4
-, .iSideBar[ly-item ~= 'active']
-, .iSideBar[role = 'link']:hover {
+, *[ly-sidebar__caption *= 'current_']
+, *[ly-sidebar__link]:hover {
 	color: #370;
 }
 
-/**** @class iSideBar */
-a.iSideBar[role = 'heading'] {
+/**** @class sidebar */
+*[ly-sidebar__caption *= 'other_'] {
 	color: #CF9;
-}
-
-.iSideBar[role = 'link'] {
-	color: #9C6;
-}
-
-.iSideBar[role] {
-	border-color: #CF9;
-}
-
-a.iSideBar[role = 'heading'] {
 	background-color: #370;
 	transition: border-color .7s ease;
-}
-
-*[ly-base__sidebar = 'master'] a[role = 'heading']:hover
-, *[ly-base__sidebar = 'master'] h2[role = 'heading'] {
-	border-right-color: #FFF;
-}
-
-*[ly-base__sidebar = 'slave'] a[role = 'heading']:hover
-, *[ly-base__sidebar = 'slave'] h2[role = 'heading'] {
-	border-left-color: #FFF;
-}
-
-.iSideBar[role = 'heading'] {
-	background-repeat: no-repeat;
-}
-
-/* IcoMoon заменил спрайты */
-/*
-a.iSideBar[role = 'heading'] {
-	background-position:  -385px 8px;
-}
-
-a.iSideBar[role = 'heading']:hover {
-	background-position:  -185px 8px;
-}
-
-h2.iSideBar[role = 'heading'] {
-	background-position:  15px 8px;
-}
-*/
-
-a.iSideBar[role = 'heading']:hover {
-	color: #FFF;
-}
-
-a.iSideBar[role = 'heading']
-, .iSideBar[ly-item ~= 'active'] {
 	text-decoration: none;
 }
 
-h2.iSideBar[role = 'heading'] {
+*[ly-sidebar__link] {
+	color: #9C6;
+}
+
+*[ly-sidebar__caption]
+, *[ly-sidebar__link] {
+	border-color: #CF9;
+}
+
+*[ly-base__sidebar = 'master'] *[ly-sidebar__caption *= 'other_']:hover 
+, *[ly-base__sidebar = 'master'] *[ly-sidebar__caption *= 'current_'] {
+	border-right-color: #FFF;
+}
+
+*[ly-base__sidebar = 'slave'] *[ly-sidebar__caption *= 'other_']:hover
+, *[ly-base__sidebar = 'slave'] *[ly-sidebar__caption *= 'current_'] {
+	border-left-color: #FFF;
+}
+
+*[ly-sidebar__caption] {
+	background-repeat: no-repeat;
+}
+
+*[ly-sidebar__caption *= 'other_']:hover {
+	color: #FFF;
+}
+
+*[ly-sidebar__caption *= 'current_'] {
 	cursor: default;
 }
 /* @class iSideBar ****/
 
 *[ly-info_panel]
-, a.iSideBar[role = 'heading']
-, .iSideBar[ly-item ~= 'active']
+, *[ly-sidebar__caption]
 , *[ly-hldMain] h3
 , *[ly-hldMain] h4 {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
-h2.iSideBar[role = 'heading'] {
+*[ly-sidebar__caption *= 'current_'] {
 	font-size: 1em;
 }
 
 *[ly-info_panel]
 , *[ly-hldMain] h4
 , h3 .hTxt-date
-, .iSideBar[role = 'link'] {
+, *[ly-sidebar__link] {
 	font-size: 14px;
 }
 

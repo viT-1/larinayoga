@@ -8,7 +8,7 @@
 }
 /* @class iMoreLess ****/
 
-.iSideBar[role = 'heading']:before
+*[ly-sidebar__caption]:before
 , .iMoreLess dd > *:first-child:after {
 	font-weight: normal;
 	font-style: normal;
@@ -18,13 +18,13 @@
 	speak: none;
 }
 
-/**** @class iSideBar */
-.iSideBar[role = 'heading'] {
+/**** @class sidebar */
+*[ly-sidebar__caption] {
 	position: relative;
 	background-image: none;
 }
 
-.iSideBar[role = 'heading']:before {
+*[ly-sidebar__caption]:before {
 	position: absolute;
 	left: 12px;
 	top: 0;
@@ -37,48 +37,48 @@
 	line-height: 48px;
 }
 
-.iSideBar[ly-item ~= 'about'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'about_']:before {
 	content: '\263a';
 }
 
-.iSideBar[ly-item ~= 'reviews'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'reviews_']:before {
 	content: '\2653';
 }
 
-.iSideBar[ly-item ~= 'video'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'video_']:before {
 	content: '\25b6';
 }
 
-.iSideBar[ly-item ~= 'photo'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'photo_']:before {
 	content: '\113d';
 }
 
-.iSideBar[ly-item ~= 'books'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'books_']:before {
 	content: '\25e7';
 }
 
 /* @todo: Вынести content в контент, но IE8 не поддерживает считывание data-атрибута в качестве контента */
 /*
-.iSideBar[ly-item ~= 'reviews'] a[role = 'heading'][data-ico]:before {
+*[ly-sidebar__caption ~= 'reviews_'][data-ico]:before {
 	content: attr(data-ico);
 }
 */
 
-.iSideBar[ly-item ~= 'schedule'] *[role = 'heading']:before {
+*[ly-sidebar__caption *= 'schedule_']:before {
 	content: '\25d4';
 }
 
-.iSideBar[ly-item ~= 'events'] *[role = 'heading']:before{
+*[ly-sidebar__caption *= 'events_']:before{
 	content: '\24d8';
 }
 
 /**** screen max629 */
 @media screen and (max-width:629px) {
-.iSideBar[role = 'heading']:before {
+*[ly-sidebar__caption]:before {
 	display: none;
 }}
 /* screen max629 ****/
-/* @class iSideBar ****/
+/* @class sidebar ****/
 
 /**** @class material-icons (Google code) */
 .material-icons {

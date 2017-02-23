@@ -4,7 +4,7 @@
 
 *[ly-info_panel]
 , *[ly-page__banner]
-, menu {
+, *[ly-sidebar] {
 	display: none;
 }
 

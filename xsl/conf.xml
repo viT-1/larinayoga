@@ -14,22 +14,24 @@
 	<set name="active_theme" content="css/other/" dis_abled="" />
 
 	<link href="css/other/normalize.css" />
+	<link href="css/other/ly-animate.css" media="only screen" dis_abled="" />
+	<link href="css/other/animate.min.css" media="only screen" disabled="" />
+	<link href="css/other/social-likes.css" disabled="" />
+	<link href="img/other/icoFontFaces.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 	<link href="css/mimimi/somelayout.css" disabled="" data-ly-proc="postCSS" />
 	<link href="css/original/iGallery.css" />
 	<link href="css/original/base.css" />
+	<link href="css/original/base-layScreen-mobile.css" media="only screen and (max-width:1015px)" />
+	<link href="css/original/base-layScreen-wide.css" media="only screen and (min-width:1016px)" />
+	<link href="css/original/base-layScreen-wide.css" data-ly-ie="lt IE 9" media="screen" />
 	<link href="css/original/base-sknGreen.css" disabled="" />
 	<link href="img/original/base-sknGreen_urlBackgr.css" disabled="" />
 	<link href="css/original/base-sknWarm.css" media="screen" dis_abled="" />
 	<link href="img/original/base-sknWarm_urlBackgr.css" media="screen" dis_abled="" />
 	<link href="css/original/base-mdi.css" dis_abled="" />
-	<link href="img/other/icoFontFaces.css" />
-	<link href="css/other/ly-animate.css" media="only screen" dis_abled="" />
-	<link href="css/other/animate.min.css" media="only screen" disabled="" />
-	<link href="css/other/social-likes.css" disabled="" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href="css/original/base-layScreen-mobile.css" media="only screen and (max-width:1015px)" />
-	<link href="css/original/base-layScreen-wide.css" media="only screen and (min-width:1016px)" />
-	<link href="css/original/base-layScreen-wide.css" data-ly-ie="lt IE 9" media="screen" />
+
 	<link href="css/original/base-layPrint.css" media="print" />
 
 	<script src="js/common.js" />

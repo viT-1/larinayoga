@@ -10,9 +10,10 @@ a img {
 	display: inline-block;
 }
 
-menu
+*[ly-sidebar]
+, *[ly-sidebar__page_index]
 , .iList[ly-list ~= 'unstyled']
-, menu li 
+, *[ly-sidebar__item]
 , .iList[ly-list ~= 'unstyled'] > li {
 	list-style: none;
 	display: block;
@@ -149,37 +150,35 @@ h3:target  .iAnchor[href ^= '#'] {
 }
 }
 
-/**** @class iSideBar */
-.iSideBar[role = 'heading'] {
+/**** @class sidebar */
+*[ly-sidebar__caption] {
 	display: block;
 	padding: 1em 0 1em 58px;
 	font-weight: bolder;
 }
 
-h2.iSideBar[role = 'heading'] {
+*[ly-sidebar__caption *= 'current_'] {
 	margin: 0;
 }
 
-.iSideBar[role = 'link'] {
+*[ly-sidebar__link] {
 	display: block;
 	padding-bottom: 15px;
 	border-width: 15px;
 }
-/* @class iSideBar ****/
 
-/**** @class hldSideBar */
-*[ly-base__sidebar ~= 'master'] *[role = 'link']{
+*[ly-base__sidebar *= 'master'] *[ly-sidebar__link]{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-*[ly-base__sidebar ~= 'slave'] *[role = 'link'] {
+*[ly-base__sidebar *= 'slave'] *[ly-sidebar__link] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;
 }
-/* @class hldSideBar ****/
+/* @class sidebar ****/
 
 *[ly-hldMain] {
 	padding: 15px;

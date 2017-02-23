@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nav>
 	<menu lang="ru" role="navigation">
-		<li data-ly-class="about"><a href="about-ru.xml">О себе</a></li>
-		<li data-ly-class="reviews"><a href="reviews-ru.xml" data-ico="@">Отзывы</a></li>
-		<li data-ly-class="video"><a href="video-ru.xml">Видео</a></li>
-		<li data-ly-class="photo"><a href="photo-ru.xml">Фото</a></li>
-		<li data-ly-class="books"><a href="books-ru.xml">Книги</a></li>
-		<li data-ly-class="schedule"><a href="schedule-ru.xml">Занятия</a></li>
-		<li data-ly-class="events"><a href="events-ru.xml">Анонсы</a></li>
+		<li><a href="about-ru.xml" data-ly-class="about">О себе</a></li>
+		<li><a href="reviews-ru.xml" data-ly-class="reviews" data-ico="@">Отзывы</a></li>
+		<li><a href="video-ru.xml" data-ly-class="video">Видео</a></li>
+		<li><a href="photo-ru.xml" data-ly-class="photo">Фото</a></li>
+		<li><a href="books-ru.xml" data-ly-class="books">Книги</a></li>
+		<li><a href="schedule-ru.xml" data-ly-class="schedule">Занятия</a></li>
+		<li><a href="events-ru.xml" data-ly-class="events">Анонсы</a></li>
 	</menu>
 	<menu lang="en" role="navigation">
-		<li data-ly-class="about"><a href="about-en.xml">About me</a></li>
-		<li data-ly-class="reviews"><a href="reviews-en.xml">Reviews</a></li>
-		<li data-ly-class="video"><a href="video-en.xml">Videos</a></li>
-		<li data-ly-class="photo"><a href="photo-en.xml">Photos</a></li>
-		<li data-ly-class="books"><a href="books-en.xml">Books</a></li>
-		<li data-ly-class="schedule"><a href="schedule-en.xml">Schedule</a></li>
-		<li data-ly-class="events"><a href="events-ru.xml">Events</a></li>
+		<li><a href="about-en.xml" data-ly-class="about">About me</a></li>
+		<li><a href="reviews-en.xml" data-ly-class="reviews">Reviews</a></li>
+		<li><a href="video-en.xml" data-ly-class="video">Videos</a></li>
+		<li><a href="photo-en.xml" data-ly-class="photo">Photos</a></li>
+		<li><a href="books-en.xml" data-ly-class="books">Books</a></li>
+		<li><a href="schedule-en.xml" data-ly-class="schedule">Schedule</a></li>
+		<li><a href="events-ru.xml" data-ly-class="events">Events</a></li>
 	</menu>
 	<footer lang="ru">
 		<a href="http://fotki.yandex.ru/users/galalari/albums/" data-ly-class="yandexName">Ларина Галина</a>: инструктор йоги.

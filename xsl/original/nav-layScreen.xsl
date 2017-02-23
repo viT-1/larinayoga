@@ -21,23 +21,25 @@
 	</a>
 </xsl:template>
 
-<xsl:template match="nav//menu/li" mode="nav-layScreen_current">
-	<li class="iSideBar" ly-item="{@data-ly-class} active"><h2 class="iSideBar" role="heading"><xsl:value-of select="*" /></h2></li>
+<xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
+	<li ly-sidebar__item="" aria-level="1"><h1 ly-sidebar__caption="{@data-ly-class}_ current_"><xsl:value-of select="." /></h1></li>
 </xsl:template>
 
 <xsl:variable name="lay-current_class" select="//html/@data-ly-class" />
 
 <xsl:template match="nav//menu/li">
+	<xsl:variable name="data-ly-class" select="*/@data-ly-class" />
+	
 	<xsl:choose>
-		<xsl:when test="@data-ly-class = $lay-current_class"><xsl:apply-templates select="." mode="nav-layScreen_current" /></xsl:when>
-		<xsl:otherwise><li class="iSideBar" ly-item="{@data-ly-class}"><xsl:apply-templates /></li></xsl:otherwise>
+		<xsl:when test="$data-ly-class = $lay-current_class"><xsl:apply-templates mode="nav-layScreen_current" /></xsl:when>
+		<xsl:otherwise><li ly-sidebar__item="" aria-level="1"><xsl:apply-templates /></li></xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
 
 <xsl:template match="nav//menu/li/a/@href">
 	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
-	<xsl:attribute name="class">iSideBar</xsl:attribute>
-	<xsl:attribute name="role">heading</xsl:attribute>
+	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_</xsl:attribute>
+	<xsl:attribute name="aria-level">1</xsl:attribute>
 </xsl:template>
 
 <xsl:template match="nav//menu">
