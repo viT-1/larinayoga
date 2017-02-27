@@ -1,4 +1,4 @@
-.-pastEvents h3 {
+.-pastEvents *[ly-section__caption *= 'main_'] {
 	text-decoration: line-through;
 }
 

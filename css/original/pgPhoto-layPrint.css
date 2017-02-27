@@ -1,7 +1,7 @@
-h3 {
+*[ly-section__caption *= 'main_'] {
 	page-break-before: always;
 }
 
-li:first-child h3 {
+li:first-child *[ly-section__caption *= 'main_'] {
 	page-break-before: auto;
 }

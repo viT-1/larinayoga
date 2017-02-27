@@ -97,11 +97,11 @@ li {
 }
 
 /**** IE8 cannot render these two selectors together! */
-h3:hover  .iAnchor[href ^= '#'] {
+*[ly-section__caption *= 'main_']:hover  .iAnchor[href ^= '#'] {
 	width: 23px;
 }
 
-h3:target  .iAnchor[href ^= '#'] {
+*[ly-section__caption *= 'main_']:target  .iAnchor[href ^= '#'] {
 	width: 23px;
 }
 /* IE8 cannot render these two selectors together! ****/
