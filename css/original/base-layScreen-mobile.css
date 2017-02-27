@@ -12,7 +12,7 @@
 	text-align: right;
 }
 
-*[ly-hldMain] {
+*[ly-page__main] {
 	margin: 0 auto 0;
 	clear: both;
 }
@@ -62,11 +62,11 @@
 	width: 30%;
 }
 
-*[ly-hldMain] object
+/*[ly-hldMain] object
 , *[ly-hldMain] embed {
 	width: 100%;
 	height: auto;
-}}
+}*/}
 /* screen max629 ****/
 
 /**** screen max422 */
@@ -76,7 +76,7 @@
 	clear: left;
 }
 
-*[ly-hldMain] h3 img
+*[ly-caption__img]
 , *[ly-page__banner]
 , *[ly-page__likes] {
 	display: none;

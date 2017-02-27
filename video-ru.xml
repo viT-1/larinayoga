@@ -9,7 +9,7 @@
 	</head>
 	<body vocab="http://schema.org/" typeof="VideoGallery">
 		<ul data-ly-class="lstVideo" property="mainEntity" typeof="ItemList">
-			<li property="itemListElement" typeof="VideoObject">
+			<li property="itemListElement" typeof="VideoObject" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-10-09" />
 					<em property="name">Гвоздестояние. Ольга Таскаева в передаче "Доброе утро"</em>
@@ -19,7 +19,7 @@
 				<meta property="description" content="Телепередача о гвоздестоянии и его пользе" />
 				<meta property="thumbnailUrl" content="http://img.youtube.com/vi/IRd3kbCozpU/hqdefault.jpg" />
 			</li>
-			<li property="itemListElement" typeof="VideoObject">
+			<li property="itemListElement" typeof="VideoObject" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-07-12" />
 					<em property="name">"Сурья Намаскар - приветствие Солнцу"</em>
@@ -29,7 +29,7 @@
 				<meta property="description" content="Галина Ларина на фоне гор показывает комплекс асан" />
 				<meta property="thumbnailUrl" content="http://img.youtube.com/vi/jkIEStMJRTU/hqdefault.jpg" />
 			</li>
-			<li property="itemListElement" typeof="VideoObject">
+			<li property="itemListElement" typeof="VideoObject" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2010-12-11" />
 					<em property="name">Стеклохождение в программе "Шире округ"</em>

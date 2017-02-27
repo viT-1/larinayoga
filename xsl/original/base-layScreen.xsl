@@ -36,7 +36,7 @@
 				<xsl:with-param name="mod__class" select="'slave'" />
 			</xsl:apply-templates>
 			
-			<div role="main" ly-hldMain="">
+			<div role="main" ly-page__main="">
 				<xsl:apply-templates select="*" />
 			</div>
 			
@@ -58,7 +58,7 @@
 			
 			//IE9 and other browsers
 			if (document.addEventListener) {
-				initToggleAbility( '*[ly-hldMain] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
+				initToggleAbility( '*[ly-page__main] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
 			}
 		</script>
 	</body>
@@ -66,6 +66,11 @@
 
 <xsl:template match="*[@role = 'heading']/em">
 	<xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="*[@role = 'heading']//img/@src">
+	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
+	<xsl:attribute name="ly-caption__img"></xsl:attribute>
 </xsl:template>
 
 </xsl:stylesheet>

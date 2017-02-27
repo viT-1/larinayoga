@@ -28,12 +28,12 @@
 	</li>
 </xsl:template>
 
-<xsl:template match="html[@data-ly-class = 'photo']//*[@role = 'heading']/em">
+<xsl:template match="html[@data-ly-class = 'photo']//*[@role = 'section']//*[@role = 'heading']/em">
 	<xsl:variable name="date" select="../*[@property = 'dateCreated']/@content" />
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 	
 	<hr aria-hidden="true" />
-	<h3 id="{$date_href}">
+	<h3 id="{$date_href}" ly-section__caption="main__">
 		<xsl:variable name="alternate_href" select="../*[@property = 'alternateName']/@content" />
 		<xsl:if test="$alternate_href">
 			<xsl:attribute name="id"><xsl:value-of select="$alternate_href" /></xsl:attribute>
@@ -44,7 +44,7 @@
 			</xsl:if>
 			#
 		</a>
-		<span class="hTxt-date"><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates />
+		<span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates />
 	</h3>
 </xsl:template>
 

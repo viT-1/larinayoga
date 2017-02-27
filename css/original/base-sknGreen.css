@@ -3,34 +3,33 @@
 	background-attachment: fixed;
 }
 
-/**** @class ly-hldMain */
-*[ly-hldMain] {
+/**** @class ly-main */
+*[role = 'main'] {
 	font-family: "PT Sans", Calibri, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-*[ly-hldMain] h4 {
+*[ly-section__caption *= 'sub_'] {
 	text-transform: uppercase;
 }
 
 a
-, *[ly-hldMain] a:hover
+, *[role = 'main'] a:hover
 , .iMoreLess[aria-expanded] dd > *:first-child:after {
 	color: blue;
 	border-bottom-color: blue;
 }
-/* @class ly-hldMain ****/
+/* @class ly-main ****/
 
-*[ly-hldMain]
+*[role = 'main']
 , *[ly-sidebar__caption *= 'current_']
 , *[ly-sidebar__link] {
 	background-color: #FFF;
 }
 
-*[ly-hldMain] b
-, *[ly-hldMain] strong
-, *[ly-hldMain] h3
-, *[ly-hldMain] h3 a
-, *[ly-hldMain] h4
+*[role = 'main'] b
+, *[role = 'main'] strong
+, *[ly-section__caption]
+, *[ly-section__caption] a
 , *[ly-sidebar__caption *= 'current_']
 , *[ly-sidebar__link]:hover {
 	color: #370;
@@ -78,8 +77,7 @@ a
 
 *[ly-info_panel]
 , *[ly-sidebar__caption]
-, *[ly-hldMain] h3
-, *[ly-hldMain] h4 {
+, *[ly-section__caption] {
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
@@ -88,8 +86,8 @@ a
 }
 
 *[ly-info_panel]
-, *[ly-hldMain] h4
-, h3 .hTxt-date
+, *[ly-section__caption *= 'sub_']
+, *[ly-section__date]
 , *[ly-sidebar__link] {
 	font-size: 14px;
 }

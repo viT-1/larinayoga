@@ -9,13 +9,13 @@
 	doctype-system="about:legacy-compat"
 />
 
-<xsl:template match="html[@data-ly-class = 'video']//*[@role = 'heading']/em">
+<xsl:template match="html[@data-ly-class = 'video']//*[@role = 'section']//*[@role = 'heading']/em">
 	<xsl:variable name="date" select="../*[@property = 'dateCreated']/@content" />
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 	
 	<hr aria-hidden="true" />
-	<h3 id="{translate($date, '-', '')}">
-		<a class="iAnchor" href="#{$date_href}">#</a><span class="hTxt-date"><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
+	<h3 id="{translate($date, '-', '')}" ly-section__caption="main_">
+		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
 	</h3>
 </xsl:template>
 

@@ -10,7 +10,7 @@
 	</head>
 	<body vocab="http://schema.org/" typeof="ImageGallery">
 		<ul property="mainEntity" typeof="ItemList">
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2014-12-26" />
 					<em property="name">Лыжи в Кузьминках</em>
@@ -34,7 +34,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2014-08-24" />
 					<em property="name">Гвозди в Коломенском</em>
@@ -58,7 +58,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-07-16" />
 					<em property="name">Алтай, Укок, забавы</em>
@@ -82,7 +82,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-07-12" />
 					<meta property="alternateName" content="20130712_1" />
@@ -107,7 +107,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-07-12" />
 					<meta property="alternateName" content="20130712_2" />
@@ -147,7 +147,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-06-22" />
 					<em property="name">Разминка в Кузьминках</em>
@@ -186,7 +186,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2013-05-18" />
 					<em property="name">Фестивль «Здоровая Москва»</em>
@@ -225,7 +225,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2012-12-30" />
 					<em property="name">Новый год. Питер - Карелия - Питер</em>
@@ -264,7 +264,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2012-12-22" />
 					<em property="name">Первый ПВД после «конца света»</em>
@@ -303,7 +303,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2012-11-18" />
 					<em property="name">Прогулка по подмосковным болотам</em>
@@ -342,7 +342,7 @@
 					</li>
 				</ul>
 			</li>
-			<li property="itemListElement" typeof="CreativeWork">
+			<li property="itemListElement" typeof="CreativeWork" role="section">
 				<div role="heading">
 					<meta property="dateCreated" content="2012-09-14" />
 					<em property="name">Глаза боятся, а тело делает!</em>

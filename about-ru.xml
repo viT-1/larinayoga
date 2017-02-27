@@ -8,7 +8,7 @@
 		<link rel="author" href="https://vk.com/larinayoga" />
 	</head>
 	<body typeof="ProfilePage">
-		<div property="mainContentOfPage">
+		<div property="mainContentOfPage" role="section">
 			<div id="qualification" role="heading" property="mainEntity">
 				<em property="name">Профессиональный опыт</em>
 				<span property="primaryImageOfPage" typeof="ImageObject">
@@ -40,7 +40,7 @@
 			в <a href="http://nashayoga.ru/mastera/galina-larina/">конференциях «Наша йога»</a>
 			и новогодних мероприятиях в качестве мастера по гвоздестоянию.</p>
 		</div>
-		<div>
+		<div role="section">
 			<em role="heading" id="personal">Отношение к делу</em>
 			<p>Свои тренировки выстраиваю от простого к сложному, учитывая индивидуальные особенности
 			каждого человека и правила травмобезопасности. На занятиях включаю элементы суставной гимнастики,
@@ -51,7 +51,7 @@
 			при котором в каждом действии, мысли и чувстве ты интуитивно проявляешь свое истинное начало.
 			При работе с телом, мы освобождаемся от эмоциональных блоков и улучшаем своё качество жизни.</p>
 		</div>
-		<div>
+		<div role="section">
 			<em role="heading" id="certificates">Сертификаты</em>
 			<ul data-ly-class="certificates">
 				<li>
