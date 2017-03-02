@@ -71,7 +71,7 @@
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li[count( div[@aria-label = 'description']/p ) &gt; 1 ]">
 	<li>
 		<xsl:apply-templates select="@*" />
-		<dl class="iMoreLess" ly-list="unstyled">
+		<dl ly-more_less="" ly-list="unstyled">
 			<xsl:apply-templates select="*[@role = 'heading']" />
 			<xsl:apply-templates select="*[not(@role = 'heading')]" />
 		</dl>

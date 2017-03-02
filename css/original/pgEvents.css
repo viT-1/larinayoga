@@ -15,7 +15,7 @@ ul.-pastEvents {
 
 .-pastEvents
 , .-pastEvents *
-, .-pastEvents .iMoreLess dd > *:first-child:after {
+, .-pastEvents *[ly-more_less__toggler]:after {
 	color: #CCC!important;
 }
 
@@ -23,7 +23,7 @@ ul.-pastEvents {
 	color: #777!important;
 }
 
-.-pastEvents .iMoreLess dd > *:first-child:after {
+.-pastEvents *[ly-more_less__toggler]:after {
 	border-bottom-color: #CCC; 
 }
 }

@@ -10,7 +10,7 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'reviews']//*[@role = 'article']">
-	<dl class="iMoreLess" ly-section="">
+	<dl ly-more_less="" ly-section="">
 		<xsl:apply-templates select="*[@role = 'heading']" />
 		<xsl:apply-templates select="blockquote" />
 	</dl>

@@ -95,7 +95,7 @@ p
 *[ly-section__caption *= 'main_']:target  .iAnchor[href ^= '#'] {
 	width: 23px;
 }
-/* IE8 cannot render these two selectors together! ****/
+/* IE8 cannot render these two :selectors together! ****/
 
 *[ly-section__caption *= 'sub_'] {
 	margin: 0 0 .2em 15px;
@@ -189,43 +189,47 @@ p
 	top: 45px;
 }
 
-/**** @class iMoreLess */
-.iMoreLess dt
-, .iMoreLess dd {
+/**** @class ly-more_less */
+*[ly-more_less] dt
+, *[ly-more_less] dd {
 	padding: 0;
 	margin: 0;
 }
 
-/**** iMoreLess screen only */
+/**** ly-more_less screen only */
 @media screen {
-.iMoreLess[aria-expanded = 'false'] dd > * {
+*[ly-more_less *= 'less'] dd > *
+, *[ly-more_less].less dd > * {
 	display: none;
 }
 
-.iMoreLess[aria-expanded] dd > *:first-child {
-	display: inherit;
+*[ly-more_less__toggler] {
+	display: inherit!important;
 	cursor: default;
 }
 
-.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
+*[ly-more_less *= 'more'] *[ly-more_less__toggler]:after
+, *[ly-more_less].more *[ly-more_less__toggler]:after {
 	content: '<<<';
 }
 
-.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
+*[ly-more_less *= 'less'] *[ly-more_less__toggler]:after
+, *[ly-more_less].less *[ly-more_less__toggler]:after  {
 	content: '>>>';
 }
 
-.iMoreLess[aria-expanded] dd > *:first-child:after {
+*[ly-more_less__toggler]:after {
 	display: inline;
+	cursor: pointer;
 	margin-left: 1ex;
 	border-bottom-style: dotted;
 	border-bottom-width: 1px;
 }
 
-.iMoreLess[aria-expanded] { -webkit-animation: bugfix infinite 1s; }
+*[ly-more_less] { -webkit-animation: bugfix infinite 1s; }
 }
-/* iMoreLess screen only ****/
-/* @class iMoreLess ****/
+/* ly-more_less screen only ****/
+/* @class ly-more_less ****/
 
 .hTxt-r {
 	text-align: right;

@@ -13,7 +13,7 @@
 }
 
 *[role = 'main'] a
-, .iMoreLess[aria-expanded] dd > *:first-child:after {
+, *[ly-more_less__toggler]:after {
 	color: #09C;
 	border-bottom-color: #09C;
 }

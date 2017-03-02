@@ -1,15 +1,17 @@
-/**** @class iMoreLess */
-.iMoreLess[aria-expanded = 'true'] dd > *:first-child:after {
+/**** @class ly-more_less */
+*[ly-more_less *= 'more'] *[ly-more_less__toggler]:after
+, *[ly-more_less].more *[ly-more_less__toggler]:after {
 	content: '\fe3d';
 }
 
-.iMoreLess[aria-expanded = 'false'] dd > *:first-child:after {
+*[ly-more_less *= 'less'] *[ly-more_less__toggler]:after
+, *[ly-more_less].less *[ly-more_less__toggler]:after {
 	content: '\fe3e';
 }
-/* @class iMoreLess ****/
+/* @class ly-more_less ****/
 
 *[ly-sidebar__caption]:before
-, .iMoreLess dd > *:first-child:after {
+, *[ly-more_less__toggler]:after {
 	font-weight: normal;
 	font-style: normal;
 	

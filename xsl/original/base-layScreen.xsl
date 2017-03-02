@@ -57,9 +57,8 @@
 			initBodySettings();
 			
 			//IE9 and other browsers
-			if (document.addEventListener) {
-				initToggleAbility( '*[ly-page__main] dl.iMoreLess', 'dd > p:first-child', 'aria-expanded', 'false', 'true' );
-			}
+			var attr_for_change_name = document.addEventListener ? 'ly-more_less' : 'class';
+			initToggleAbility( 'dl[ly-more_less]', 'dd > p:first-child', attr_for_change_name, 'less', 'more' );
 		</script>
 	</body>
 </xsl:template>

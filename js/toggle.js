@@ -1,6 +1,10 @@
 function addTogglingCtl ( state_elem, onclick_elem_query, attr_name, c_less, c_more ) {
+	var toggling_toggler = state_elem.querySelector( onclick_elem_query );
+	
+	addAttrVal( toggling_toggler, 'ly-more_less__toggler', '' );
+	
 	addListener(
-		state_elem.querySelector( onclick_elem_query )
+		toggling_toggler
 		, 'click'
 		, function () {
 			toggleAttrVal ( state_elem, attr_name, c_less, c_more );
