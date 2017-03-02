@@ -198,8 +198,8 @@ p
 
 /**** ly-more_less screen only */
 @media screen {
-*[ly-more_less *= 'less'] dd > *
-, *[ly-more_less].less dd > * {
+*[ly-more_less *= '_less'] dd > *
+, *[ly-more_less]._less dd > * {
 	display: none;
 }
 
@@ -208,13 +208,13 @@ p
 	cursor: default;
 }
 
-*[ly-more_less *= 'more'] *[ly-more_less__toggler]:after
-, *[ly-more_less].more *[ly-more_less__toggler]:after {
+*[ly-more_less *= '_more'] *[ly-more_less__toggler]:after
+, *[ly-more_less]._more *[ly-more_less__toggler]:after {
 	content: '<<<';
 }
 
-*[ly-more_less *= 'less'] *[ly-more_less__toggler]:after
-, *[ly-more_less].less *[ly-more_less__toggler]:after  {
+*[ly-more_less *= '_less'] *[ly-more_less__toggler]:after
+, *[ly-more_less]._less *[ly-more_less__toggler]:after  {
 	content: '>>>';
 }
 

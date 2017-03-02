@@ -58,7 +58,7 @@
 			
 			//IE9 and other browsers
 			var attr_for_change_name = document.addEventListener ? 'ly-more_less' : 'class';
-			initToggleAbility( 'dl[ly-more_less]', 'dd > p:first-child', attr_for_change_name, 'less', 'more' );
+			initToggleAbility( 'dl[ly-more_less]', 'dd > p:first-child', attr_for_change_name, '_less', '_more' );
 		</script>
 	</body>
 </xsl:template>
