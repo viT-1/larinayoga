@@ -86,7 +86,7 @@
 	<xsl:variable name="second_date" select="substring-after( ..//*[@property = 'duration'][1]/@content, '/' )" />
 	
 	<hr aria-hidden="true" />
-	<h3 id="{$date_href}" ly-section__caption="main_">
+	<h2 id="{$date_href}" ly-section__caption="main_">
 		<xsl:apply-templates select="img" />
 		<br aria-hidden="true" />
 		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>
@@ -94,7 +94,7 @@
 			<xsl:text> - </xsl:text>
 			<span ly-section__date=""><xsl:value-of select="translate( $second_date, '-', '.' )" /></span>
 		</xsl:if>: <xsl:apply-templates select="em" />
-	</h3>
+	</h2>
 	<xsl:apply-templates select="*[not( name() = 'img' or name() = 'em' )]" />
 </xsl:template>
 
@@ -121,7 +121,7 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li//*[@aria-label = 'description']//em[@role = 'heading']">
-	<h4 ly-section__caption="sub_"><xsl:apply-templates /></h4>
+	<h3 ly-section__caption="sub_"><xsl:apply-templates /></h3>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@role = 'section']//ul//ul">

@@ -21,9 +21,9 @@
 		<xsl:variable name="date" select="substring(*[@property = 'datePublished']/@content, 1, 10 )" />
 		<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 		<hr aria-hidden="true" />
-		<h3 id="{$date_href}" ly-section__caption="main_">
-		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h3>
-		<h4 ly-section__caption="sub_"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'cite'" /></xsl:call-template> &#171;<xsl:apply-templates select="cite" />&#187;</h4>
+		<h2 id="{$date_href}" ly-section__caption="main_">
+		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h2>
+		<h3 ly-section__caption="sub_"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'cite'" /></xsl:call-template> &#171;<xsl:apply-templates select="cite" />&#187;</h3>
 	</dt>
 </xsl:template>
 

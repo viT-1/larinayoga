@@ -14,9 +14,9 @@
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
 	
 	<hr aria-hidden="true" />
-	<h3 id="{translate($date, '-', '')}" ly-section__caption="main_">
+	<h2 id="{translate($date, '-', '')}" ly-section__caption="main_">
 		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate($date, '-', '.')" /></span>: <xsl:apply-templates select="text()" />
-	</h3>
+	</h2>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'video']//*[@data-ly-class = 'lstVideo']/@data-ly-class">

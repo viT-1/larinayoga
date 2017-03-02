@@ -36,8 +36,8 @@
 	<link href="css/original/iGallery.css" />
 	
 	<link href="css/original/sknGreen.css" />
-	<link href="img/original/sknGreen_urlBackgr.css" />
-	<link href="css/original/sknWarm.css" media="screen" />
+	<link href="img/original/sknGreen_urlBackgr.css" media="screen" />
+	<link href="css/original/sknWarm.css" />
 	<link href="img/original/sknWarm_urlBackgr.css" media="screen" />
 
 	<script src="js/common.js" />

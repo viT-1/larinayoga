@@ -11,7 +11,7 @@
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@role = 'section']//*[@role = 'heading']">
 	<hr aria-hidden="true" />
-	<h3 id="{@id}" ly-section__caption="main_"><a class="iAnchor" href="#{@id}">#</a><xsl:apply-templates /></h3>
+	<h2 id="{@id}" ly-section__caption="main_"><a class="iAnchor" href="#{@id}">#</a><xsl:apply-templates /></h2>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'about']//*[@data-ly-class = 'img-primary']/@data-ly-class">

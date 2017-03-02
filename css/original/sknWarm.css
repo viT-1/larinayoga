@@ -89,6 +89,10 @@
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
+*[ly-section__caption *= 'main_'] {
+	font-size: 1.15em;
+}
+
 *[ly-sidebar__caption *= 'current_'] {
 	font-size: 1em;
 }
@@ -97,7 +101,7 @@
 , *[ly-section__caption *= 'sub_']
 , *[ly-section__date]
 , *[ly-sidebar__link] {
-	font-size: 14px;
+	font-size: .8em;
 }
 
 /**** @class info_panel */
