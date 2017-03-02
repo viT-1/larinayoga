@@ -113,18 +113,15 @@ a[ly-sidebar__caption *= 'sidebar--slave_']:hover
 	background: #630;
 }
 
-[ly-info_panel]
 *[ly-info_panel__link]:hover {
 	color: #FFF;
 }
 
-[ly-info_panel *= 'light_']
-*[ly-info_panel__link] {
+*[ly-info_panel__link *= 'info_panel--light_'] {
 	color: #630;
 }
 
-[ly-info_panel *= 'dark_']
-*[ly-info_panel__link] {
+*[ly-info_panel__link *= 'info_panel--dark_'] {
 	color: #C96;
 }
 /* @class info_panel ****/

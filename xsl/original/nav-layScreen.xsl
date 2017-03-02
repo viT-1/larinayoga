@@ -8,11 +8,25 @@
 	doctype-system="about:legacy-compat"
 />
 
-<xsl:template match="nav//footer//*[@data-ly-class = 'yandexName']">
+<xsl:template match="nav//footer//a">
+	<xsl:param name="is_header" />
+	<a>
+		<xsl:attribute name="ly-info_panel__link">
+			<xsl:choose>
+				<xsl:when test="$is_header">info_panel--light_</xsl:when>
+				<xsl:otherwise>info_panel--dark_</xsl:otherwise>
+			</xsl:choose>
+		</xsl:attribute>
+		<xsl:apply-templates select="@* | node()" />
+	</a>
+</xsl:template>
+
+<xsl:template match="nav//footer//a[@data-ly-class = 'yandexName']">
 	<xsl:param name="is_header" />
 	
-	<a ly-info_panel__link="" ly-user_name="">
+	<a ly-info_panel__link="info_panel--dark_" ly-user_name="">
 		<xsl:if test="$is_header">
+			<xsl:attribute name="ly-info_panel__link">info_panel--light_</xsl:attribute>
 			<xsl:attribute name="role">heading</xsl:attribute>
 			<xsl:attribute name="aria-level">1</xsl:attribute>
 		</xsl:if>
