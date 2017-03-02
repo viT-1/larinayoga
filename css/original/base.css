@@ -76,11 +76,11 @@ li {
 }
 
 *[ly-section] {
-	margin: 0 0 1em;
+	margin: 1em 0 0;
 }
 
-*[ly-section]:last-child {
-	margin-bottom: 0;
+*[ly-section]:first-child {
+	margin-top: 0;
 }
 
 *[ly-section__caption *= 'main_'] {
