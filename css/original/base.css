@@ -9,9 +9,8 @@ ul
 	padding: 0 0 1em 15px;
 }
 
-ul:last-child
-, ol:last-child {
-	padding-bottom: 0;
+li {
+	list-style: square outside;
 }
 
 *[ly-page] {
@@ -37,7 +36,7 @@ ul:last-child
 	display: block;
 }
 
-/**** @group p ly-ist */
+/**** @group p ly-list */
 p
 , *[ly-list ~= 'paragraph'] > li {
 	text-indent: 30px;
@@ -56,23 +55,10 @@ p
 , *[ly-list ~= 'inline'] li {
 	display: inline;
 }
-/*
-.iList[ly-list ~= 'unstyled'] > li {
-	margin-bottom: 1em;
-}
-
-.iList[ly-list ~= 'unstyled']:last-child > li:last-child {
-	margin-bottom: 0;
-}
-*/
 /* @class iList ****/
 
 *[aria-hidden = 'true'] {
 	display: none;
-}
-
-li {
-	list-style: square outside;
 }
 
 *[ly-section] {
