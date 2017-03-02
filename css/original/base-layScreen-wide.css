@@ -15,11 +15,11 @@
 	width: 185px;
 }
 
-*[ly-base__sidebar *= 'master'] {
+*[ly-base__sidebar *= 'master_'] {
 	left: 0;
 }
 
-*[ly-base__sidebar *= 'slave'] {
+*[ly-base__sidebar *= 'slave_'] {
 	right: 0;
 }
 

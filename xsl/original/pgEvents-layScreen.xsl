@@ -31,7 +31,7 @@
 
 <xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
 	<li ly-sidebar__item="" aria-level="1">
-		<h1 ly-sidebar__caption="{@data-ly-class}_ current_"><xsl:value-of select="." /></h1>
+		<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--slave_"><xsl:value-of select="." /></h1>
 		
 		<xsl:if test="count( $pgEvents-future ) &gt; 0">
 			<xsl:variable name="strFuture">
@@ -62,7 +62,7 @@
 	<xsl:variable name="second_date" select="substring( ..//*[@property = 'duration'][1]/@content, 11 )" />
 	<xsl:variable name="second_date_mi" select="translate( translate($second_date, '-', '.'), '/', '-' )" />
 	<li ly-sidebar__item="" aria-level="2">
-		<a href="#{translate($date, '-', '')}" ly-sidebar__link="">
+		<a href="#{translate($date, '-', '')}" ly-sidebar__link="sidebar--slave_">
 			<xsl:value-of select="translate( $date, '-', '.' )" />
 			<xsl:value-of select="concat( substring( $second_date_mi, 1, 1 ), substring( $second_date_mi, 7, 5 ) )" />: <xsl:value-of select="em" /></a>
 	</li>

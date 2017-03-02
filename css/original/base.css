@@ -158,13 +158,13 @@ p
 	border-width: 15px;
 }
 
-*[ly-base__sidebar *= 'master'] *[ly-sidebar__link]{
+*[ly-sidebar__link *= 'sidebar--master_']{
 	text-align: right;
 	padding-left: 15px;
 	border-style: none none none solid;
 }
 
-*[ly-base__sidebar *= 'slave'] *[ly-sidebar__link] {
+*[ly-sidebar__link *= 'sidebar--slave_'] {
 	text-align: left;
 	padding-right: 15px;
 	border-style: none solid none none;

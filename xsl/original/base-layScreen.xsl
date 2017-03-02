@@ -30,10 +30,10 @@
 		<div ly-page__base="" ly-base="">
 			<hr aria-hidden="true" />
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
-				<xsl:with-param name="mod__class" select="'master'" />
+				<xsl:with-param name="mod__class" select="'master_'" />
 			</xsl:apply-templates>
 			<xsl:apply-templates select="$nav_navRoot/menu[@lang = $base_htmlLang]">
-				<xsl:with-param name="mod__class" select="'slave'" />
+				<xsl:with-param name="mod__class" select="'slave_'" />
 			</xsl:apply-templates>
 			
 			<div role="main" ly-page__main="">

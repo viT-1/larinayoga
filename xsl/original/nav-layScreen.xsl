@@ -21,8 +21,12 @@
 	</a>
 </xsl:template>
 
-<xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
-	<li ly-sidebar__item="" aria-level="1"><h1 ly-sidebar__caption="{@data-ly-class}_ current_"><xsl:value-of select="." /></h1></li>
+<xsl:template match="nav//menu/li[position() &lt; 5]/*" mode="nav-layScreen_current">
+	<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--master_"><xsl:value-of select="." /></h1>
+</xsl:template>
+
+<xsl:template match="nav//menu/li[position() &gt; 4]/*" mode="nav-layScreen_current">
+	<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--slave_"><xsl:value-of select="." /></h1>
 </xsl:template>
 
 <xsl:variable name="lay-current_class" select="//html/@data-ly-class" />
@@ -30,15 +34,23 @@
 <xsl:template match="nav//menu/li">
 	<xsl:variable name="data-ly-class" select="*/@data-ly-class" />
 	
+	<li ly-sidebar__item="" aria-level="1">
 	<xsl:choose>
 		<xsl:when test="$data-ly-class = $lay-current_class"><xsl:apply-templates mode="nav-layScreen_current" /></xsl:when>
-		<xsl:otherwise><li ly-sidebar__item="" aria-level="1"><xsl:apply-templates /></li></xsl:otherwise>
+		<xsl:otherwise><xsl:apply-templates /></xsl:otherwise>
 	</xsl:choose>
+	</li>
 </xsl:template>
 
-<xsl:template match="nav//menu/li/a/@href">
+<xsl:template match="nav//menu/li[position() &lt; 5]/a/@href">
 	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
-	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_</xsl:attribute>
+	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_ sidebar--master_</xsl:attribute>
+	<xsl:attribute name="aria-level">1</xsl:attribute>
+</xsl:template>
+
+<xsl:template match="nav//menu/li[position() &gt; 4]/a/@href">
+	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
+	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_ sidebar--slave_</xsl:attribute>
 	<xsl:attribute name="aria-level">1</xsl:attribute>
 </xsl:template>
 
@@ -46,8 +58,8 @@
 	<xsl:param name="mod__class" />
 	<menu ly-base__sidebar="{$mod__class}" ly-sidebar="">
 		<xsl:choose>
-			<xsl:when test="$mod__class = 'master'"><xsl:apply-templates select="*[position() &lt; 5]" /></xsl:when>
-			<xsl:when test="$mod__class = 'slave'"><xsl:apply-templates select="*[position() &gt; 4]" /></xsl:when>
+			<xsl:when test="$mod__class = 'master_'"><xsl:apply-templates select="*[position() &lt; 5]" /></xsl:when>
+			<xsl:when test="$mod__class = 'slave_'"><xsl:apply-templates select="*[position() &gt; 4]" /></xsl:when>
 		</xsl:choose>
 	</menu>
 </xsl:template>

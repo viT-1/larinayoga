@@ -60,13 +60,13 @@
 	border-color: #C96;
 }
 
-*[ly-base__sidebar = 'master'] *[ly-sidebar__caption *= 'other_']:hover 
-, *[ly-base__sidebar = 'master'] *[ly-sidebar__caption *= 'current_'] {
+a[ly-sidebar__caption *= 'sidebar--master_']:hover 
+, h1[ly-sidebar__caption *= 'sidebar--master_'] {
 	border-right-color: #FFF;
 }
 
-*[ly-base__sidebar = 'slave'] *[ly-sidebar__caption *= 'other_']:hover
-, *[ly-base__sidebar = 'slave'] *[ly-sidebar__caption *= 'current_'] {
+a[ly-sidebar__caption *= 'sidebar--slave_']:hover
+, h1[ly-sidebar__caption *= 'sidebar--slave_'] {
 	border-left-color: #FFF;
 }
 
