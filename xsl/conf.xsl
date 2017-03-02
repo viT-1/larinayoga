@@ -27,11 +27,11 @@
 		<!-- Порядок css: затем индивидуальные для конкретной страницы -->
 		<xsl:apply-templates select="$srcPgCssLinks" />
 		<!-- В низ head скрипты -->
-		<xsl:apply-templates select="$conf_confRoot//script | $srcPgScripts" />
+		<xsl:apply-templates select="$conf_confRoot//script[not(@disabled)] | $srcPgScripts" />
 	</head>
 </xsl:template>
 
-<xsl:template match="conf//link" mode="conf_writeThemesToHead">
+<xsl:template match="conf//link[not(@disabled)]" mode="conf_writeThemesToHead">
 	<xsl:variable name="active_themes" select="$conf_confRoot//*[@name = 'active_theme' and not(@disabled)]" />
 	<xsl:variable name="current_href" select="@href" />
 	<xsl:if test="count($active_themes[contains($current_href, @content)])">
