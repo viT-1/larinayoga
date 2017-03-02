@@ -70,7 +70,11 @@
 
 <xsl:template match="*[@role = 'heading']//img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
-	<xsl:attribute name="ly-caption__img"></xsl:attribute>
+	<xsl:attribute name="ly-caption__img" />
+</xsl:template>
+
+<xsl:template match="*[@role = 'section']/@role">
+	<xsl:attribute name="ly-section" />
 </xsl:template>
 
 </xsl:stylesheet>

@@ -1,24 +1,6 @@
-*[ly-page] {
-	font-size: 1em;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
 a img {
 	/*border-style: none;*/
 	display: inline-block;
-}
-
-*[ly-sidebar]
-, *[ly-sidebar__page_index]
-, .iList[ly-list ~= 'unstyled']
-, *[ly-sidebar__item]
-, .iList[ly-list ~= 'unstyled'] > li {
-	list-style: none;
-	display: block;
-	margin: 0;
-	padding: 0;
 }
 
 ul
@@ -27,59 +9,82 @@ ul
 	padding: 0 0 1em 15px;
 }
 
-/**** @group p iList */
-p
-, .iList[ly-list ~= 'paragraph'] li {
-	text-indent: 30px;
-	margin: 0 0 0 15px;
-	padding: 0 0 1em 0;
+ul:last-child
+, ol:last-child {
+	padding-bottom: 0;
 }
-/* @group p iList ****/
 
-/**** @class iList */
-.iList[ly-list ~= 'paragraph'] {
+*[ly-page] {
+	font-size: 1em;
+	text-align: center;
+}
+
+*[ly-page]
+, *[ly-sidebar]
+, *[ly-sidebar__page_index]
+, *[ly-list ~= 'unstyled']
+, *[ly-list ~= 'paragraph']
+, *[ly-sidebar__item] {
 	margin: 0;
 	padding: 0;
 }
 
-.iList[ly-list ~= 'inline'] {
-	margin: 0 .5em 0 0;
-	padding: 0;
-}
-
-.iList[ly-list ~= 'inline']
-, .iList[ly-list ~= 'inline'] li {
-	display: inline;
-}
-
-.iList[ly-list ~= 'paragraph'] li  {
+*[ly-list ~= 'unstyled']
+, *[ly-sidebar__item]
+, *[ly-list ~= 'unstyled'] > li
+, *[ly-list ~= 'paragraph'] > li  {
 	list-style: none;
 	display: block;
 }
 
+/**** @group p ly-ist */
+p
+, *[ly-list ~= 'paragraph'] > li {
+	text-indent: 30px;
+	margin: 0 0 0 15px;
+	padding: 0 0 1em 0;
+}
+/* @group p ly-list ****/
+
+/**** @class ly-list */
+*[ly-list ~= 'inline'] {
+	margin: 0 .5em 0 0;
+	padding: 0;
+}
+
+*[ly-list ~= 'inline']
+, *[ly-list ~= 'inline'] li {
+	display: inline;
+}
+/*
 .iList[ly-list ~= 'unstyled'] > li {
 	margin-bottom: 1em;
 }
 
-.iList[ly-list ~= 'unstyled'] > li:last-child {
+.iList[ly-list ~= 'unstyled']:last-child > li:last-child {
 	margin-bottom: 0;
 }
+*/
 /* @class iList ****/
 
 *[aria-hidden = 'true'] {
 	display: none;
 }
 
-*[role = 'main'] dl {
-	margin: 0 0 15px;
-}
-
 li {
 	list-style: square outside;
 }
 
+*[ly-section] {
+	margin: 0 0 1em;
+}
+
+*[ly-section]:last-child {
+	margin-bottom: 0;
+}
+
 *[ly-section__caption *= 'main_'] {
-	margin: 15px 0 .5em 0;
+	margin: 0 0 .5em 0;
 	padding: 0 0 0 15px;
 	position: relative;
 }
@@ -235,12 +240,6 @@ li {
 }
 /* iMoreLess screen only ****/
 /* @class iMoreLess ****/
-
-*[ly-section__caption *= 'main_']:first-child
-, li:first-child *[ly-section__caption *= 'main_']
-, *[role = 'main'] > div:first-child *[ly-section__caption *= 'main_']  {
-	margin-top: 0;
-}
 
 .hTxt-r {
 	text-align: right;

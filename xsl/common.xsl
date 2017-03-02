@@ -12,7 +12,7 @@
 @cite
 
 | @vocab
-| body/*/@typeof
+| body//@typeof
 | @property
 
 | @itemscope

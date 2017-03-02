@@ -10,7 +10,6 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'reviews']//*[@role = 'article']">
-	<hr aria-hidden="true" />
 	<dl class="iMoreLess" ly-section="">
 		<xsl:apply-templates select="*[@role = 'heading']" />
 		<xsl:apply-templates select="blockquote" />
@@ -21,6 +20,7 @@
 	<dt>
 		<xsl:variable name="date" select="substring(*[@property = 'datePublished']/@content, 1, 10 )" />
 		<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
+		<hr aria-hidden="true" />
 		<h3 id="{$date_href}" ly-section__caption="main_">
 		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h3>
 		<h4 ly-section__caption="sub_"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'cite'" /></xsl:call-template> &#171;<xsl:apply-templates select="cite" />&#187;</h4>

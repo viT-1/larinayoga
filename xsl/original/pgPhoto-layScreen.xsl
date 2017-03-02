@@ -50,7 +50,6 @@
 
 <xsl:template match="html[@data-ly-class = 'photo']/body/ul">
 	<xsl:element name="{name()}">
-		<xsl:attribute name="class">iList</xsl:attribute>
 		<xsl:attribute name="ly-list">unstyled</xsl:attribute>
 		<xsl:apply-templates />
 	</xsl:element>
@@ -72,7 +71,7 @@
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
 	<xsl:attribute name="class">iGallery</xsl:attribute>
 	<xsl:attribute name="ly-imgThumb">bhvrHover paspartu</xsl:attribute>
-	<xsl:attribute name="hidden"></xsl:attribute>
+	<xsl:attribute name="hidden" />
 </xsl:template>
 
 </xsl:stylesheet>

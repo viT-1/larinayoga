@@ -14,14 +14,14 @@
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']">
 	<xsl:if test="count( $pgEvents-future ) &gt; 0">
-		<ul class="iList" ly-list="unstyled">
+		<ul ly-list="unstyled">
 			<xsl:apply-templates select="$pgEvents-future">
 				<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 			</xsl:apply-templates>
 		</ul>
 	</xsl:if>
 	<xsl:if test="count( $pgEvents-complete ) &gt; 0">
-		<ul class="iList -pastEvents" ly-list="unstyled">
+		<ul class="-pastEvents" ly-list="unstyled">
 			<xsl:apply-templates select="$pgEvents-complete">
 				<xsl:sort select="descendant::*[@property = 'startDate'][1]/@content" order="descending" />
 			</xsl:apply-templates>
@@ -71,7 +71,7 @@
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li[count( div[@aria-label = 'description']/p ) &gt; 1 ]">
 	<li>
 		<xsl:apply-templates select="@*" />
-		<dl class="iMoreLess iList" ly-list="unstyled">
+		<dl class="iMoreLess" ly-list="unstyled">
 			<xsl:apply-templates select="*[@role = 'heading']" />
 			<xsl:apply-templates select="*[not(@role = 'heading')]" />
 		</dl>
@@ -116,7 +116,7 @@
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/*[@role = 'heading']/img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
-	<xsl:attribute name="ly-caption__img"></xsl:attribute>
+	<xsl:attribute name="ly-caption__img" />
 	<xsl:attribute name="height">168</xsl:attribute>
 </xsl:template>
 
@@ -125,7 +125,7 @@
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@role = 'section']//ul//ul">
-	<ul class="iList" ly-list="inline"><xsl:apply-templates /></ul>
+	<ul ly-list="inline"><xsl:apply-templates /></ul>
 </xsl:template>
 
 </xsl:stylesheet>
