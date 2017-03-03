@@ -219,7 +219,7 @@ p
 	border-bottom-width: 1px;
 }
 
-*[ly-more_less] { -webkit-animation: bugfix infinite 1s; }
+*[ly-section] { -webkit-animation: bugfix infinite 1s; }
 }
 /* @class ly-more_less screen only ****/
 
