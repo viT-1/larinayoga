@@ -85,6 +85,11 @@
 	<xsl:attribute name="ly-caption__img" />
 </xsl:template>
 
+<xsl:template match="body//a[not(img)]/@href">
+	<xsl:attribute name="href"><xsl:value-of select="." /></xsl:attribute>
+	<xsl:attribute name="ly-section__link" />
+</xsl:template>
+
 <xsl:template match="*[@role = 'section']/@role">
 	<xsl:attribute name="ly-section" />
 </xsl:template>

@@ -12,17 +12,17 @@
 	text-transform: uppercase;
 }
 
-*[role = 'main'] a
+*[ly-section__link]
 , *[ly-more_less__toggler]:after {
 	color: #09C;
 	border-bottom-color: #09C;
 }
 
-*[role = 'main'] a:visited {
+*[ly-section__link]:visited {
 	color: #069;
 }
 
-*[role = 'main'] a:hover {
+*[ly-section__link]:hover {
 	color: #6CF;
 }
 /* @class ly-hldMain ****/

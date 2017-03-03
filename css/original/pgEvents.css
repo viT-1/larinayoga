@@ -15,12 +15,13 @@ ul.-pastEvents {
 
 .-pastEvents
 , .-pastEvents *
+, .-pastEvents *[ly-section__link]
 , .-pastEvents *[ly-more_less__toggler]:after {
-	color: #CCC!important;
+	color: #CCC;
 }
 
-.-pastEvents  li:hover * {
-	color: #777!important;
+.-pastEvents  *[ly-section]:hover * {
+	color: #777;
 }
 
 .-pastEvents *[ly-more_less__toggler]:after {
