@@ -49,9 +49,22 @@
 			&copy;<a href="https://github.com/viT-1/larinayoga/issues" ly-info_panel__link="info_panel--dark_">viT-1</a></span>
 			<a href="#top" ly-info_panel__link="info_panel--dark_" ly-info_panel__tothetop=""><xsl:call-template name="select_string"><xsl:with-param name="id" select="'tothetop'" /></xsl:call-template></a>
 		</div>
-		<a ly-page__banner="" href="index-{$base_htmlLang}.xml">
+		
+		<xsl:variable name="banner_el_name">
+			<xsl:choose>
+				<xsl:when test="$base_pgContext = 'index'">span</xsl:when>
+				<xsl:otherwise>a</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="var_banner_el_name" select="normalize-space($banner_el_name)" />
+		
+		<xsl:element name="{$var_banner_el_name}">
+			<xsl:attribute name="ly-page__banner"></xsl:attribute>
 			<xsl:attribute name="title"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'siteroot'" /></xsl:call-template></xsl:attribute>
-		</a>
+			<xsl:if test="$var_banner_el_name = 'a'">
+				<xsl:attribute name="href">index-<xsl:value-of select="$base_htmlLang" />.xml</xsl:attribute>
+			</xsl:if>
+		</xsl:element>
 		
 		<script type="text/javascript">
 			initBodySettings();
