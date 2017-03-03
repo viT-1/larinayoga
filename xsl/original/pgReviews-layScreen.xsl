@@ -10,9 +10,9 @@
 />
 
 <xsl:template match="html[@data-ly-class = 'reviews']//*[@role = 'article']">
-	<dl ly-more_less="" ly-section="">
+	<dl ly-list="unstyled" ly-section="">
 		<xsl:apply-templates select="*[@role = 'heading']" />
-		<xsl:apply-templates select="blockquote" />
+		<xsl:apply-templates select="blockquote" mode="base-more_less__ctl" />
 	</dl>
 </xsl:template>
 
@@ -25,12 +25,6 @@
 		<a class="iAnchor" href="#{$date_href}">#</a><span ly-section__date=""><xsl:value-of select="translate( $date, '-', '.' )" /></span>: <xsl:apply-templates select="*[@property = 'author']" /></h2>
 		<h3 ly-section__caption="sub_"><xsl:call-template name="select_string"><xsl:with-param name="id" select="'cite'" /></xsl:call-template> &#171;<xsl:apply-templates select="cite" />&#187;</h3>
 	</dt>
-</xsl:template>
-
-<xsl:template match="html[@data-ly-class = 'reviews']//blockquote">
-	<dd>
-		<xsl:apply-templates />
-	</dd>
 </xsl:template>
 
 </xsl:stylesheet>

@@ -22,6 +22,7 @@ li {
 , *[ly-sidebar]
 , *[ly-sidebar__page_index]
 , *[ly-list ~= 'unstyled']
+, *[ly-list ~= 'unstyled'] > dd
 , *[ly-list ~= 'paragraph']
 , *[ly-sidebar__item] {
 	margin: 0;
@@ -189,32 +190,24 @@ p
 	top: 45px;
 }
 
-/**** @class ly-more_less */
-*[ly-more_less] dt
-, *[ly-more_less] dd {
-	padding: 0;
-	margin: 0;
-}
-
-/**** ly-more_less screen only */
+/**** @class ly-more_less screen only */
 @media screen {
-*[ly-more_less *= '_less'] dd > *
-, *[ly-more_less]._less dd > * {
+*[ly-more_less__hider *= '_less']
+, *[ly-more_less__hider]._less {
 	display: none;
 }
 
 *[ly-more_less__toggler] {
-	display: inherit!important;
 	cursor: default;
 }
 
-*[ly-more_less *= '_more'] *[ly-more_less__toggler]:after
-, *[ly-more_less]._more *[ly-more_less__toggler]:after {
+*[ly-more_less__toggler *= '_more']:after
+, *[ly-more_less__toggler]._more:after {
 	content: '<<<';
 }
 
-*[ly-more_less *= '_less'] *[ly-more_less__toggler]:after
-, *[ly-more_less]._less *[ly-more_less__toggler]:after  {
+*[ly-more_less__toggler *= '_less']:after
+, *[ly-more_less__toggler]._less:after  {
 	content: '>>>';
 }
 
@@ -228,8 +221,7 @@ p
 
 *[ly-more_less] { -webkit-animation: bugfix infinite 1s; }
 }
-/* ly-more_less screen only ****/
-/* @class ly-more_less ****/
+/* @class ly-more_less screen only ****/
 
 .hTxt-r {
 	text-align: right;

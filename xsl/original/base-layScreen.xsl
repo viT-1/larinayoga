@@ -55,12 +55,25 @@
 		
 		<script type="text/javascript">
 			initBodySettings();
-			
-			//IE9 and other browsers
-			var attr_for_change_name = document.addEventListener ? 'ly-more_less' : 'class';
-			initToggleAbility( 'dl[ly-more_less]', 'dd > p:first-child', attr_for_change_name, '_less', '_more' );
+			initToggleAbility( 'ly-more_less__toggler', 'ly-more_less__hider', '_less', '_more' );
 		</script>
 	</body>
+</xsl:template>
+
+<xsl:template match="*" mode="base-more_less__ctl">
+	<dd ly-more_less="">
+		<xsl:apply-templates select="*[1]" mode="base-toggler" />
+		<div ly-more_less__hider="">
+			<xsl:apply-templates select="*[position() &gt; 1]" />
+		</div>
+	</dd>
+</xsl:template>
+
+<xsl:template match="*" mode="base-toggler">
+	<xsl:element name="{name()}">
+		<xsl:attribute name="ly-more_less__toggler" />
+		<xsl:apply-templates select="@* | node()" />
+	</xsl:element>
 </xsl:template>
 
 <xsl:template match="*[@role = 'heading']/em">

@@ -71,14 +71,14 @@
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li[count( div[@aria-label = 'description']/p ) &gt; 1 ]">
 	<li>
 		<xsl:apply-templates select="@*" />
-		<dl ly-more_less="" ly-list="unstyled">
-			<xsl:apply-templates select="*[@role = 'heading']" />
-			<xsl:apply-templates select="*[not(@role = 'heading')]" />
+		<dl ly-list="unstyled">
+			<dt><xsl:apply-templates select="*[@role = 'heading']" /></dt>
+			<xsl:apply-templates select="*[not(@role = 'heading')]" mode="base-more_less__ctl" />
 		</dl>
 	</li>
 </xsl:template>
 
-<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/*[@role = 'heading']" mode="pgEvents_heading">
+<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/*[@role = 'heading']">
 	<!-- startDate может быть как с разделителем 'T' так и без него -->
 	<xsl:variable name="date" select="substring( ..//*[@property = 'startDate'][1]/@content, 1, 10 )" />
 	<xsl:variable name="date_href" select="translate( $date, '-', '' )" />
@@ -98,30 +98,14 @@
 	<xsl:apply-templates select="*[not( name() = 'img' or name() = 'em' )]" />
 </xsl:template>
 
-<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/*[@role = 'heading']">
-	<xsl:apply-templates select="." mode="pgEvents_heading" />
-</xsl:template>
-
-<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li[count( div[@aria-label = 'description']/p ) &gt; 1 ]/*[@role = 'heading']">
-	<dt>
-		<xsl:apply-templates select="." mode="pgEvents_heading" />
-	</dt>
-</xsl:template>
-
-<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/div[@aria-label = 'description'][count( p ) &gt; 1]">
-	<dd>
-		<xsl:apply-templates />
-	</dd>
+<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li//*[@aria-label = 'description']//em[@role = 'heading']">
+	<h3 ly-section__caption="sub_"><xsl:apply-templates /></h3>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li/*[@role = 'heading']/img/@src">
 	<xsl:attribute name="src"><xsl:value-of select="." /></xsl:attribute>
 	<xsl:attribute name="ly-caption__img" />
 	<xsl:attribute name="height">168</xsl:attribute>
-</xsl:template>
-
-<xsl:template match="html[@data-ly-class = 'events']//*[@data-ly-class = 'lstEvents']/li//*[@aria-label = 'description']//em[@role = 'heading']">
-	<h3 ly-section__caption="sub_"><xsl:apply-templates /></h3>
 </xsl:template>
 
 <xsl:template match="html[@data-ly-class = 'events']//*[@role = 'section']//ul//ul">

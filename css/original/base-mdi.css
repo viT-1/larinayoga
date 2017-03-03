@@ -1,11 +1,11 @@
 /**** @class ly-more_less */
-*[ly-more_less *= '_more'] *[ly-more_less__toggler]:after
-, *[ly-more_less]._more *[ly-more_less__toggler]:after {
+*[ly-more_less__toggler *= '_more']:after
+, *[ly-more_less__toggler]._more:after {
 	content: '\fe3d';
 }
 
-*[ly-more_less *= '_less'] *[ly-more_less__toggler]:after
-, *[ly-more_less]._less *[ly-more_less__toggler]:after {
+*[ly-more_less__toggler *= '_less']:after
+, *[ly-more_less__toggler]._less:after {
 	content: '\fe3e';
 }
 /* @class ly-more_less ****/
