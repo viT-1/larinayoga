@@ -35,12 +35,12 @@
 	</a>
 </xsl:template>
 
-<xsl:template match="nav//menu/li[position() &lt; 5]/*" mode="nav-layScreen_current">
-	<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--master_"><xsl:value-of select="." /></h1>
+<xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
+	<h1 ly-sidebar__caption="{@data-ly-class}_ (current_ sidebar--slave_)"><xsl:value-of select="." /></h1>
 </xsl:template>
 
-<xsl:template match="nav//menu/li[position() &gt; 4]/*" mode="nav-layScreen_current">
-	<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--slave_"><xsl:value-of select="." /></h1>
+<xsl:template match="nav//menu/li[position() &lt; 5]/*" mode="nav-layScreen_current">
+	<h1 ly-sidebar__caption="{@data-ly-class}_ (current_ sidebar--master_)"><xsl:value-of select="." /></h1>
 </xsl:template>
 
 <xsl:variable name="lay-current_class" select="//html/@data-ly-class" />
@@ -56,15 +56,15 @@
 	</li>
 </xsl:template>
 
-<xsl:template match="nav//menu/li[position() &lt; 5]/a/@href">
+<xsl:template match="nav//menu/li/a/@href">
 	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
-	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_ sidebar--master_</xsl:attribute>
+	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ (other_ sidebar--slave_)</xsl:attribute>
 	<xsl:attribute name="aria-level">1</xsl:attribute>
 </xsl:template>
 
-<xsl:template match="nav//menu/li[position() &gt; 4]/a/@href">
+<xsl:template match="nav//menu/li[position() &lt; 5]/a/@href">
 	<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
-	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ other_ sidebar--slave_</xsl:attribute>
+	<xsl:attribute name="ly-sidebar__caption"><xsl:value-of select="../@data-ly-class" />_ (other_ sidebar--master_)</xsl:attribute>
 	<xsl:attribute name="aria-level">1</xsl:attribute>
 </xsl:template>
 

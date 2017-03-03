@@ -11,7 +11,7 @@
 
 <xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
 	<li ly-sidebar__item="" aria-level="1">
-		<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--master_"><xsl:value-of select="." /></h1>
+		<h1 ly-sidebar__caption="{@data-ly-class}_ (current_ sidebar--master_)"><xsl:value-of select="." /></h1>
 		<menu ly-sidebar__page_index="">
 			<xsl:apply-templates select="$base_htmlRoot//*[@role = 'heading']" mode="pgPhoto-layScreen_mi" />
 		</menu>

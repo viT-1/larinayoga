@@ -52,13 +52,13 @@ a
 	border-color: #CF9;
 }
 
-a[ly-sidebar__caption *= 'sidebar--master_']:hover 
-, h1[ly-sidebar__caption *= 'sidebar--master_'] {
+*[ly-sidebar__caption *= '(other_ sidebar--master_)']:hover 
+, *[ly-sidebar__caption *= '(current_ sidebar--master_)'] {
 	border-right-color: #FFF;
 }
 
-a[ly-sidebar__caption *= 'sidebar--slave_']:hover
-, h1[ly-sidebar__caption *= 'sidebar--slave_'] {
+a[ly-sidebar__caption *= '(other_ sidebar--slave_)']:hover
+, h1[ly-sidebar__caption *= '(current_ sidebar--slave_)'] {
 	border-left-color: #FFF;
 }
 

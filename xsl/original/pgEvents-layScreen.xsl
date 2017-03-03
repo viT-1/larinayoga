@@ -31,7 +31,7 @@
 
 <xsl:template match="nav//menu/li/*" mode="nav-layScreen_current">
 	<li ly-sidebar__item="" aria-level="1">
-		<h1 ly-sidebar__caption="{@data-ly-class}_ current_ sidebar--slave_"><xsl:value-of select="." /></h1>
+		<h1 ly-sidebar__caption="{@data-ly-class}_ (current_ sidebar--slave_)"><xsl:value-of select="." /></h1>
 		
 		<xsl:if test="count( $pgEvents-future ) &gt; 0">
 			<xsl:variable name="strFuture">
