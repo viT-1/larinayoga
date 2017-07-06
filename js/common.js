@@ -70,3 +70,7 @@ function removeListener(element, eventName, handler) {
 		element['on' + eventName] = null;
 	}
 }
+
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+}
